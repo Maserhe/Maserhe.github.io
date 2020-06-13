@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://maserhe.top/"/>
-  <updated>2020-06-11T06:41:59.280Z</updated>
+  <updated>2020-06-13T16:32:03.984Z</updated>
   <id>https://maserhe.top/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>DTOJ2431 棋盘路径</title>
+    <link href="https://maserhe.top/2020/04/27/dtoj2431-qi-pan-lu-jing/"/>
+    <id>https://maserhe.top/2020/04/27/dtoj2431-qi-pan-lu-jing/</id>
+    <published>2020-04-27T09:16:26.000Z</published>
+    <updated>2020-06-13T16:32:03.984Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;
+    
+    </summary>
+    
+      <category term="信息竞赛" scheme="https://maserhe.top/categories/%E4%BF%A1%E6%81%AF%E7%AB%9E%E8%B5%9B/"/>
+    
+    
+      <category term="DTOJ" scheme="https://maserhe.top/tags/DTOJ/"/>
+    
+      <category term="题解" scheme="https://maserhe.top/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="数学" scheme="https://maserhe.top/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="组合" scheme="https://maserhe.top/tags/%E7%BB%84%E5%90%88/"/>
+    
+  </entry>
   
   <entry>
     <title>博客开源</title>
