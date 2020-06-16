@@ -6,13 +6,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="BZOJ4499 DTOJ2555 线性函数, SUT self java Golang 计算机科学 Linux学习">
+    <meta name="keywords" content="DTOJ Begin4028 DTOJ3603 table, SUT self java Golang 计算机科学 Linux学习">
     <meta name="baidu-site-verification" content="eFxriE7DVh" />
     <meta name="google-site-verification" content="KeoTn_OFy4ndJwXNmm2gMeQfPhd7alqE9vQDwI32KCY" />
-    <meta name="description" content="题目题目描述
-小C最近在学习线性函数，线性函数可以表示为：$f(x) = kx + b$。现在小C面前有$n$个线性函数$f_i=k_ix+b_i$，他对这$n$个线性函数执行$m$次操作，每次可以：
-
-M i K B代表把第$i$个线性函">
+    <meta name="description" content="题目题目描述C 酱有一个$m \times n$的数表，行与列的编号都从$1$开始。令$f_{i,j}$表示表格第$i$行第$j$列内的数，那么对于表格的第$i(i&amp;gt;1)$行有
+$$\begin{cases}f_{i,1}=a \ti">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +18,7 @@ M i K B代表把第$i$个线性函">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>BZOJ4499 DTOJ2555 线性函数 | Maserhe</title>
+    <title>DTOJ Begin4028 DTOJ3603 table | Maserhe</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -606,7 +604,7 @@ M i K B代表把第$i$个线性函">
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '';
+        let pwd = 'yang';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -619,13 +617,13 @@ M i K B代表把第$i$个线性函">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        BZOJ4499 DTOJ2555 线性函数
+                        DTOJ Begin4028 DTOJ3603 table
                     </div>
                 </div>
             </div>
@@ -741,16 +739,12 @@ M i K B代表把第$i$个线性函">
                                 <span class="chip bg-color">DTOJ</span>
                             </a>
                         
-                            <a href="/tags/BZOJ/" target="_blank">
-                                <span class="chip bg-color">BZOJ</span>
-                            </a>
-                        
                             <a href="/tags/%E9%A2%98%E8%A7%A3/" target="_blank">
                                 <span class="chip bg-color">题解</span>
                             </a>
                         
-                            <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/" target="_blank">
-                                <span class="chip bg-color">线段树</span>
+                            <a href="/tags/%E7%BB%84%E5%90%88/" target="_blank">
+                                <span class="chip bg-color">组合</span>
                             </a>
                         
                     </div>
@@ -773,7 +767,7 @@ M i K B代表把第$i$个线性函">
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-03-27
+                    2020-05-22
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -787,14 +781,14 @@ M i K B代表把第$i$个线性函">
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        838
+                        1.6k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        4 分
+                        8 分
                     </div>
                     
                 
@@ -806,82 +800,129 @@ M i K B代表把第$i$个线性函">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><a id="more"></a>
-<p>小<code>C</code>最近在学习线性函数，线性函数可以表示为：$f(x) = kx + b$。现在小<code>C</code>面前有$n$个线性函数$f_i=k_ix+b_i$，他对这$n$个线性函数执行$m$次操作，每次可以：</p>
-<ol>
-<li><code>M i K B</code>代表把第$i$个线性函数改为$f_i(x)=Kx+B$</li>
-<li><code>Q l r x</code>返回$f_r(f_{r-1}(\cdots \cdots f_l(x)))mod(10^9+7)$<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2>第一行两个整数$n, m (1 \leqslant n, m \leqslant 200,000)$<br>接下来$n$行，每行两个整数$k_i, b_i$<br>接下来$m$行，每行的格式为<code>M i K B</code>或者<code>Q l r x</code><h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2>对于每个<code>Q</code>操作，输出一行答案 <h2 id="样例"><a href="#样例" class="headerlink" title="样例"></a>样例</h2><h3 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h3><pre><code>5 5
-4 2
-3 6
-5 7
-2 6
-7 5
-Q 1 5 1
-Q 3 3 2
-M 3 10 6
-Q 1 4 3
-Q 3 4 4</code></pre><h3 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h3><pre><code>1825
-17
-978
-98</code></pre><h2 id="数据范围与提示"><a href="#数据范围与提示" class="headerlink" title="数据范围与提示"></a>数据范围与提示</h2>$20%$：$n, m \leqslant 1000$<br>另外$10%$：$b = 0$<br>另外$10%$：$k = 1$<br>$100%$：$1 \leqslant n, m \leqslant 200,000，0 \leqslant k, b, x &lt; 10^9+7$<h2 id="来源"><a href="#来源" class="headerlink" title="来源"></a>来源</h2>FJWC2016 day5<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1>这一题一眼看过去就是线段树，问题是要储存什么<br>假设现在有两个函数$f_1(x)=k_1x+b_1,f_2(x)=k_2x+b_2$，那么$f(x)=f_2(f_1(x))$的表达式是什么呢？<br>$f(x)=f_2(f_1(x))=f_2(k_1x+b_1)=k_2(k_1x+b_1)+b_2=k_1k_2x+b_1k_2+b_2$<br>所以，我们令$k_1k_2=K,b_1k_2+b_2=B$，就可以把$f(x)$表示为$Kx+B$了<br>所以，我们只需要在线段树中存储这个函数的$k$和$b$，上传时按照上面的方法操作就可以了</li>
-</ol>
-<p><strong>注意：线段树要开4倍！！！要记得mod10^9+7！！！</strong><br>附上代码：</p>
-<pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;algorithm></span></span>
-<span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;cstdio></span></span>
+                <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p><code>C</code> 酱有一个$m \times n$的数表，行与列的编号都从$1$开始。令$f_{i,j}$表示表格第$i$行第$j$列内的数，那么对于表格的第$i(i&gt;1)$行有</p>
+<p>$$\begin{cases}f_{i,1}=a \times f_{i-1,1}\f_{i,j}=a\times f_{i-1,j}+b\times f_{i-1,j-1}\end{cases}$$</p>
+<p>然而 <code>C</code> 酱已经把表格中的数忘得差不多了，他现在只记得第$p$行的数。他希望你能够帮忙还原出部分位置的数值。</p>
+<a id="more"></a>
+
+<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>输入第一行为$6$个整数$m,n,a,b,p,q$，其中$q$表示询问的个数。  </p>
+<p>接下来一行共$n$个整数，依次表示$f_{p,1},f_{p,2},\cdots,f_{p,n}$。  </p>
+<p>接下来$q$行，每行两个整数$x,y$，表示 <code>C</code> 酱询问你$f_{x,y}$的数值。</p>
+<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>输出共$q$行，依次表示每个询问的答案在模$998244353$意义下的取值。  </p>
+<p>即设答案可以表示为分式$\frac{a}{b}$ ，则输出整数$x$使得$b \times x \equiv a \pmod {998244353}$且$0  \leqslant x &lt; 998244353$。可以证明这样的整数$x$是唯一的。</p>
+<h2 id="样例"><a href="#样例" class="headerlink" title="样例"></a>样例</h2><h3 id="样例输入-1"><a href="#样例输入-1" class="headerlink" title="样例输入 1"></a>样例输入 1</h3><pre><code>5 4 1 1 3 5
+1 0 0 0
+5 2
+3 1
+1 2
+2 3
+4 3</code></pre><h3 id="样例输出-1"><a href="#样例输出-1" class="headerlink" title="样例输出 1"></a>样例输出 1</h3><pre><code>2
+1
+998244351
+1
+0</code></pre><h3 id="样例输入-2"><a href="#样例输入-2" class="headerlink" title="样例输入 2"></a>样例输入 2</h3><pre><code>10 5 233 2333 6 4
+9 3 1 0 10
+1 5
+10 2
+5 3
+8 1</code></pre><h3 id="样例输出-2"><a href="#样例输出-2" class="headerlink" title="样例输出 2"></a>样例输出 2</h3><pre><code>110343631
+118211750
+770559638
+488601</code></pre><h2 id="数据范围与提示"><a href="#数据范围与提示" class="headerlink" title="数据范围与提示"></a>数据范围与提示</h2><table>
+<thead>
+<tr>
+<th align="center">测试点编号</th>
+<th align="center">$n$</th>
+<th align="center">$m$</th>
+<th align="center">$a,b$</th>
+<th align="center">$p$</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">$1,2$</td>
+<td align="center">$\leqslant 100$</td>
+<td align="center">$\leqslant 10^5$</td>
+<td align="center">−</td>
+<td align="center">$p=1$</td>
+</tr>
+<tr>
+<td align="center">$3,4$</td>
+<td align="center">$\leqslant 100$</td>
+<td align="center">$\leqslant 10^5$</td>
+<td align="center">$a=b=1$</td>
+<td align="center">−</td>
+</tr>
+<tr>
+<td align="center">$5,6,7,8$</td>
+<td align="center">$\leqslant 100$</td>
+<td align="center">$\leqslant 10^5$</td>
+<td align="center">−</td>
+<td align="center">−</td>
+</tr>
+<tr>
+<td align="center">$9,10,11,12$</td>
+<td align="center">$\leqslant 10^5$</td>
+<td align="center">$\leqslant 10^5$</td>
+<td align="center">−</td>
+<td align="center">$p=1$</td>
+</tr>
+<tr>
+<td align="center">$13,14,15,16$</td>
+<td align="center">$\leqslant 10^5$</td>
+<td align="center">$\leqslant 10^5$</td>
+<td align="center">−</td>
+<td align="center">$p=m$</td>
+</tr>
+<tr>
+<td align="center">$17,18,19,20$</td>
+<td align="center">$\leqslant 10^5$</td>
+<td align="center">$\leqslant 10^7$</td>
+<td align="center">−</td>
+<td align="center">−</td>
+</tr>
+</tbody></table>
+<p>对于$100%$的数据，保证$1 \leqslant q \leqslant 100 , 1 \leqslant x , p \leqslant m , 1 \leqslant y \leqslant n , 1 \leqslant a,b &lt; 998244353,0 \leqslant f_{i,j} &lt; 998244353$。</p>
+<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><h2 id="40分算法"><a href="#40分算法" class="headerlink" title="40分算法"></a>40分算法</h2><p>暴力把所有格子算出来<br>代码：</p>
+<pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;iostream></span></span>
 <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
-<span class="token macro property">#<span class="token directive keyword">define</span> l(x) t[x].l</span>
-<span class="token macro property">#<span class="token directive keyword">define</span> r(x) t[x].r</span>
-<span class="token macro property">#<span class="token directive keyword">define</span> k(x) t[x].k</span>
-<span class="token macro property">#<span class="token directive keyword">define</span> b(x) t[x].b</span>
-<span class="token keyword">struct</span> Segment_Tree
+<span class="token keyword">int</span> m<span class="token punctuation">,</span>n<span class="token punctuation">,</span>a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>p<span class="token punctuation">,</span>q<span class="token punctuation">;</span>
+<span class="token keyword">long</span> <span class="token keyword">long</span> ny<span class="token punctuation">,</span>f<span class="token punctuation">[</span><span class="token number">100010</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">110</span><span class="token punctuation">]</span><span class="token punctuation">,</span>MOD<span class="token operator">=</span><span class="token number">998244353</span><span class="token punctuation">;</span>
+<span class="token keyword">long</span> <span class="token keyword">long</span> <span class="token function">POW</span><span class="token punctuation">(</span><span class="token keyword">long</span> <span class="token keyword">long</span> a<span class="token punctuation">,</span><span class="token keyword">long</span> <span class="token keyword">long</span> b<span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
-    <span class="token keyword">int</span> l<span class="token punctuation">,</span>r<span class="token punctuation">;</span>
-    <span class="token keyword">long</span> <span class="token keyword">long</span> k<span class="token punctuation">,</span>b<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>t<span class="token punctuation">[</span><span class="token number">800010</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-<span class="token keyword">int</span> n<span class="token punctuation">,</span>m<span class="token punctuation">;</span>
-<span class="token keyword">long</span> <span class="token keyword">long</span> x<span class="token punctuation">,</span>y<span class="token punctuation">,</span>z<span class="token punctuation">,</span>MOD<span class="token operator">=</span><span class="token number">1e9</span><span class="token operator">+</span><span class="token number">7</span><span class="token punctuation">,</span>k<span class="token punctuation">[</span><span class="token number">200010</span><span class="token punctuation">]</span><span class="token punctuation">,</span>b<span class="token punctuation">[</span><span class="token number">200010</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-<span class="token keyword">void</span> <span class="token function">build</span><span class="token punctuation">(</span><span class="token keyword">int</span> p<span class="token punctuation">,</span><span class="token keyword">int</span> l<span class="token punctuation">,</span><span class="token keyword">int</span> r<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    <span class="token function">l</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token operator">=</span>l<span class="token punctuation">,</span><span class="token function">r</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token operator">=</span>r<span class="token punctuation">;</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>l<span class="token operator">==</span>r<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token function">k</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token operator">=</span>k<span class="token punctuation">[</span>l<span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token function">b</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token operator">=</span>b<span class="token punctuation">[</span>l<span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token keyword">return</span><span class="token punctuation">;</span><span class="token punctuation">}</span> 
-    <span class="token keyword">int</span> mid<span class="token operator">=</span><span class="token punctuation">(</span>l<span class="token operator">+</span>r<span class="token punctuation">)</span><span class="token operator">>></span><span class="token number">1</span><span class="token punctuation">;</span>
-    <span class="token function">build</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>p<span class="token punctuation">,</span>l<span class="token punctuation">,</span>mid<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">build</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>p<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span>mid<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span>r<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">k</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token operator">=</span><span class="token function">k</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>p<span class="token punctuation">)</span><span class="token operator">*</span><span class="token function">k</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>p<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">%</span>MOD<span class="token punctuation">,</span><span class="token function">b</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token function">b</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>p<span class="token punctuation">)</span><span class="token operator">*</span><span class="token function">k</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>p<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">%</span>MOD<span class="token operator">+</span><span class="token function">b</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>p<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">%</span>MOD<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token keyword">void</span> <span class="token function">change</span><span class="token punctuation">(</span><span class="token keyword">int</span> p<span class="token punctuation">,</span><span class="token keyword">int</span> x<span class="token punctuation">,</span><span class="token keyword">long</span> <span class="token keyword">long</span> K<span class="token punctuation">,</span><span class="token keyword">long</span> <span class="token keyword">long</span> B<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">l</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token operator">==</span><span class="token function">r</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token operator">&amp;&amp;</span><span class="token function">l</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token operator">==</span>x<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token function">k</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token operator">=</span>K<span class="token punctuation">,</span><span class="token function">b</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token operator">=</span>B<span class="token punctuation">;</span><span class="token keyword">return</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
-    <span class="token keyword">int</span> mid<span class="token operator">=</span><span class="token punctuation">(</span><span class="token function">l</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token operator">+</span><span class="token function">r</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">>></span><span class="token number">1</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>x<span class="token operator">&lt;=</span>mid<span class="token punctuation">)</span> <span class="token function">change</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>p<span class="token punctuation">,</span>x<span class="token punctuation">,</span>K<span class="token punctuation">,</span>B<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">else</span> <span class="token function">change</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>p<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span>x<span class="token punctuation">,</span>K<span class="token punctuation">,</span>B<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">k</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token operator">=</span><span class="token function">k</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>p<span class="token punctuation">)</span><span class="token operator">*</span><span class="token function">k</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>p<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">%</span>MOD<span class="token punctuation">,</span><span class="token function">b</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token function">b</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>p<span class="token punctuation">)</span><span class="token operator">*</span><span class="token function">k</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>p<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">%</span>MOD<span class="token operator">+</span><span class="token function">b</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>p<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">%</span>MOD<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-pair<span class="token operator">&lt;</span><span class="token keyword">long</span> <span class="token keyword">long</span><span class="token punctuation">,</span><span class="token keyword">long</span> <span class="token keyword">long</span><span class="token operator">></span> <span class="token function">ask</span><span class="token punctuation">(</span><span class="token keyword">int</span> p<span class="token punctuation">,</span><span class="token keyword">int</span> L<span class="token punctuation">,</span><span class="token keyword">int</span> R<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>L<span class="token operator">&lt;=</span><span class="token function">l</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token operator">&amp;&amp;</span><span class="token function">r</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token operator">&lt;=</span>R<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token function">make_pair</span><span class="token punctuation">(</span><span class="token function">k</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">b</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">int</span> mid<span class="token operator">=</span><span class="token punctuation">(</span><span class="token function">l</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token operator">+</span><span class="token function">r</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">>></span><span class="token number">1</span><span class="token punctuation">;</span>
-    pair<span class="token operator">&lt;</span><span class="token keyword">long</span> <span class="token keyword">long</span><span class="token punctuation">,</span><span class="token keyword">long</span> <span class="token keyword">long</span><span class="token operator">></span> ansl<span class="token operator">=</span><span class="token function">make_pair</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">,</span>ansr<span class="token operator">=</span><span class="token function">make_pair</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>L<span class="token operator">&lt;=</span>mid<span class="token punctuation">)</span> ansl<span class="token operator">=</span><span class="token function">ask</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>p<span class="token punctuation">,</span>L<span class="token punctuation">,</span>R<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>R<span class="token operator">></span>mid<span class="token punctuation">)</span> ansr<span class="token operator">=</span><span class="token function">ask</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>p<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span>L<span class="token punctuation">,</span>R<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">return</span> <span class="token function">make_pair</span><span class="token punctuation">(</span>ansl<span class="token punctuation">.</span>first<span class="token operator">*</span>ansr<span class="token punctuation">.</span>first<span class="token operator">%</span>MOD<span class="token punctuation">,</span><span class="token punctuation">(</span>ansl<span class="token punctuation">.</span>second<span class="token operator">*</span>ansr<span class="token punctuation">.</span>first<span class="token operator">%</span>MOD<span class="token operator">+</span>ansr<span class="token punctuation">.</span>second<span class="token punctuation">)</span><span class="token operator">%</span>MOD<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">long</span> <span class="token keyword">long</span> ans<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token punctuation">;</span>b<span class="token punctuation">;</span>b<span class="token operator">>>=</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>b<span class="token operator">&amp;</span><span class="token number">1</span><span class="token punctuation">)</span> ans<span class="token operator">=</span><span class="token punctuation">(</span>ans<span class="token operator">*</span>a<span class="token punctuation">)</span><span class="token operator">%</span>MOD<span class="token punctuation">;</span>
+        a<span class="token operator">=</span><span class="token punctuation">(</span>a<span class="token operator">*</span>a<span class="token punctuation">)</span><span class="token operator">%</span>MOD<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> ans<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
-    <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>n<span class="token punctuation">,</span><span class="token operator">&amp;</span>m<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%lld%lld"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>k<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>b<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">build</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>m<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-        <span class="token keyword">char</span> op<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-        <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%s %lld%lld%lld"</span><span class="token punctuation">,</span>op<span class="token punctuation">,</span><span class="token operator">&amp;</span>x<span class="token punctuation">,</span><span class="token operator">&amp;</span>y<span class="token punctuation">,</span><span class="token operator">&amp;</span>z<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">if</span><span class="token punctuation">(</span>op<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">==</span><span class="token string">'M'</span><span class="token punctuation">)</span> <span class="token function">change</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span>x<span class="token punctuation">,</span>y<span class="token punctuation">,</span>z<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">else</span><span class="token punctuation">{</span>
-            pair<span class="token operator">&lt;</span><span class="token keyword">long</span> <span class="token keyword">long</span><span class="token punctuation">,</span><span class="token keyword">long</span> <span class="token keyword">long</span><span class="token operator">></span> ans<span class="token punctuation">;</span>
-            ans<span class="token operator">=</span><span class="token function">ask</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%lld\n"</span><span class="token punctuation">,</span><span class="token punctuation">(</span>ans<span class="token punctuation">.</span>first<span class="token operator">*</span>z<span class="token operator">%</span>MOD<span class="token operator">+</span>ans<span class="token punctuation">.</span>second<span class="token punctuation">)</span><span class="token operator">%</span>MOD<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    cin<span class="token operator">>></span>m<span class="token operator">>></span>n<span class="token operator">>></span>a<span class="token operator">>></span>b<span class="token operator">>></span>p<span class="token operator">>></span>q<span class="token punctuation">;</span>
+    ny<span class="token operator">=</span><span class="token function">POW</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>MOD<span class="token number">-2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span> cin<span class="token operator">>></span>f<span class="token punctuation">[</span>p<span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span>p<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>m<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>j<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span> f<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token punctuation">(</span>a<span class="token operator">*</span>f<span class="token punctuation">[</span>i<span class="token number">-1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">%</span>MOD<span class="token operator">+</span><span class="token punctuation">(</span>b<span class="token operator">*</span>f<span class="token punctuation">[</span>i<span class="token number">-1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token number">-1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">%</span>MOD<span class="token punctuation">)</span><span class="token operator">%</span>MOD<span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span>p<span class="token number">-1</span><span class="token punctuation">;</span>i<span class="token operator">></span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>j<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span> f<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">(</span>f<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">-</span><span class="token punctuation">(</span>b<span class="token operator">*</span>f<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token number">-1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">%</span>MOD<span class="token punctuation">)</span><span class="token operator">%</span>MOD<span class="token operator">*</span>ny<span class="token punctuation">)</span><span class="token operator">%</span>MOD<span class="token operator">+</span>MOD<span class="token punctuation">)</span><span class="token operator">%</span>MOD<span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span>x<span class="token punctuation">,</span>y<span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>q<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span> cin<span class="token operator">>></span>x<span class="token operator">>></span>y<span class="token punctuation">,</span>cout<span class="token operator">&lt;&lt;</span>f<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">[</span>y<span class="token punctuation">]</span><span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h1 id="AC算法"><a href="#AC算法" class="headerlink" title="AC算法"></a>AC算法</h1><p>我们先分类讨论，在第$p$行下和在第$p$行上<br>若在第$p$行下，我们可以由上面的两个点得出下面一个点<br><img src="https://cdn.jsdelivr.net/gh/maserhe/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img-blog.csdnimg.cn/20190922124118645.png" alt=""><br>由题目可知，$f_{i,j}=a\times f_{i-1,j}+b\times f_{i-1,j-1}$</p>
+<p>所以，我们考虑第$p$行中，要求的点$(x,y)$左侧的点$(p,i)$（即$i\leqslant y$），它对$(x,y)$的贡献就是$(p,i)$到$(x,y)$的路径条数（只能向右下或向下走）$\times a^{\cdots}\times b^{\cdots}$</p>
+<p>我们只需要求$(p,i)$到$(x,y)$的路径条数和$a$、$b$的次数</p>
+<p>假设$n=x-p,m=y-i$，那么，我们可以知道我们一共需要走$n$步，向右下走$m$步，所以路径数就是$C^m_n$</p>
+<p>所以最终的结果就是：$C^m_n\times a^{n-m}\times b^{m}$<br><img src="https://cdn.jsdelivr.net/gh/maserhe/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img-blog.csdnimg.cn/20190922125117710.png" alt=""><br>所以我们还能得到一个范围：$n\geqslant m$<br>终于，我们解决了$(x,y)$在在$p$行下，即$x&gt;p$的情况，接下来，我们讨论一下$x&lt;p$的情况</p>
+<p>同样，我们可以通过下面的和他左边的点得到这个位置的值，$f_{i,j}=\frac{f_{i+1,j}}{a}-\frac{b\times f_{i,j-1}}{a}$，那么，问题就变成考虑第$p$行中，要求的点$(x,y)$左侧的点$(p,i)$（即$i\leqslant y$），它对$(x,y)$的贡献就是$(p,i)$到$(x,y)$的路径条数（只能向上或右走）$\times a^{\cdots}\times \left(-\frac{b}{a}\right)^{\cdots}$</p>
+<p>同样假设$n=p-x,m=y-i$，但是，不一样的地方在于第一步必须向上走！所以，我们可以知道去掉先向上走的一步后，一共需要走$n+m-1$步，向右走$m$步，所以路径数就是$C^m_{n+m-1}$</p>
+<p>所以最终的结果就是：$C^m_{n+m-1}\times a^{n}\times \left(-\frac{b}{a}\right)^{m}$</p>
+<p><img src="https://cdn.jsdelivr.net/gh/maserhe/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img-blog.csdnimg.cn/20190922131247325.png" alt=""></p>
+<h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><ol>
+<li>取模</li>
+<li>阶乘的逆元可以反着算，$invjc_i=invjc_{i+1}*(i+1)$，这样就避免了多次的$pow$</li>
+<li>提前保存$a$的逆元</li>
+<li>提前保存$-\frac{b}{a}$的次方，避免计算$-1^{y-i}$</li>
+<li>$x&lt;p$的情况中，是$C^m_{n+m-1}$<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1>```cpp<br>#include<iostream><br>using namespace std;<br>int n,m,p,q;<br>long long a,b,MOD=998244353,f[10100010],jc[10100010],cj[10100010],pa[10100010],pb[10100010],ap[10100010],bp[10100010];<br>/*<br>f：第p行的值<br>jc：阶乘<br>cj：阶乘的逆元<br>pa：a的次方<br>pb：b的次方<br>ap：pa的逆元<br>bp：-b/a的次方 </iostream></li>
+</ol>
+<p><em>/<br>long long POW(long long a,long long b)//快速幂<br>{<br>    long long ans=1;<br>    for(;b;b&gt;&gt;=1){<br>        if(b&amp;1) ans=(ans<em>a)%MOD;<br>        a=(a</em>a)%MOD;<br>    }<br>    return ans;<br>}<br>long long C(int x,int y)//求组合数<br>{<br>    if(x&lt;0||y&lt;0||y&gt;x) return 0;<br>    return jc[x]<em>cj[y]%MOD</em>cj[x-y]%MOD;<br>}<br>int main()<br>{<br>    cin&gt;&gt;m&gt;&gt;n&gt;&gt;a&gt;&gt;b&gt;&gt;p&gt;&gt;q;<br>    jc[0]=pa[0]=pb[0]=ap[0]=bp[0]=1;<br>    for(int i=1;i&lt;=10100000;i++) jc[i]=jc[i-1]*i%MOD;//暴力求阶乘<br>    cj[10100000]=POW(jc[10100000],MOD-2);<br>    for(int i=10099999;i&gt;=0;i–) cj[i]=cj[i+1]</em>(i+1)%MOD;//反向求阶乘的逆元<br>    long long na=POW(a,MOD-2),nb=MOD-(b<em>na%MOD);<br>    for(int i=1;i&lt;=10100000;i++) pa[i]=pa[i-1]</em>a%MOD,pb[i]=pb[i-1]<em>b%MOD,ap[i]=ap[i-1]</em>na%MOD,bp[i]=bp[i-1]<em>nb%MOD;<br>    for(int i=1;i&lt;=n;i++) cin&gt;&gt;f[i];<br>    for(int i=1,x,y;i&lt;=q;i++){<br>        cin&gt;&gt;x&gt;&gt;y;<br>        if(x==p){cout&lt;&lt;f[y]&lt;&lt;endl;continue;}<br>        long long ans=0;<br>        if(x&gt;p){for(int j=1;j&lt;=y;j++) if(y-j&lt;=x-p) ans=(ans+f[j]</em>C(x-p,y-j)%MOD<em>pa[x-y-p+j]%MOD</em>pb[y-j]%MOD)%MOD;}<br>        //括号很重要！不能删除<br>        else for(int j=1;j&lt;=y;j++) ans=(ans+f[j]<em>C(y-x+p-j-1,y-j)%MOD</em>ap[p-x]%MOD*bp[y-j]%MOD)%MOD;<br>        //分类讨论<br>        cout&lt;&lt;ans&lt;&lt;endl;<br>    }<br>}<br>```</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -1050,7 +1091,7 @@ pair<span class="token operator">&lt;</span><span class="token keyword">long</sp
                     </span>
                     <a href="https://maserhe.top" class="b-link-green">Maserhe</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2020/03/27/bzoj4499-dtoj2555-xian-xing-han-shu/" class="b-link-green">BZOJ4499 DTOJ2555 线性函数</a>
+                    <a href="/2020/05/22/dtoj-begin4028-dtoj3603-table/" class="b-link-green">DTOJ Begin4028 DTOJ3603 table</a>
                 </p>
             </div>
 
@@ -1072,9 +1113,9 @@ pair<span class="token operator">&lt;</span><span class="token keyword">long</sp
 
 <script type="text/javascript">
     disqus_config = function () {
-        this.page.url = 'https://maserhe.top/2020/03/27/bzoj4499-dtoj2555-xian-xing-han-shu/';
-        this.page.identifier = '/2020/03/27/bzoj4499-dtoj2555-xian-xing-han-shu/';
-        this.page.title = 'BZOJ4499 DTOJ2555 线性函数';
+        this.page.url = 'https://maserhe.top/2020/05/22/dtoj-begin4028-dtoj3603-table/';
+        this.page.identifier = '/2020/05/22/dtoj-begin4028-dtoj3603-table/';
+        this.page.title = 'DTOJ Begin4028 DTOJ3603 table';
     };
     let disqus_shortname = 'admin';
 
@@ -1395,97 +1436,30 @@ pair<span class="token operator">&lt;</span><span class="token keyword">long</sp
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/03/27/dtoj1984-hua-yuan/">
+                <a href="/2020/05/22/dtoj-begin4028-dtoj3603-table/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="DTOJ1984 花园">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="DTOJ Begin4028 DTOJ3603 table">
                         
-                        <span class="card-title">DTOJ1984 花园</span>
+                        <span class="card-title">DTOJ Begin4028 DTOJ3603 table</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            题目题目描述
-奇怪的大学有一座奇怪的花园，花园由N座温室组成，温室依次标号为$1,2,\cdots \cdots ,N$，温室之间由$N-1$条双向道路连接每一座温室都种植这一种花，随着季节的变换，温室里的花的种类也在不断发生着变化Shen
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-03-27
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E4%BF%A1%E6%81%AF%E7%AB%9E%E8%B5%9B/" class="post-category" target="_blank">
-                                    信息竞赛
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/DTOJ/" target="_blank">
-                        <span class="chip bg-color">DTOJ</span>
-                    </a>
-                    
-                    <a href="/tags/%E9%A2%98%E8%A7%A3/" target="_blank">
-                        <span class="chip bg-color">题解</span>
-                    </a>
-                    
-                    <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/" target="_blank">
-                        <span class="chip bg-color">线段树</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%9B%BE%E8%AE%BA/" target="_blank">
-                        <span class="chip bg-color">图论</span>
-                    </a>
-                    
-                    <a href="/tags/LCA/" target="_blank">
-                        <span class="chip bg-color">LCA</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="fa fa-dot-circle-o"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/03/27/bzoj4499-dtoj2555-xian-xing-han-shu/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="BZOJ4499 DTOJ2555 线性函数">
-                        
-                        <span class="card-title">BZOJ4499 DTOJ2555 线性函数</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            题目题目描述
-小C最近在学习线性函数，线性函数可以表示为：$f(x) = kx + b$。现在小C面前有$n$个线性函数$f_i=k_ix+b_i$，他对这$n$个线性函数执行$m$次操作，每次可以：
-
-M i K B代表把第$i$个线性函
+                            题目题目描述C 酱有一个$m \times n$的数表，行与列的编号都从$1$开始。令$f_{i,j}$表示表格第$i$行第$j$列内的数，那么对于表格的第$i(i&gt;1)$行有
+$$\begin{cases}f_{i,1}=a \ti
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-03-27
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-05-22
                             </span>
                         <span class="publish-author">
                             
@@ -1507,16 +1481,74 @@ M i K B代表把第$i$个线性函
                         <span class="chip bg-color">DTOJ</span>
                     </a>
                     
-                    <a href="/tags/BZOJ/" target="_blank">
-                        <span class="chip bg-color">BZOJ</span>
+                    <a href="/tags/%E9%A2%98%E8%A7%A3/" target="_blank">
+                        <span class="chip bg-color">题解</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%BB%84%E5%90%88/" target="_blank">
+                        <span class="chip bg-color">组合</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/04/27/dtoj2431-qi-pan-lu-jing/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="DTOJ2431 棋盘路径">
+                        
+                        <span class="card-title">DTOJ2431 棋盘路径</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            题目题目描述
+像南京这样的213城市，天气总是不太友好周三下午是模电实验课，xy正打算从宿舍$(0,0)$去实验楼$(n,m)$上课，然而他突然发现，由于暴雨的缘故，有$k$个路口$(x,y)$已经被水淹没（不知所措），根本过不了人xy行走
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-04-27
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E4%BF%A1%E6%81%AF%E7%AB%9E%E8%B5%9B/" class="post-category" target="_blank">
+                                    信息竞赛
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/DTOJ/" target="_blank">
+                        <span class="chip bg-color">DTOJ</span>
                     </a>
                     
                     <a href="/tags/%E9%A2%98%E8%A7%A3/" target="_blank">
                         <span class="chip bg-color">题解</span>
                     </a>
                     
-                    <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/" target="_blank">
-                        <span class="chip bg-color">线段树</span>
+                    <a href="/tags/%E6%95%B0%E5%AD%A6/" target="_blank">
+                        <span class="chip bg-color">数学</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%BB%84%E5%90%88/" target="_blank">
+                        <span class="chip bg-color">组合</span>
                     </a>
                     
                 </div>

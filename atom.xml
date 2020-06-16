@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://maserhe.top/"/>
-  <updated>2020-06-13T16:32:03.984Z</updated>
+  <updated>2020-06-16T19:30:46.422Z</updated>
   <id>https://maserhe.top/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>DTOJ Begin4028 DTOJ3603 table</title>
+    <link href="https://maserhe.top/2020/05/22/dtoj-begin4028-dtoj3603-table/"/>
+    <id>https://maserhe.top/2020/05/22/dtoj-begin4028-dtoj3603-table/</id>
+    <published>2020-05-22T10:01:37.000Z</published>
+    <updated>2020-06-16T19:30:46.422Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;p&gt;&lt;code&gt;C&lt;/code&gt; 酱有一个$m \times n$的数表，行与列的编号都从$1$开始。令$f_{i,j}$表示表格第$i$行第$j$列内的数，那么对于表格的第$i(i&amp;gt;1)$行有&lt;/p&gt;
+&lt;p&gt;$$\begin{cases}f_{i,1}=a \times f_{i-1,1}\f_{i,j}=a\times f_{i-1,j}+b\times f_{i-1,j-1}\end{cases}$$&lt;/p&gt;
+&lt;p&gt;然而 &lt;code&gt;C&lt;/code&gt; 酱已经把表格中的数忘得差不多了，他现在只记得第$p$行的数。他希望你能够帮忙还原出部分位置的数值。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="信息竞赛" scheme="https://maserhe.top/categories/%E4%BF%A1%E6%81%AF%E7%AB%9E%E8%B5%9B/"/>
+    
+    
+      <category term="DTOJ" scheme="https://maserhe.top/tags/DTOJ/"/>
+    
+      <category term="题解" scheme="https://maserhe.top/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="组合" scheme="https://maserhe.top/tags/%E7%BB%84%E5%90%88/"/>
+    
+  </entry>
   
   <entry>
     <title>DTOJ2431 棋盘路径</title>
