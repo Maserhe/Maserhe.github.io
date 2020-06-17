@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://maserhe.top/"/>
-  <updated>2020-06-16T19:30:46.422Z</updated>
+  <updated>2020-06-17T16:12:06.847Z</updated>
   <id>https://maserhe.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://maserhe.top/2020/05/22/dtoj-begin4028-dtoj3603-table/"/>
     <id>https://maserhe.top/2020/05/22/dtoj-begin4028-dtoj3603-table/</id>
     <published>2020-05-22T10:01:37.000Z</published>
-    <updated>2020-06-16T19:30:46.422Z</updated>
+    <updated>2020-06-17T16:12:06.847Z</updated>
     
     <summary type="html">
     
@@ -123,6 +123,32 @@
       <category term="Github" scheme="https://maserhe.top/tags/Github/"/>
     
       <category term="博客" scheme="https://maserhe.top/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>DTOJ2281 圈地为王</title>
+    <link href="https://maserhe.top/2020/04/11/dtoj2281-quan-di-wei-wang/"/>
+    <id>https://maserhe.top/2020/04/11/dtoj2281-quan-di-wei-wang/</id>
+    <published>2020-04-11T01:14:35.000Z</published>
+    <updated>2020-06-17T16:13:07.608Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;
+    
+    </summary>
+    
+      <category term="信息竞赛" scheme="https://maserhe.top/categories/%E4%BF%A1%E6%81%AF%E7%AB%9E%E8%B5%9B/"/>
+    
+    
+      <category term="DTOJ" scheme="https://maserhe.top/tags/DTOJ/"/>
+    
+      <category term="题解" scheme="https://maserhe.top/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="DP" scheme="https://maserhe.top/tags/DP/"/>
+    
+      <category term="状压DP" scheme="https://maserhe.top/tags/%E7%8A%B6%E5%8E%8BDP/"/>
     
   </entry>
   
