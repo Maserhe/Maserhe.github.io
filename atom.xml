@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://maserhe.top/"/>
-  <updated>2020-06-17T16:12:06.847Z</updated>
+  <updated>2020-06-21T09:17:12.670Z</updated>
   <id>https://maserhe.top/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>洛谷P2146 DTOJ2409 </title>
+    <link href="https://maserhe.top/2020/05/28/luo-gu-p2146-dtoj2409-noi2015-ruan-jian-bao-guan-li-qi/"/>
+    <id>https://maserhe.top/2020/05/28/luo-gu-p2146-dtoj2409-noi2015-ruan-jian-bao-guan-li-qi/</id>
+    <published>2020-05-28T07:03:17.000Z</published>
+    <updated>2020-06-21T09:17:12.670Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;
+    
+    </summary>
+    
+      <category term="信息竞赛" scheme="https://maserhe.top/categories/%E4%BF%A1%E6%81%AF%E7%AB%9E%E8%B5%9B/"/>
+    
+    
+      <category term="DTOJ" scheme="https://maserhe.top/tags/DTOJ/"/>
+    
+      <category term="题解" scheme="https://maserhe.top/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="图论" scheme="https://maserhe.top/tags/%E5%9B%BE%E8%AE%BA/"/>
+    
+      <category term="洛谷" scheme="https://maserhe.top/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="树剖" scheme="https://maserhe.top/tags/%E6%A0%91%E5%89%96/"/>
+    
+  </entry>
   
   <entry>
     <title>DTOJ Begin4028 DTOJ3603 table</title>
