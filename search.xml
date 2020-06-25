@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>矢量（向量）</title>
+      <link href="/2020/06/25/shi-liang-xiang-liang/"/>
+      <url>/2020/06/25/shi-liang-xiang-liang/</url>
+      
+        <content type="html"><![CDATA[<h2 id="1、矢量的定义"><a href="#1、矢量的定义" class="headerlink" title="1、矢量的定义"></a>1、矢量的定义</h2><p>矢量是一种既有大小又有方向的量，又称为向量。在计算机中，矢量图可以无限放大永不变形 <del>（反正我没看懂）</del>。——百度百科</p><a id="more"></a><h2 id="2、矢量的表示及其相关量的表示"><a href="#2、矢量的表示及其相关量的表示" class="headerlink" title="2、矢量的表示及其相关量的表示"></a>2、矢量的表示及其相关量的表示</h2><h3 id="1-矢量的表示"><a href="#1-矢量的表示" class="headerlink" title="(1)矢量的表示"></a>(1)矢量的表示</h3><p>矢量可以表示为一个小写字母$a$上面一个箭头$\vec{a}$（ps:正确的箭头应该是$\rightharpoonup$这样的，而不是$\rightarrow$的，但$L_{A}T^{E}X$上打不出来）或者一个粗体 <strong>A</strong><br>在$n$维空间内，矢量通常被表示为一个$n$元组$(a_{1},a_{2},\cdots \cdots,a_{n})$</p><h3 id="2-矢量夹角的表示"><a href="#2-矢量夹角的表示" class="headerlink" title="(2)矢量夹角的表示"></a>(2)矢量夹角的表示</h3><p>两个矢量$\vec{a},\vec{b}$的夹角表示为$\langle\vec{a},\vec{b}\rangle$</p><h2 id="3、矢量的运算"><a href="#3、矢量的运算" class="headerlink" title="3、矢量的运算"></a>3、矢量的运算</h2><h2 id="1-矢量的模"><a href="#1-矢量的模" class="headerlink" title="(1)矢量的模"></a>(1)矢量的模</h2><p>即矢量的长度，记为$|\vec{a}|$</p><h3 id="2-矢量的加法"><a href="#2-矢量的加法" class="headerlink" title="(2)矢量的加法"></a>(2)矢量的加法</h3><p>满足三角形法则，如图<br><img src="https://cdn.jsdelivr.net/gh/maserhe/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img-blog.csdnimg.cn/20190719195643588.png" alt=""></p><h3 id="3-矢量的减法"><a href="#3-矢量的减法" class="headerlink" title="(3)矢量的减法"></a>(3)矢量的减法</h3><p>满足平行四边形法则，如图<br><img src="https://cdn.jsdelivr.net/gh/maserhe/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img-blog.csdnimg.cn/20190719195730190.png" alt="在这里插入图片描述"></p><h3 id="4-矢量的点乘"><a href="#4-矢量的点乘" class="headerlink" title="(4)矢量的点乘"></a>(4)矢量的点乘</h3><p>两个矢量的点乘是标量，$(a_{1},a_{2},\cdots\cdots,a_{n})\cdot(b_{1},b_{2},\cdots\cdots,b_{n})\overset{\underset{def}{}}{=}\sum \limits_{i=1}^{n}a_{i}b_{i},\vec{a}\cdot\vec{b}=|\vec{a}||\vec{b}|cos(\langle\vec{a},\vec{b}\rangle)$<br>这时，我们终于可以给出矢量的模的表达式了$|\vec{a}|\overset{\underset{def}{}}{=}\sqrt{(\vec{a})^2}$<br>点乘满足交换律和分配律</p><h3 id="5-矢量的叉乘"><a href="#5-矢量的叉乘" class="headerlink" title="(5)矢量的叉乘"></a>(5)矢量的叉乘</h3><p>有$0.999999994538$的概率我们不考虑矢量的叉乘后的结果，我们只考虑矢量的叉乘后矢量的模<br>$(a_{1},a_{2})\times(b_{1},b_{2})\overset{\underset{def}{}}{=}a_{1}b_{2}-a_{2}b_{1},\vec{a}\times\vec{b}=|\vec{a}||\vec{b}|sin(\langle\vec{a},\vec{b}\rangle)$<br>矢量的叉乘的本质的有向面积，它的方向满足右手螺旋法则：先把手掌除大拇指以外的$4$个指头展开，指向$\vec{a}$的方向，然后把$4$个指头弯起来，弯的方向由$\vec{a}$转向矢量$\vec{b}$（转的角度须小于$\pi$），此时大拇指立起的方向，就是$\vec{a}\times\vec{b}$的方向。<br>矢量的叉乘满足逆交换律，即$\vec{a}\times\vec{b}=-\vec{b}\times\vec{a}$</p><h3 id="6-矢量的极角"><a href="#6-矢量的极角" class="headerlink" title="(6)矢量的极角"></a>(6)矢量的极角</h3><p>向量$\vec{a}$的极角$\theta$为$atan2(y,x)$</p><h2 id="4、矢量的变换"><a href="#4、矢量的变换" class="headerlink" title="4、矢量的变换"></a>4、矢量的变换</h2><h3 id="1-缩放"><a href="#1-缩放" class="headerlink" title="(1)缩放"></a>(1)缩放</h3><p>$\vec{a}$方向的单位矢量（即长度为1的矢量）为$\frac{\vec{a}}{|a|}$<br>与$\vec{a}$同向但长度为$l$的矢量为</p><h3 id="2-平移"><a href="#2-平移" class="headerlink" title="(2)平移"></a>(2)平移</h3><p>平移后的矢量和平移前的矢量是同一个向量</p><h3 id="3-旋转"><a href="#3-旋转" class="headerlink" title="(3)旋转"></a>(3)旋转</h3><p>矢量$\vec{a}=(x,y)$逆时针旋转$\theta$，得到的矢量$\vec{a’}=(xcos\theta-ysin\theta,ycos\theta+xsin\theta)$</p><h3 id="4-投影"><a href="#4-投影" class="headerlink" title="(4)投影"></a>(4)投影</h3><p>矢量$\vec{b}$在矢量$\vec{a}$上的投影为$\vec{a}\frac{\vec{a}\cdot\vec{b}}{\vec{a}^2}$</p><h3 id="5-对称"><a href="#5-对称" class="headerlink" title="(5)对称"></a>(5)对称</h3><p>记矢量$\vec{b}$在矢量$\vec{a}$上的投影为$\vec{c}=\vec{a}\frac{\vec{a}\cdot\vec{b}}{\vec{a}^2}$，则矢量$\vec{b}$关于矢量$\vec{a}$的对称为$\vec{b}-2(\vec{b}-\vec{s})=2\vec{a}\frac{\vec{a}\cdot\vec{b}}{\vec{a}^2}=\vec{b}$</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数学 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 几何 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>DTOJ2444 祖玛</title>
       <link href="/2020/06/22/dtoj2444-zu-ma/"/>
       <url>/2020/06/22/dtoj2444-zu-ma/</url>
@@ -414,8 +439,6 @@
       
       
         <tags>
-            
-            <tag> 数学 </tag>
             
             <tag> 数论 </tag>
             
