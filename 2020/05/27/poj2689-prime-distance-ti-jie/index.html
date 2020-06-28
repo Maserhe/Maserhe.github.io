@@ -6,13 +6,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="矢量（向量）, SUT self java Golang 计算机科学 Linux学习">
+    <meta name="keywords" content="POJ2689 Prime Distance题解, SUT self java Golang 计算机科学 Linux学习">
     <meta name="baidu-site-verification" content="eFxriE7DVh" />
     <meta name="google-site-verification" content="KeoTn_OFy4ndJwXNmm2gMeQfPhd7alqE9vQDwI32KCY" />
-    <meta name="description" content="1、矢量的定义矢量是一种既有大小又有方向的量，又称为向量。在计算机中，矢量图可以无限放大永不变形 （反正我没看懂）。——百度百科
+    <meta name="description" content="题目题目描述原题
 
 
-2、矢量的表示及其相关量的表示(1)矢量的表示矢量可以表示为一个小写字母$a$上面一个箭头$\vec{a}">
+英文题目The branch of mathematics called number theory is about properties of numbers. One of the areas that has ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +20,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>矢量（向量） | Maserhe</title>
+    <title>POJ2689 Prime Distance题解 | Maserhe</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -619,13 +619,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        矢量（向量）
+                        POJ2689 Prime Distance题解
                     </div>
                 </div>
             </div>
@@ -737,8 +737,16 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%87%A0%E4%BD%95/" target="_blank">
-                                <span class="chip bg-color">几何</span>
+                            <a href="/tags/%E9%A2%98%E8%A7%A3/" target="_blank">
+                                <span class="chip bg-color">题解</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%95%B0%E8%AE%BA/" target="_blank">
+                                <span class="chip bg-color">数论</span>
+                            </a>
+                        
+                            <a href="/tags/POJ/" target="_blank">
+                                <span class="chip bg-color">POJ</span>
                             </a>
                         
                     </div>
@@ -749,8 +757,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E6%95%B0%E5%AD%A6/" class="post-category" target="_blank">
-                                数学
+                            <a href="/categories/%E4%BF%A1%E6%81%AF%E7%AB%9E%E8%B5%9B/" class="post-category" target="_blank">
+                                信息竞赛
                             </a>
                         
                     </div>
@@ -761,7 +769,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-06-25
+                    2020-05-27
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -775,14 +783,14 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        801
+                        865
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        3 分
+                        4 分
                     </div>
                     
                 
@@ -794,22 +802,63 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="1、矢量的定义"><a href="#1、矢量的定义" class="headerlink" title="1、矢量的定义"></a>1、矢量的定义</h2><p>矢量是一种既有大小又有方向的量，又称为向量。在计算机中，矢量图可以无限放大永不变形 <del>（反正我没看懂）</del>。——百度百科</p>
+                <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p><strong><a href="http://poj.org/problem?id=2689" target="_blank" rel="noopener">原题</a></strong></p>
 <a id="more"></a>
 
-<h2 id="2、矢量的表示及其相关量的表示"><a href="#2、矢量的表示及其相关量的表示" class="headerlink" title="2、矢量的表示及其相关量的表示"></a>2、矢量的表示及其相关量的表示</h2><h3 id="1-矢量的表示"><a href="#1-矢量的表示" class="headerlink" title="(1)矢量的表示"></a>(1)矢量的表示</h3><p>矢量可以表示为一个小写字母$a$上面一个箭头$\vec{a}$（ps:正确的箭头应该是$\rightharpoonup$这样的，而不是$\rightarrow$的，但$L_{A}T^{E}X$上打不出来）或者一个粗体 <strong>A</strong><br>在$n$维空间内，矢量通常被表示为一个$n$元组$(a_{1},a_{2},\cdots \cdots,a_{n})$</p>
-<h3 id="2-矢量夹角的表示"><a href="#2-矢量夹角的表示" class="headerlink" title="(2)矢量夹角的表示"></a>(2)矢量夹角的表示</h3><p>两个矢量$\vec{a},\vec{b}$的夹角表示为$\langle\vec{a},\vec{b}\rangle$</p>
-<h2 id="3、矢量的运算"><a href="#3、矢量的运算" class="headerlink" title="3、矢量的运算"></a>3、矢量的运算</h2><h2 id="1-矢量的模"><a href="#1-矢量的模" class="headerlink" title="(1)矢量的模"></a>(1)矢量的模</h2><p>即矢量的长度，记为$|\vec{a}|$</p>
-<h3 id="2-矢量的加法"><a href="#2-矢量的加法" class="headerlink" title="(2)矢量的加法"></a>(2)矢量的加法</h3><p>满足三角形法则，如图<br><img src="https://cdn.jsdelivr.net/gh/maserhe/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img-blog.csdnimg.cn/20190719195643588.png" alt=""></p>
-<h3 id="3-矢量的减法"><a href="#3-矢量的减法" class="headerlink" title="(3)矢量的减法"></a>(3)矢量的减法</h3><p>满足平行四边形法则，如图<br><img src="https://cdn.jsdelivr.net/gh/maserhe/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img-blog.csdnimg.cn/20190719195730190.png" alt="在这里插入图片描述"></p>
-<h3 id="4-矢量的点乘"><a href="#4-矢量的点乘" class="headerlink" title="(4)矢量的点乘"></a>(4)矢量的点乘</h3><p>两个矢量的点乘是标量，$(a_{1},a_{2},\cdots\cdots,a_{n})\cdot(b_{1},b_{2},\cdots\cdots,b_{n})\overset{\underset{def}{}}{=}\sum \limits_{i=1}^{n}a_{i}b_{i},\vec{a}\cdot\vec{b}=|\vec{a}||\vec{b}|cos(\langle\vec{a},\vec{b}\rangle)$<br>这时，我们终于可以给出矢量的模的表达式了$|\vec{a}|\overset{\underset{def}{}}{=}\sqrt{(\vec{a})^2}$<br>点乘满足交换律和分配律</p>
-<h3 id="5-矢量的叉乘"><a href="#5-矢量的叉乘" class="headerlink" title="(5)矢量的叉乘"></a>(5)矢量的叉乘</h3><p>有$0.999999994538$的概率我们不考虑矢量的叉乘后的结果，我们只考虑矢量的叉乘后矢量的模<br>$(a_{1},a_{2})\times(b_{1},b_{2})\overset{\underset{def}{}}{=}a_{1}b_{2}-a_{2}b_{1},\vec{a}\times\vec{b}=|\vec{a}||\vec{b}|sin(\langle\vec{a},\vec{b}\rangle)$<br>矢量的叉乘的本质的有向面积，它的方向满足右手螺旋法则：先把手掌除大拇指以外的$4$个指头展开，指向$\vec{a}$的方向，然后把$4$个指头弯起来，弯的方向由$\vec{a}$转向矢量$\vec{b}$（转的角度须小于$\pi$），此时大拇指立起的方向，就是$\vec{a}\times\vec{b}$的方向。<br>矢量的叉乘满足逆交换律，即$\vec{a}\times\vec{b}=-\vec{b}\times\vec{a}$</p>
-<h3 id="6-矢量的极角"><a href="#6-矢量的极角" class="headerlink" title="(6)矢量的极角"></a>(6)矢量的极角</h3><p>向量$\vec{a}$的极角$\theta$为$atan2(y,x)$</p>
-<h2 id="4、矢量的变换"><a href="#4、矢量的变换" class="headerlink" title="4、矢量的变换"></a>4、矢量的变换</h2><h3 id="1-缩放"><a href="#1-缩放" class="headerlink" title="(1)缩放"></a>(1)缩放</h3><p>$\vec{a}$方向的单位矢量（即长度为1的矢量）为$\frac{\vec{a}}{|a|}$<br>与$\vec{a}$同向但长度为$l$的矢量为</p>
-<h3 id="2-平移"><a href="#2-平移" class="headerlink" title="(2)平移"></a>(2)平移</h3><p>平移后的矢量和平移前的矢量是同一个向量</p>
-<h3 id="3-旋转"><a href="#3-旋转" class="headerlink" title="(3)旋转"></a>(3)旋转</h3><p>矢量$\vec{a}=(x,y)$逆时针旋转$\theta$，得到的矢量$\vec{a’}=(xcos\theta-ysin\theta,ycos\theta+xsin\theta)$</p>
-<h3 id="4-投影"><a href="#4-投影" class="headerlink" title="(4)投影"></a>(4)投影</h3><p>矢量$\vec{b}$在矢量$\vec{a}$上的投影为$\vec{a}\frac{\vec{a}\cdot\vec{b}}{\vec{a}^2}$</p>
-<h3 id="5-对称"><a href="#5-对称" class="headerlink" title="(5)对称"></a>(5)对称</h3><p>记矢量$\vec{b}$在矢量$\vec{a}$上的投影为$\vec{c}=\vec{a}\frac{\vec{a}\cdot\vec{b}}{\vec{a}^2}$，则矢量$\vec{b}$关于矢量$\vec{a}$的对称为$\vec{b}-2(\vec{b}-\vec{s})=2\vec{a}\frac{\vec{a}\cdot\vec{b}}{\vec{a}^2}=\vec{b}$</p>
+<h3 id="英文题目"><a href="#英文题目" class="headerlink" title="英文题目"></a>英文题目</h3><p>The branch of mathematics called number theory is about properties of numbers. One of the areas that has captured the interest of number theoreticians for thousands of years is the question of primality. A prime number is a number that is has no proper factors (it is only evenly divisible by $1$ and itself). The first prime numbers are $2,3,5,7$ but they quickly become less frequent. One of the interesting questions is how dense they are in various ranges. Adjacent primes are two numbers that are both primes, but there are no other prime numbers between the adjacent primes. For example, $2,3$ are the only adjacent primes that are also adjacent numbers.<br>Your program is given $2$ numbers: $L$ and $U$ ($1 \leqslant L&lt; U \leqslant 2,147,483,647$), and you are to find the two adjacent primes $C1$ and $C2$ ($L \leqslant C1&lt; C2 \leqslant U$) that are closest (i.e. $C2-C1$ is the minimum). If there are other pairs that are the same distance apart, use the first pair. You are also to find the two adjacent primes $D1$ and $D2$ ($L \leqslant D1&lt; D2 \leqslant U$) where $D1$ and $D2$ are as distant from each other as possible (again choosing the first pair if there is a tie).</p>
+<h3 id="中文题意"><a href="#中文题意" class="headerlink" title="中文题意"></a>中文题意</h3><p>给定两个整数$L,R$($1 \leqslant L&lt; R \leqslant 2,147,483,647$)，求闭区间 $\left[L,R\right]$中相邻两个质数的差的最小值和最大值是多少，分别输出这两对质数。</p>
+<h2 id="输入输出格式"><a href="#输入输出格式" class="headerlink" title="输入输出格式"></a>输入输出格式</h2><h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h3><p>每行两个整数$L,R$($1 \leqslant L&lt; R \leqslant 2,147,483,647,R-L \leqslant 10^6$)。</p>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h3><p>对于每个$L,R$，输出最小值和最大值，格式参照样例。若区间内无质数，输出”There are no adjacent primes.”。</p>
+<h2 id="输入输出样例"><a href="#输入输出样例" class="headerlink" title="输入输出样例"></a>输入输出样例</h2><h3 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例"></a>输入样例</h3><p>2 17<br>14 17</p>
+<h3 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例"></a>输出样例</h3><p>2,3 are closest, 7,11 are most distant.<br>There are no adjacent primes.</p>
+<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><p>由于$L,R$的范围很大，所以埃氏筛法和欧拉筛法都无法生成$\left[1,R\right]$的所有质数。但是$R-L$的范围很小且任何一个合数$n$一定包含一个不超过$\sqrt{n}$的质因子，所以我们只需要用筛法求出$2,3,\cdots,\sqrt{n}$的所有质数。而对于每一个质数$p$，标记$i \times p \left(\left\lceil\frac{L}{p}\right\rceil \leqslant i \leqslant \left\lceil\frac{R}{p}\right\rceil\right)$为合数。标记完后，剩下的所有数就是$\left[L,R\right]$中的质数了。再两两比较，找出差最大和最小的就可以了。<br>代码如下：</p>
+<pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;cstdio></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;cstring></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;algorithm></span></span>
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">int</span> n<span class="token punctuation">,</span>m<span class="token punctuation">,</span>i<span class="token punctuation">,</span>j<span class="token punctuation">,</span>t1<span class="token punctuation">,</span>t2<span class="token punctuation">,</span>x1<span class="token punctuation">,</span>x2<span class="token punctuation">,</span>y1<span class="token punctuation">,</span>y2<span class="token punctuation">,</span>l<span class="token punctuation">,</span>r<span class="token punctuation">,</span>a<span class="token punctuation">[</span><span class="token number">100001</span><span class="token punctuation">]</span><span class="token punctuation">,</span> b<span class="token punctuation">[</span><span class="token number">1000001</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">bool</span> v<span class="token punctuation">[</span><span class="token number">1000001</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">void</span> <span class="token function">prime</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">//筛出2~46340之间的质数</span>
+<span class="token punctuation">{</span>
+  <span class="token function">memset</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token keyword">sizeof</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span><span class="token number">46340</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token keyword">if</span><span class="token punctuation">(</span>v<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    a<span class="token punctuation">[</span><span class="token operator">++</span>n<span class="token punctuation">]</span><span class="token operator">=</span>i<span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span>j<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">;</span>j<span class="token operator">&lt;=</span><span class="token number">46340</span><span class="token operator">/</span>i<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span> v<span class="token punctuation">[</span>i<span class="token operator">*</span>j<span class="token punctuation">]</span><span class="token operator">=</span><span class="token boolean">false</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+  <span class="token function">prime</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">while</span><span class="token punctuation">(</span>cin<span class="token operator">>></span>l<span class="token operator">>></span>r<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">memset</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token keyword">sizeof</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>l<span class="token operator">==</span><span class="token number">1</span><span class="token punctuation">)</span> v<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token keyword">for</span><span class="token punctuation">(</span>j<span class="token operator">=</span>l<span class="token operator">/</span>a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>j<span class="token operator">&lt;=</span>r<span class="token operator">/</span>a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token keyword">if</span><span class="token punctuation">(</span>j<span class="token operator">></span><span class="token number">1</span><span class="token punctuation">)</span> v<span class="token punctuation">[</span>a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">*</span>j<span class="token operator">-</span>l<span class="token punctuation">]</span><span class="token operator">=</span><span class="token boolean">false</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//去除L~R中的合数</span>
+    m<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span>l<span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>r<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">if</span><span class="token punctuation">(</span>v<span class="token punctuation">[</span>i<span class="token operator">-</span>l<span class="token punctuation">]</span><span class="token punctuation">)</span> b<span class="token punctuation">[</span><span class="token operator">++</span>m<span class="token punctuation">]</span><span class="token operator">=</span>i<span class="token punctuation">;</span><span class="token comment" spellcheck="true">//存储L~R中的质数</span>
+      <span class="token keyword">if</span><span class="token punctuation">(</span>i<span class="token operator">==</span>r<span class="token punctuation">)</span> <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    t1<span class="token operator">=</span><span class="token number">2147483647</span><span class="token punctuation">;</span>
+    t2<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>m<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      j<span class="token operator">=</span>b<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">-</span>b<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+      <span class="token keyword">if</span><span class="token punctuation">(</span>j<span class="token operator">&lt;</span>t1<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        t1<span class="token operator">=</span>j<span class="token punctuation">;</span>
+        x1<span class="token operator">=</span>b<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        y1<span class="token operator">=</span>b<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">if</span><span class="token punctuation">(</span>j<span class="token operator">></span>t2<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        t2<span class="token operator">=</span>j<span class="token punctuation">;</span>
+        x2<span class="token operator">=</span>b<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        y2<span class="token operator">=</span>b<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token comment" spellcheck="true">//比较差的大小</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>t2<span class="token punctuation">)</span> cout<span class="token operator">&lt;&lt;</span><span class="token string">"There are no adjacent primes."</span><span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
+    <span class="token keyword">else</span> cout<span class="token operator">&lt;&lt;</span>x1<span class="token operator">&lt;&lt;</span><span class="token string">","</span><span class="token operator">&lt;&lt;</span>y1<span class="token operator">&lt;&lt;</span><span class="token string">" are closest, "</span><span class="token operator">&lt;&lt;</span>x2<span class="token operator">&lt;&lt;</span><span class="token string">","</span><span class="token operator">&lt;&lt;</span>y2<span class="token operator">&lt;&lt;</span><span class="token string">" are most distant."</span><span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -978,7 +1027,7 @@
                     </span>
                     <a href="https://maserhe.top" class="b-link-green">Maserhe</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2020/06/25/shi-liang-xiang-liang/" class="b-link-green">矢量（向量）</a>
+                    <a href="/2020/05/27/poj2689-prime-distance-ti-jie/" class="b-link-green">POJ2689 Prime Distance题解</a>
                 </p>
             </div>
 
@@ -1000,9 +1049,9 @@
 
 <script type="text/javascript">
     disqus_config = function () {
-        this.page.url = 'https://maserhe.top/2020/06/25/shi-liang-xiang-liang/';
-        this.page.identifier = '/2020/06/25/shi-liang-xiang-liang/';
-        this.page.title = '矢量（向量）';
+        this.page.url = 'https://maserhe.top/2020/05/27/poj2689-prime-distance-ti-jie/';
+        this.page.identifier = '/2020/05/27/poj2689-prime-distance-ti-jie/';
+        this.page.title = 'POJ2689 Prime Distance题解';
     };
     let disqus_shortname = 'admin';
 
@@ -1029,25 +1078,25 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/06/27/dtoj2229-qiang-che-wei/">
+                <a href="/2020/05/28/luo-gu-p2146-dtoj2409-noi2015-ruan-jian-bao-guan-li-qi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="DTOJ2229 抢车位">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="洛谷P2146 DTOJ2409 ">
                         
-                        <span class="card-title">DTOJ2229 抢车位</span>
+                        <span class="card-title">洛谷P2146 DTOJ2409 </span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             题目题目描述
-很久以前 ，cxm做了一个题，叫“抢车位”，大意是让你调度的汽车 使得每个汽车都有位。AC以后，cxm去实地考察了这个游戏 ，发现最有意思的地方是“以旧换新”：你最多拥有$10$辆汽车， 便宜的汽车换贵只用补差价但是贵的汽车不
+Linux用户和OS X用户一定对软件包管理器不会陌生通过软件包管理器，你可以通过一行命令安装某一个软件包，然后软件包管理器会帮助你从软件源下载软件包，同时自动解决所有的依赖（即下载安装这个软件包的安装所依赖的其它软件包），完
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-06-27
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-05-28
                         </span>
                         <span class="publish-author">
                             
@@ -1072,6 +1121,18 @@
                         <span class="chip bg-color">题解</span>
                     </a>
                     
+                    <a href="/tags/%E5%9B%BE%E8%AE%BA/" target="_blank">
+                        <span class="chip bg-color">图论</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%B4%9B%E8%B0%B7/" target="_blank">
+                        <span class="chip bg-color">洛谷</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%A0%91%E5%89%96/" target="_blank">
+                        <span class="chip bg-color">树剖</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1083,25 +1144,25 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/06/22/dtoj2444-zu-ma/">
+                <a href="/2020/05/22/dtoj-begin4028-dtoj3603-table/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="DTOJ2444 祖玛">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="DTOJ Begin4028 DTOJ3603 table">
                         
-                        <span class="card-title">DTOJ2444 祖玛</span>
+                        <span class="card-title">DTOJ Begin4028 DTOJ3603 table</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            题目题目描述
-祖玛是一款曾经风靡全球的游戏，其玩法是：在一条轨道上初始排列着若干个彩色珠子，其中任意三个相邻的珠子不会完全同色此后，你可以发射珠子到轨道上并加入原有序列中一旦有三个或更多同色的珠子变成相邻，它们就会立即消失这类消除现象可能会
+                            题目题目描述C 酱有一个$m \times n$的数表，行与列的编号都从$1$开始。令$f_{i,j}$表示表格第$i$行第$j$列内的数，那么对于表格的第$i(i&gt;1)$行有
+$$\begin{cases}f_{i,1}=a \ti
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-06-22
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-05-22
                             </span>
                         <span class="publish-author">
                             
@@ -1124,6 +1185,10 @@
                     
                     <a href="/tags/%E9%A2%98%E8%A7%A3/" target="_blank">
                         <span class="chip bg-color">题解</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%BB%84%E5%90%88/" target="_blank">
+                        <span class="chip bg-color">组合</span>
                     </a>
                     
                 </div>
