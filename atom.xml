@@ -233,7 +233,7 @@
     <link href="https://maserhe.top/2020/05/27/poj2689-prime-distance-ti-jie/"/>
     <id>https://maserhe.top/2020/05/27/poj2689-prime-distance-ti-jie/</id>
     <published>2020-05-27T07:46:52.000Z</published>
-    <updated>2020-06-28T11:42:34.335Z</updated>
+    <updated>2020-06-28T16:26:09.488Z</updated>
     
     <summary type="html">
     
@@ -359,6 +359,32 @@
   </entry>
   
   <entry>
+    <title>DTOJ3410 splay.one</title>
+    <link href="https://maserhe.top/2020/04/18/dtoj3410-splay-one/"/>
+    <id>https://maserhe.top/2020/04/18/dtoj3410-splay-one/</id>
+    <published>2020-04-18T10:32:52.000Z</published>
+    <updated>2020-06-28T16:27:09.078Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;
+    
+    </summary>
+    
+      <category term="信息竞赛" scheme="https://maserhe.top/categories/%E4%BF%A1%E6%81%AF%E7%AB%9E%E8%B5%9B/"/>
+    
+    
+      <category term="DTOJ" scheme="https://maserhe.top/tags/DTOJ/"/>
+    
+      <category term="题解" scheme="https://maserhe.top/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="线段树" scheme="https://maserhe.top/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
+    
+      <category term="数论" scheme="https://maserhe.top/tags/%E6%95%B0%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
     <title>博客开源</title>
     <link href="https://maserhe.top/2020/04/14/blog-open-source/"/>
     <id>https://maserhe.top/2020/04/14/blog-open-source/</id>
@@ -385,6 +411,28 @@
       <category term="Github" scheme="https://maserhe.top/tags/Github/"/>
     
       <category term="博客" scheme="https://maserhe.top/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>exLucas定理</title>
+    <link href="https://maserhe.top/2020/04/13/exlucas-ding-li/"/>
+    <id>https://maserhe.top/2020/04/13/exlucas-ding-li/</id>
+    <published>2020-04-13T10:09:09.000Z</published>
+    <updated>2020-06-28T16:24:18.501Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://www.luogu.com.cn/problem/P4720&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;模板&lt;/a&gt;&lt;br&gt;这好像不是个定理……&lt;br&gt;看起来是个算法，但是不知道为什么大家都叫它定理，所以我也跟着写了……&lt;br&gt;还有，这玩意儿好像跟Lucas定理没有半毛钱关系，不知道为什么叫exLucas……&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="数学" scheme="https://maserhe.top/categories/%E6%95%B0%E5%AD%A6/"/>
+    
+    
+      <category term="组合" scheme="https://maserhe.top/tags/%E7%BB%84%E5%90%88/"/>
+    
+      <category term="数论" scheme="https://maserhe.top/tags/%E6%95%B0%E8%AE%BA/"/>
     
   </entry>
   
@@ -459,68 +507,6 @@
       <category term="DTOJ" scheme="https://maserhe.top/tags/DTOJ/"/>
     
       <category term="题解" scheme="https://maserhe.top/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷P4322 BZOJ4753 DTOJ3156 [JSOI2016]最佳团体</title>
-    <link href="https://maserhe.top/2020/04/05/luo-gu-p4322-bzoj4753-dtoj3156-jsoi2016-zui-jia-tuan-ti/"/>
-    <id>https://maserhe.top/2020/04/05/luo-gu-p4322-bzoj4753-dtoj3156-jsoi2016-zui-jia-tuan-ti/</id>
-    <published>2020-04-05T10:27:36.000Z</published>
-    <updated>2020-06-26T17:09:17.466Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://www.luogu.com.cn/problem/P4322&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;原题&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="信息竞赛" scheme="https://maserhe.top/categories/%E4%BF%A1%E6%81%AF%E7%AB%9E%E8%B5%9B/"/>
-    
-    
-      <category term="DTOJ" scheme="https://maserhe.top/tags/DTOJ/"/>
-    
-      <category term="BZOJ" scheme="https://maserhe.top/tags/BZOJ/"/>
-    
-      <category term="题解" scheme="https://maserhe.top/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="DP" scheme="https://maserhe.top/tags/DP/"/>
-    
-      <category term="数学" scheme="https://maserhe.top/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-      <category term="洛谷" scheme="https://maserhe.top/tags/%E6%B4%9B%E8%B0%B7/"/>
-    
-      <category term="树形DP" scheme="https://maserhe.top/tags/%E6%A0%91%E5%BD%A2DP/"/>
-    
-      <category term="01分数规划" scheme="https://maserhe.top/tags/01%E5%88%86%E6%95%B0%E8%A7%84%E5%88%92/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>DTOJ1984 花园</title>
-    <link href="https://maserhe.top/2020/03/27/dtoj1984-hua-yuan/"/>
-    <id>https://maserhe.top/2020/03/27/dtoj1984-hua-yuan/</id>
-    <published>2020-03-27T09:15:27.000Z</published>
-    <updated>2020-06-12T17:03:13.815Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;
-    
-    </summary>
-    
-      <category term="信息竞赛" scheme="https://maserhe.top/categories/%E4%BF%A1%E6%81%AF%E7%AB%9E%E8%B5%9B/"/>
-    
-    
-      <category term="DTOJ" scheme="https://maserhe.top/tags/DTOJ/"/>
-    
-      <category term="题解" scheme="https://maserhe.top/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="线段树" scheme="https://maserhe.top/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
-    
-      <category term="图论" scheme="https://maserhe.top/tags/%E5%9B%BE%E8%AE%BA/"/>
-    
-      <category term="LCA" scheme="https://maserhe.top/tags/LCA/"/>
     
   </entry>
   
