@@ -159,6 +159,30 @@
   </entry>
   
   <entry>
+    <title>POJ3696 The Luckiest number题解</title>
+    <link href="https://maserhe.top/2020/05/31/poj3696-the-luckiest-number-ti-jie/"/>
+    <id>https://maserhe.top/2020/05/31/poj3696-the-luckiest-number-ti-jie/</id>
+    <published>2020-05-31T09:33:00.000Z</published>
+    <updated>2020-06-30T10:55:12.613Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://poj.org/problem?id=3696&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;原题&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="信息竞赛" scheme="https://maserhe.top/categories/%E4%BF%A1%E6%81%AF%E7%AB%9E%E8%B5%9B/"/>
+    
+    
+      <category term="题解" scheme="https://maserhe.top/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="数论" scheme="https://maserhe.top/tags/%E6%95%B0%E8%AE%BA/"/>
+    
+      <category term="POJ" scheme="https://maserhe.top/tags/POJ/"/>
+    
+  </entry>
+  
+  <entry>
     <title>基础数论总结</title>
     <link href="https://maserhe.top/2020/05/31/ji-chu-shu-lun-zong-jie/"/>
     <id>https://maserhe.top/2020/05/31/ji-chu-shu-lun-zong-jie/</id>
@@ -175,6 +199,34 @@
     
     
       <category term="数论" scheme="https://maserhe.top/tags/%E6%95%B0%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>DTOJ2603 不稳定的传送门</title>
+    <link href="https://maserhe.top/2020/05/30/dtoj2603-bu-wen-ding-de-chuan-song-men/"/>
+    <id>https://maserhe.top/2020/05/30/dtoj2603-bu-wen-ding-de-chuan-song-men/</id>
+    <published>2020-05-30T04:09:10.000Z</published>
+    <updated>2020-06-30T10:49:27.650Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;
+    
+    </summary>
+    
+      <category term="信息竞赛" scheme="https://maserhe.top/categories/%E4%BF%A1%E6%81%AF%E7%AB%9E%E8%B5%9B/"/>
+    
+    
+      <category term="DTOJ" scheme="https://maserhe.top/tags/DTOJ/"/>
+    
+      <category term="题解" scheme="https://maserhe.top/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="DP" scheme="https://maserhe.top/tags/DP/"/>
+    
+      <category term="图论" scheme="https://maserhe.top/tags/%E5%9B%BE%E8%AE%BA/"/>
+    
+      <category term="概率DP" scheme="https://maserhe.top/tags/%E6%A6%82%E7%8E%87DP/"/>
     
   </entry>
   
@@ -307,6 +359,36 @@
   </entry>
   
   <entry>
+    <title>DTOJ2460 拜访女神</title>
+    <link href="https://maserhe.top/2020/04/27/dtoj2460-bai-fang-nu-shen/"/>
+    <id>https://maserhe.top/2020/04/27/dtoj2460-bai-fang-nu-shen/</id>
+    <published>2020-04-27T09:16:47.000Z</published>
+    <updated>2020-06-30T10:46:46.391Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;
+    
+    </summary>
+    
+      <category term="信息竞赛" scheme="https://maserhe.top/categories/%E4%BF%A1%E6%81%AF%E7%AB%9E%E8%B5%9B/"/>
+    
+    
+      <category term="DTOJ" scheme="https://maserhe.top/tags/DTOJ/"/>
+    
+      <category term="题解" scheme="https://maserhe.top/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="DP" scheme="https://maserhe.top/tags/DP/"/>
+    
+      <category term="状压DP" scheme="https://maserhe.top/tags/%E7%8A%B6%E5%8E%8BDP/"/>
+    
+      <category term="图论" scheme="https://maserhe.top/tags/%E5%9B%BE%E8%AE%BA/"/>
+    
+      <category term="最短路" scheme="https://maserhe.top/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/"/>
+    
+  </entry>
+  
+  <entry>
     <title>DTOJ2431 棋盘路径</title>
     <link href="https://maserhe.top/2020/04/27/dtoj2431-qi-pan-lu-jing/"/>
     <id>https://maserhe.top/2020/04/27/dtoj2431-qi-pan-lu-jing/</id>
@@ -433,80 +515,6 @@
       <category term="组合" scheme="https://maserhe.top/tags/%E7%BB%84%E5%90%88/"/>
     
       <category term="数论" scheme="https://maserhe.top/tags/%E6%95%B0%E8%AE%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>DTOJ2281 圈地为王</title>
-    <link href="https://maserhe.top/2020/04/11/dtoj2281-quan-di-wei-wang/"/>
-    <id>https://maserhe.top/2020/04/11/dtoj2281-quan-di-wei-wang/</id>
-    <published>2020-04-11T01:14:35.000Z</published>
-    <updated>2020-06-17T16:13:07.608Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;
-    
-    </summary>
-    
-      <category term="信息竞赛" scheme="https://maserhe.top/categories/%E4%BF%A1%E6%81%AF%E7%AB%9E%E8%B5%9B/"/>
-    
-    
-      <category term="DTOJ" scheme="https://maserhe.top/tags/DTOJ/"/>
-    
-      <category term="题解" scheme="https://maserhe.top/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="DP" scheme="https://maserhe.top/tags/DP/"/>
-    
-      <category term="状压DP" scheme="https://maserhe.top/tags/%E7%8A%B6%E5%8E%8BDP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>DTOJ1053 爱博饼的翔霸</title>
-    <link href="https://maserhe.top/2020/04/11/dtoj1053-ai-bo-bing-de-xiang-ba/"/>
-    <id>https://maserhe.top/2020/04/11/dtoj1053-ai-bo-bing-de-xiang-ba/</id>
-    <published>2020-04-11T01:14:15.000Z</published>
-    <updated>2020-06-25T15:08:47.865Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;
-    
-    </summary>
-    
-      <category term="信息竞赛" scheme="https://maserhe.top/categories/%E4%BF%A1%E6%81%AF%E7%AB%9E%E8%B5%9B/"/>
-    
-    
-      <category term="DTOJ" scheme="https://maserhe.top/tags/DTOJ/"/>
-    
-      <category term="题解" scheme="https://maserhe.top/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="DP" scheme="https://maserhe.top/tags/DP/"/>
-    
-      <category term="状压DP" scheme="https://maserhe.top/tags/%E7%8A%B6%E5%8E%8BDP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>DTOJ1039 吃蛋糕</title>
-    <link href="https://maserhe.top/2020/04/05/dtoj1039-chi-dan-gao/"/>
-    <id>https://maserhe.top/2020/04/05/dtoj1039-chi-dan-gao/</id>
-    <published>2020-04-05T10:32:31.000Z</published>
-    <updated>2020-06-25T15:08:32.534Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;
-    
-    </summary>
-    
-      <category term="信息竞赛" scheme="https://maserhe.top/categories/%E4%BF%A1%E6%81%AF%E7%AB%9E%E8%B5%9B/"/>
-    
-    
-      <category term="DTOJ" scheme="https://maserhe.top/tags/DTOJ/"/>
-    
-      <category term="题解" scheme="https://maserhe.top/tags/%E9%A2%98%E8%A7%A3/"/>
     
   </entry>
   
