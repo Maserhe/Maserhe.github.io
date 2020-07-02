@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://maserhe.top/"/>
-  <updated>2020-07-01T09:48:24.117Z</updated>
+  <updated>2020-07-02T15:30:35.416Z</updated>
   <id>https://maserhe.top/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>洛谷P4582 BZOJ4015 DTOJ1748 [FJOI2014]树的重心</title>
+    <link href="https://maserhe.top/2020/07/01/luo-gu-p4582-bzoj4015-dtoj1748-fjoi2014-shu-de-chong-xin/"/>
+    <id>https://maserhe.top/2020/07/01/luo-gu-p4582-bzoj4015-dtoj1748-fjoi2014-shu-de-chong-xin/</id>
+    <published>2020-07-01T10:31:48.000Z</published>
+    <updated>2020-07-02T15:30:35.416Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;
+    
+    </summary>
+    
+      <category term="信息竞赛" scheme="https://maserhe.top/categories/%E4%BF%A1%E6%81%AF%E7%AB%9E%E8%B5%9B/"/>
+    
+    
+      <category term="题解" scheme="https://maserhe.top/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="DP" scheme="https://maserhe.top/tags/DP/"/>
+    
+      <category term="洛谷" scheme="https://maserhe.top/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="树形DP" scheme="https://maserhe.top/tags/%E6%A0%91%E5%BD%A2DP/"/>
+    
+  </entry>
   
   <entry>
     <title>DTOJ3303 W的火星工程</title>
@@ -491,34 +517,6 @@
       <category term="题解" scheme="https://maserhe.top/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="组合" scheme="https://maserhe.top/tags/%E7%BB%84%E5%90%88/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷P4155  国旗计划</title>
-    <link href="https://maserhe.top/2020/04/22/luo-gu-p4155-bzoj4444-guo-qi-ji-hua/"/>
-    <id>https://maserhe.top/2020/04/22/luo-gu-p4155-bzoj4444-guo-qi-ji-hua/</id>
-    <published>2020-04-22T10:32:22.000Z</published>
-    <updated>2020-06-25T15:06:31.968Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;
-    
-    </summary>
-    
-      <category term="信息竞赛" scheme="https://maserhe.top/categories/%E4%BF%A1%E6%81%AF%E7%AB%9E%E8%B5%9B/"/>
-    
-    
-      <category term="BZOJ" scheme="https://maserhe.top/tags/BZOJ/"/>
-    
-      <category term="题解" scheme="https://maserhe.top/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="洛谷" scheme="https://maserhe.top/tags/%E6%B4%9B%E8%B0%B7/"/>
-    
-      <category term="省选" scheme="https://maserhe.top/tags/%E7%9C%81%E9%80%89/"/>
-    
-      <category term="倍增" scheme="https://maserhe.top/tags/%E5%80%8D%E5%A2%9E/"/>
     
   </entry>
   
