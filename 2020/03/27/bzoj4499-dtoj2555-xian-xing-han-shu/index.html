@@ -1062,34 +1062,307 @@ pair<span class="token operator">&lt;</span><span class="token keyword">long</sp
     
 
     
-        <div class="disqus-card card" data-aos="fade-up">
-    <div id="disqus_thread" class="card-content">
-        <noscript>Please enable JavaScript to view the
-            <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a>
-        </noscript>
-    </div>
+
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+    /* valine 评论框增加背景图片 */
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("") 100% 100% no-repeat;
+    }
+
+    #vcomments input[type=text],
+    #vcomments input[type=email],
+    #vcomments input[type=url],
+    #vcomments textarea {
+        box-sizing: border-box;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #42b983;
+        font-weight: 500;
+        text-decoration: underline;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    /* 修复评论第一行位置错位 */
+    .v .vlist .vcard {
+    padding-top: 2.5em !important ;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div id="vcomments" class="card-content"></div>
 </div>
 
-<script type="text/javascript">
-    disqus_config = function () {
-        this.page.url = 'https://maserhe.top/2020/03/27/bzoj4499-dtoj2555-xian-xing-han-shu/';
-        this.page.identifier = '/2020/03/27/bzoj4499-dtoj2555-xian-xing-han-shu/';
-        this.page.title = 'BZOJ4499 DTOJ2555 线性函数';
-    };
-    let disqus_shortname = 'admin';
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
+<!-- <link rel="stylesheet" type="text/css" href="/libs//libs/jQuery-emoji/dist/css/jquery.emoji.css">
+<script src="/libs//libs/jQuery-emoji/dist/js/jquery.emoji.min.js"></script>
+<script src="/libs//libs/jQuery-emoji/dist/js/emoji.list.js"></script> -->
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'Y5wk7kOhn51rrRBh2tH2y9UJ-gzGzoHsz',
+        appKey: 'mxRoyRzOrbLBFfSqsWfDNjOY',
+        notify: 'true' === 'true',
+        verify: 'true' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'retro',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: '没有github的这里评论喽',
 
-    (function () { // DON'T EDIT BELOW THIS LINE
-        let d = document, s = d.createElement('script');
-        // 如：s.src = 'https://blinkfox.disqus.com/embed.js';
-        s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
+    });
+
+//     function parse_emoji() {
+//     jQuery(".vcontent").emojiParse({
+//       basePath: '/libs/jQuery-emoji/images/emoji',
+//       icons: emojiLists   // 注：详见 js/emoji.list.js
+//     });
+//   }
+  
+//   setTimeout(function() {
+//     // jQuery emoji 解析
+//     parse_emoji();
+//     // jquery emoji 初始化
+//     jQuery(".veditor").emoji({
+//       showTab: true,
+//       animation: 'slide',
+//       basePath: '/libs/jQuery-emoji/images/emoji',
+//       icons: emojiLists  // 注：详见 js/emoji.list.js
+//     });
+//     jQuery(".vmore").on("click", function() {
+//       setTimeout(function() {
+//         parse_emoji();
+//       }, 500);
+//     });
+//   }, 800)
+
 </script>
-    
-
-    
-
     
 
     
@@ -1164,30 +1437,30 @@ pair<span class="token operator">&lt;</span><span class="token keyword">long</sp
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+                本篇&nbsp;<i class="fa fa-dot-circle-o"></i>
             </div>
             <div class="card">
-                <a href="/2019/07/31/luo-gu-p1072-dtoj-begin1014hankson-de-qu-wei-ti/">
+                <a href="/2020/03/27/bzoj4499-dtoj2555-xian-xing-han-shu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="洛谷P1072 Begin1014Hankson的趣味题">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="BZOJ4499 DTOJ2555 线性函数">
                         
-                        <span class="card-title">洛谷P1072 Begin1014Hankson的趣味题</span>
+                        <span class="card-title">BZOJ4499 DTOJ2555 线性函数</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            题目题目描述原题
+                            题目题目描述
+小C最近在学习线性函数，线性函数可以表示为：$f(x) = kx + b$。现在小C面前有$n$个线性函数$f_i=k_ix+b_i$，他对这$n$个线性函数执行$m$次操作，每次可以：
 
-
-Hanks博士是 BT(Bio-Tech，生物技术)领域的知名专家，他的儿子名叫Hankson。现在，刚刚放学回家的Hankson正在思考一个有趣的问题。今天在课堂上，老师讲解了如何求两个正整数$c_1$和$c_2$的
+M i K B代表把第$i$个线性函
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-31
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-03-27
                             </span>
                         <span class="publish-author">
                             
@@ -1201,6 +1474,7 @@ Hanks博士是 BT(Bio-Tech，生物技术)领域的知名专家，他的儿子�
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1208,16 +1482,16 @@ Hanks博士是 BT(Bio-Tech，生物技术)领域的知名专家，他的儿子�
                         <span class="chip bg-color">DTOJ</span>
                     </a>
                     
+                    <a href="/tags/BZOJ/" target="_blank">
+                        <span class="chip bg-color">BZOJ</span>
+                    </a>
+                    
                     <a href="/tags/%E9%A2%98%E8%A7%A3/" target="_blank">
                         <span class="chip bg-color">题解</span>
                     </a>
                     
-                    <a href="/tags/%E6%B4%9B%E8%B0%B7/" target="_blank">
-                        <span class="chip bg-color">洛谷</span>
-                    </a>
-                    
-                    <a href="/tags/%E6%95%B0%E8%AE%BA/" target="_blank">
-                        <span class="chip bg-color">数论</span>
+                    <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/" target="_blank">
+                        <span class="chip bg-color">线段树</span>
                     </a>
                     
                 </div>
@@ -1622,10 +1896,10 @@ $(function () {
             </script>
         
 
-    <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"left","width":200,"height":250},"mobile":{"show":"flase"},"react":{"opacity":0.7}});</script><script>
+    <script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var i=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){i&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,e,a=0;a<r.length;a++)t=r[a],0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var i=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){i&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,e,a=0;a<r.length;a++)t=r[a],0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"left","width":200,"height":250},"mobile":{"show":"flase"},"react":{"opacity":0.7}});</script></body>
 </html>
