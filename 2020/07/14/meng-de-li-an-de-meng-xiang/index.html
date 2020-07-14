@@ -6,11 +6,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="DTOJ3303 W的火星工程, SUT self java Golang 计算机科学 Linux学习">
+    <meta name="keywords" content="蒙德里安的梦想, SUT self java Golang 计算机科学 Linux学习">
     <meta name="baidu-site-verification" content="eFxriE7DVh" />
     <meta name="google-site-verification" content="KeoTn_OFy4ndJwXNmm2gMeQfPhd7alqE9vQDwI32KCY" />
-    <meta name="description" content="题目题目描述
-大老板W的伟大工程扩大到了火星，他准备在火星建立一个自己的度假村在他的度假村里，有两个大饭店A,B对于W来说，修建度假村必不可少的就是从A饭店向B饭店修路,以保证他可以短时间内享受各种美味火星上有一些中转站，中转站之间以及它们">
+    <meta name="description" content="题目题目描述原题
+
+求把$NM$的棋盘分割成若干个$12$的的长方形，有多少种方案。例如当$N=2$，$M=4$时，共有5种方案。当$N=2$，$M=3$时，共有3种方案。如下图所示：输入格式输入包含多组测试用例。每组测试用例占一行，包含两">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +19,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>DTOJ3303 W的火星工程 | Maserhe</title>
+    <title>蒙德里安的梦想 | Maserhe</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -617,13 +618,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        DTOJ3303 W的火星工程
+                        蒙德里安的梦想
                     </div>
                 </div>
             </div>
@@ -735,24 +736,16 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/DTOJ/" target="_blank">
-                                <span class="chip bg-color">DTOJ</span>
-                            </a>
-                        
                             <a href="/tags/%E9%A2%98%E8%A7%A3/" target="_blank">
                                 <span class="chip bg-color">题解</span>
                             </a>
                         
-                            <a href="/tags/%E5%9B%BE%E8%AE%BA/" target="_blank">
-                                <span class="chip bg-color">图论</span>
+                            <a href="/tags/dp/" target="_blank">
+                                <span class="chip bg-color">dp</span>
                             </a>
                         
-                            <a href="/tags/01%E5%88%86%E6%95%B0%E8%A7%84%E5%88%92/" target="_blank">
-                                <span class="chip bg-color">01分数规划</span>
-                            </a>
-                        
-                            <a href="/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/" target="_blank">
-                                <span class="chip bg-color">最短路</span>
+                            <a href="/tags/%E5%8E%8B%E7%BC%A9dp/" target="_blank">
+                                <span class="chip bg-color">压缩dp</span>
                             </a>
                         
                     </div>
@@ -763,8 +756,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E4%BF%A1%E6%81%AF%E7%AB%9E%E8%B5%9B/" class="post-category" target="_blank">
-                                信息竞赛
+                            <a href="/categories/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97/" class="post-category" target="_blank">
+                                算法竞赛进阶指南
                             </a>
                         
                     </div>
@@ -775,7 +768,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-01
+                    2020-07-14
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -789,7 +782,7 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        866
+                        906
                     </div>
                     
 
@@ -808,51 +801,67 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><a id="more"></a>
-<p>大老板<code>W</code>的伟大工程扩大到了火星，他准备在火星建立一个自己的度假村<br>在他的度假村里，有两个大饭店<code>A</code>,<code>B</code><br>对于<code>W</code>来说，修建度假村必不可少的就是从<code>A</code>饭店向<code>B</code>饭店修路,以保证他可以短时间内享受各种美味<br>火星上有一些中转站，中转站之间以及它们与饭店之间有路径使得能从一个到达另一个（路径为单向）<br>对于每一条路径，工程师<code>ZQ</code>给出了它的两个消费参数$a,b$<br><code>W</code>会从<code>A</code>饭店出发，经过其中的一些路径，最终到达<code>B</code>饭店<br><code>W</code>希望他走过的所有道路的$\frac{\sum{a}}{\sum{b}}$最小，也就是那些道路的$a$值之和除以他们的$b$值之和最小<br>可是路径实在太多了，<code>W</code>不知道该如何选择<br>聪明的你需要帮助他计算出这个最小值<br>至于路径的选取方法你就不需要告诉他了</p>
-<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>输入两个整数$n,m$，表示中转站的数量和边的数量<br>随后$m$行，每行四个整数$x,y,a,b$，分别表示路径的两端，路径的$a,b$消费参数<br>其中$0$号点与$n+1$号点分别表示<code>W</code>的两个饭店<code>A</code>，<code>B</code><br>注意你并不需要把所有中转站都连入路中，只要保证从<code>A</code>饭店可以到达<code>B</code>饭店就行了</p>
-<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>输出一个小数，表示所求的最小值。误差不超过$10^{-6}$即可</p>
-<h2 id="样例"><a href="#样例" class="headerlink" title="样例"></a>样例</h2><h3 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h3><pre><code>2 3
-0 1 1 2
-0 2 2 3
-1 3 1 3</code></pre><h3 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h3><pre><code>0.400000</code></pre><h2 id="数据范围与提示"><a href="#数据范围与提示" class="headerlink" title="数据范围与提示"></a>数据范围与提示</h2><p>对于$20 %$的数据，$n,m \leqslant 100$<br>对于$50 %$的数据，$n \leqslant 1000$<br>对于$100 %$的数据， $1 \leqslant n \leqslant 10000,1 \leqslant m \leqslant 100,000,0 \leqslant x,y \leqslant n+1$<br>数据保证$0$号饭店可以到达$n+1$号饭店，任意两个中转站或饭店间最多有一条边，且保证没有路可以构成环</p>
-<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><p>0/1分数规划裸题<br>考虑二分答案，记$dis_i$表示从0到i的路径$\sum a_i-b_i\times mid$的最小值，用类似最短路的方法更新，判断一下$dis_{n+1}$的值是否大于$0$，更改二分的范围<br>附上代码：</p>
-<pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;cstdio></span></span>
-<span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;queue></span></span>
+                <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p><strong><a href="https://www.acwing.com/problem/content/293/" target="_blank" rel="noopener">原题</a></strong></p>
+<a id="more"></a>
+<p>求把$N<em>M$的棋盘分割成若干个$1</em>2$的的长方形，有多少种方案。<br>例如当$N=2$，$M=4$时，共有5种方案。当$N=2$，$M=3$时，共有3种方案。<br>如下图所示：<br><img src="https://cdn.jsdelivr.net/gh/maserhe/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://i.loli.net/2020/07/14/behoHay2YC9TG7U.png" alt="0"><br><strong>输入格式</strong><br>输入包含多组测试用例。<br>每组测试用例占一行，包含两个整数N和M。<br>当输入用例N=0，M=0时，表示输入终止，且该用例无需处理。<br><strong>输出格式</strong><br>每个测试用例输出一个结果，每个结果占一行。<br>数据范围<br>$1≤N$,$M≤11$<br>$1≤N$,$M≤11$<br><strong>输入样例：</strong></p>
+<pre><code>1 2
+1 3
+1 4
+2 2
+2 3
+2 4
+2 11
+4 11
+0 0</code></pre><p><strong>输出样例：</strong></p>
+<pre><code>1
+0
+1
+2
+3
+5
+144
+51205</code></pre><h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><p>这应该是一道很典型的状态压缩dp问题，暴力显然不能计算的。用状态压缩的形式来表示每一种状态。首先我们需要了解到假设我们摆放好所有横着放的小方格，那么竖着放的小方格的状态也就确定了(如果是一种合理的摆放状态就确定唯一的一种状态了，如果不合理竖着放的小方格就不能完全放上去把空白填充了)。<br><img src="https://cdn.jsdelivr.net/gh/maserhe/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://i.loli.net/2020/07/14/DQR95NmLMfei8Ax.png" alt="544"><br>例如上图横着放的确定了，则竖着放的情况也确定了。因此我们只需要考虑横着放的状态就行了。<br>状态f[i][j]表示 第i 列 上一列哪些行伸出小方格的状态为 j<br>例如<br><img src="https://cdn.jsdelivr.net/gh/maserhe/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://i.loli.net/2020/07/14/nFBpuYRqiZjQf56.png" alt="165"><br>上图$f[i][j]$,  其中$i$代表第$i$列，$j =(10010)_2$  , $f[i][j]$中$i$的范围为0到11，$j$的范围为$0到2^{11}$。</p>
+<p>转移方程很简单，本列的每一个状态都由上列所有“合法”状态转移过来$f[i][j]$ += $f[i - 1][k]$</p>
+<ol>
+<li>两个转移条件： i 列和 i - 1列同一行不同时捅出来 ； 本列捅出来的状态j和上列捅出来的状态k求或，得到上列是否为奇数空行状态，奇数空行不转移（这个条件可以预处理）。</li>
+<li>初始化条件f[0][0] = 1，第0列只能是状态0，无任何格子捅出来。返回f[m][0]。第m + 1列不能有东西捅出来。</li>
+</ol>
+<pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;iostream></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;cstring></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;algorithm></span></span>
 <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
-<span class="token keyword">int</span> n<span class="token punctuation">,</span>m<span class="token punctuation">,</span>tot<span class="token punctuation">,</span>nxt<span class="token punctuation">[</span><span class="token number">100010</span><span class="token punctuation">]</span><span class="token punctuation">,</span>head<span class="token punctuation">[</span><span class="token number">10010</span><span class="token punctuation">]</span><span class="token punctuation">,</span>to<span class="token punctuation">[</span><span class="token number">100010</span><span class="token punctuation">]</span><span class="token punctuation">,</span>a<span class="token punctuation">[</span><span class="token number">100010</span><span class="token punctuation">]</span><span class="token punctuation">,</span>b<span class="token punctuation">[</span><span class="token number">100010</span><span class="token punctuation">]</span><span class="token punctuation">,</span>v<span class="token punctuation">[</span><span class="token number">100010</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-<span class="token keyword">double</span> L<span class="token punctuation">,</span>R<span class="token operator">=</span><span class="token number">1e9</span><span class="token punctuation">,</span>w<span class="token punctuation">[</span><span class="token number">100010</span><span class="token punctuation">]</span><span class="token punctuation">,</span>dis<span class="token punctuation">[</span><span class="token number">100010</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-<span class="token keyword">void</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">int</span> u<span class="token punctuation">,</span><span class="token keyword">int</span> v<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    nxt<span class="token punctuation">[</span><span class="token operator">++</span>tot<span class="token punctuation">]</span><span class="token operator">=</span>head<span class="token punctuation">[</span>u<span class="token punctuation">]</span><span class="token punctuation">,</span>head<span class="token punctuation">[</span>u<span class="token punctuation">]</span><span class="token operator">=</span>tot<span class="token punctuation">,</span>to<span class="token punctuation">[</span>tot<span class="token punctuation">]</span><span class="token operator">=</span>v<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token keyword">int</span> <span class="token function">pd</span><span class="token punctuation">(</span><span class="token keyword">double</span> x<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>n<span class="token operator">+</span><span class="token number">2</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span> dis<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">1e9</span><span class="token punctuation">,</span>v<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
-    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>m<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span> w<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token keyword">double</span><span class="token punctuation">)</span>a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">-</span><span class="token punctuation">(</span><span class="token keyword">double</span><span class="token punctuation">)</span>b<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">*</span>x<span class="token punctuation">;</span>
-    queue<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> q<span class="token punctuation">;</span>
-    dis<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span>q<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token operator">!</span>q<span class="token punctuation">.</span><span class="token function">empty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-        <span class="token keyword">int</span> x<span class="token operator">=</span>q<span class="token punctuation">.</span><span class="token function">front</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        q<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>v<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span>head<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">;</span>i<span class="token punctuation">;</span>i<span class="token operator">=</span>nxt<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token keyword">if</span><span class="token punctuation">(</span>dis<span class="token punctuation">[</span>to<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token operator">></span>dis<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token operator">+</span>w<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-            dis<span class="token punctuation">[</span>to<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token operator">=</span>dis<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token operator">+</span>w<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
-            <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>v<span class="token punctuation">[</span>to<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span> q<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>to<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            v<span class="token punctuation">[</span>to<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">,</span> M <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">&lt;&lt;</span> N<span class="token punctuation">;</span>
+<span class="token keyword">bool</span> st<span class="token punctuation">[</span>M<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">long</span> <span class="token keyword">long</span> f<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">[</span>M<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">int</span> n<span class="token punctuation">,</span> m<span class="token punctuation">;</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>cin <span class="token operator">>></span> n <span class="token operator">>></span> m <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span>n <span class="token operator">||</span> m<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">1</span> <span class="token operator">&lt;&lt;</span> n<span class="token punctuation">;</span> i <span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">int</span> cnt <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+            st<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> j <span class="token operator">++</span><span class="token punctuation">)</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">>></span> j <span class="token operator">&amp;</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span>    <span class="token comment" spellcheck="true">//如果由连续奇数个空白区域就 置为false</span>
+                    <span class="token keyword">if</span> <span class="token punctuation">(</span>cnt <span class="token operator">&amp;</span> <span class="token number">1</span><span class="token punctuation">)</span> st<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// cnt 为当前已经存在多少个连续的0</span>
+                    cnt <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+                <span class="token keyword">else</span> cnt <span class="token operator">++</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>cnt <span class="token operator">&amp;</span> <span class="token number">1</span><span class="token punctuation">)</span> st<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 扫完后要判断一下最后一段有多少个连续的0</span>
         <span class="token punctuation">}</span>
+
+        <span class="token function">memset</span><span class="token punctuation">(</span>f<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token keyword">sizeof</span> f<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        f<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> m<span class="token punctuation">;</span> i <span class="token operator">++</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//枚举每一列</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> <span class="token number">1</span> <span class="token operator">&lt;&lt;</span> n<span class="token punctuation">;</span> j <span class="token operator">++</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//枚举当前列</span>
+                <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> k <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> k <span class="token operator">&lt;</span> <span class="token number">1</span> <span class="token operator">&lt;&lt;</span> n<span class="token punctuation">;</span> k <span class="token operator">++</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//枚举前一列</span>
+                    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>j <span class="token operator">&amp;</span> k<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span>st<span class="token punctuation">[</span>j <span class="token operator">|</span> k<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span> 
+                    <span class="token comment" spellcheck="true">// j &amp; k == 0 表示 i 列和 i - 1列同一行不同时捅出来</span>
+                    <span class="token comment" spellcheck="true">// st[j | k] == 1 表示 在 i 列状态 j， i - 1 列状态 k 的情况下是合法的.</span>
+                        f<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">+</span><span class="token operator">=</span> f<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token punctuation">;</span>      
+        cout <span class="token operator">&lt;&lt;</span> f<span class="token punctuation">[</span>m<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//最后一列不能有格子捅出来</span>
     <span class="token punctuation">}</span>
-    <span class="token keyword">return</span> dis<span class="token punctuation">[</span>n<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">>=</span><span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>n<span class="token punctuation">,</span><span class="token operator">&amp;</span>m<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span>u<span class="token punctuation">,</span>v<span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>m<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d%d%d%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>u<span class="token punctuation">,</span><span class="token operator">&amp;</span>v<span class="token punctuation">,</span><span class="token operator">&amp;</span>a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>b<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">add</span><span class="token punctuation">(</span>u<span class="token punctuation">,</span>v<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">while</span><span class="token punctuation">(</span>L<span class="token operator">+</span><span class="token number">0.000000001</span><span class="token operator">&lt;</span>R<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        <span class="token keyword">double</span> mid<span class="token operator">=</span><span class="token punctuation">(</span>L<span class="token operator">+</span>R<span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">;</span>
-        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">pd</span><span class="token punctuation">(</span>mid<span class="token punctuation">)</span><span class="token punctuation">)</span> L<span class="token operator">=</span>mid<span class="token punctuation">;</span>
-        <span class="token keyword">else</span> R<span class="token operator">=</span>mid<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%.6lf"</span><span class="token punctuation">,</span>L<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <script>
         document.querySelectorAll('.github-emoji')
@@ -1022,7 +1031,7 @@
                     </span>
                     <a href="https://maserhe.top" class="b-link-green">Maserhe</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2020/07/01/dtoj3303-w-de-huo-xing-gong-cheng/" class="b-link-green">DTOJ3303 W的火星工程</a>
+                    <a href="/2020/07/14/meng-de-li-an-de-meng-xiang/" class="b-link-green">蒙德里安的梦想</a>
                 </p>
             </div>
 
@@ -1044,9 +1053,9 @@
 
 <script type="text/javascript">
     disqus_config = function () {
-        this.page.url = 'https://maserhe.top/2020/07/01/dtoj3303-w-de-huo-xing-gong-cheng/';
-        this.page.identifier = '/2020/07/01/dtoj3303-w-de-huo-xing-gong-cheng/';
-        this.page.title = 'DTOJ3303 W的火星工程';
+        this.page.url = 'https://maserhe.top/2020/07/14/meng-de-li-an-de-meng-xiang/';
+        this.page.identifier = '/2020/07/14/meng-de-li-an-de-meng-xiang/';
+        this.page.title = '蒙德里安的梦想';
     };
     let disqus_shortname = 'admin';
 
@@ -1069,42 +1078,45 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/07/01/luo-gu-p4582-bzoj4015-dtoj1748-fjoi2014-shu-de-chong-xin/">
+                <a href="/2020/07/14/meng-de-li-an-de-meng-xiang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="洛谷P4582 BZOJ4015 DTOJ1748 [FJOI2014]树的重心">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="蒙德里安的梦想">
                         
-                        <span class="card-title">洛谷P4582 BZOJ4015 DTOJ1748 [FJOI2014]树的重心</span>
+                        <span class="card-title">蒙德里安的梦想</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            题目题目描述
-给定一个$n$个点的树，每个点的编号从$1$至$n$，问这个树有多少不同的连通子树，和这个树有相同的重心其中$n$个点的树指的是$n$个点的最小连通图，显然$n$个点的树有$n-1$条边，去掉这$n-1$条边中的任何一条，原图
+                            题目题目描述原题
+
+求把$NM$的棋盘分割成若干个$12$的的长方形，有多少种方案。例如当$N=2$，$M=4$时，共有5种方案。当$N=2$，$M=3$时，共有3种方案。如下图所示：输入格式输入包含多组测试用例。每组测试用例占一行，包含两
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-07-01
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-07-14
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E4%BF%A1%E6%81%AF%E7%AB%9E%E8%B5%9B/" class="post-category" target="_blank">
-                                    信息竞赛
+                            <a href="/categories/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97/" class="post-category" target="_blank">
+                                    算法竞赛进阶指南
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1112,16 +1124,12 @@
                         <span class="chip bg-color">题解</span>
                     </a>
                     
-                    <a href="/tags/DP/" target="_blank">
-                        <span class="chip bg-color">DP</span>
+                    <a href="/tags/dp/" target="_blank">
+                        <span class="chip bg-color">dp</span>
                     </a>
                     
-                    <a href="/tags/%E6%B4%9B%E8%B0%B7/" target="_blank">
-                        <span class="chip bg-color">洛谷</span>
-                    </a>
-                    
-                    <a href="/tags/%E6%A0%91%E5%BD%A2DP/" target="_blank">
-                        <span class="chip bg-color">树形DP</span>
+                    <a href="/tags/%E5%8E%8B%E7%BC%A9dp/" target="_blank">
+                        <span class="chip bg-color">压缩dp</span>
                     </a>
                     
                 </div>
@@ -1135,26 +1143,25 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/01/luo-gu-p4284-dtoj1862-bzoj3566-shoi2014-gai-lu-chong-dian-qi/">
+                <a href="/2020/07/13/dtoj2162-magic/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="洛谷P4284  概率充电器">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="DTOJ2162 magic">
                         
-                        <span class="card-title">洛谷P4284  概率充电器</span>
+                        <span class="card-title">DTOJ2162 magic</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            题目题目描述原题
-
-著名的电子产品品牌SHOI刚刚发布了引领世界潮流的下一代电子产品——概率充电器：“采用全新纳米级加工技术，实现元件与导线能否通电完全由真随机数决定！SHOI概率充电器，您生活不可或缺的必需品！能充上电吗？现在就试试看吧！
+                            题目题目描述
+给定一个$n$个点，$m$条边的有向图对于任意一个点$i$，都有两个权值$a_i,b_i$你可以花费$b_i$的费用将这个点的$a_i$变成$0$另外对于圈中的每个点你需要付出$wi=Max(i,j)\in E~aj$请最小化
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-07-01
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-07-13
                             </span>
                         <span class="publish-author">
                             
@@ -1179,16 +1186,12 @@
                         <span class="chip bg-color">题解</span>
                     </a>
                     
-                    <a href="/tags/DP/" target="_blank">
-                        <span class="chip bg-color">DP</span>
+                    <a href="/tags/%E5%9B%BE%E8%AE%BA/" target="_blank">
+                        <span class="chip bg-color">图论</span>
                     </a>
                     
-                    <a href="/tags/%E6%B4%9B%E8%B0%B7/" target="_blank">
-                        <span class="chip bg-color">洛谷</span>
-                    </a>
-                    
-                    <a href="/tags/%E6%A6%82%E7%8E%87DP/" target="_blank">
-                        <span class="chip bg-color">概率DP</span>
+                    <a href="/tags/%E7%BD%91%E7%BB%9C%E6%B5%81/" target="_blank">
+                        <span class="chip bg-color">网络流</span>
                     </a>
                     
                 </div>

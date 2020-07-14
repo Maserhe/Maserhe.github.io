@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://maserhe.top/"/>
-  <updated>2020-07-13T14:04:45.796Z</updated>
+  <updated>2020-07-14T05:35:16.341Z</updated>
   <id>https://maserhe.top/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>蒙德里安的梦想</title>
+    <link href="https://maserhe.top/2020/07/14/meng-de-li-an-de-meng-xiang/"/>
+    <id>https://maserhe.top/2020/07/14/meng-de-li-an-de-meng-xiang/</id>
+    <published>2020-07-13T21:13:06.000Z</published>
+    <updated>2020-07-14T05:35:16.341Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.acwing.com/problem/content/293/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;原题&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="算法竞赛进阶指南" scheme="https://maserhe.top/categories/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97/"/>
+    
+    
+      <category term="题解" scheme="https://maserhe.top/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="dp" scheme="https://maserhe.top/tags/dp/"/>
+    
+      <category term="压缩dp" scheme="https://maserhe.top/tags/%E5%8E%8B%E7%BC%A9dp/"/>
+    
+  </entry>
   
   <entry>
     <title>DTOJ2162 magic</title>
@@ -427,7 +451,7 @@
     <link href="https://maserhe.top/2020/06/21/luo-gu-p1172-dtoj-begin1777-an-quan-tao-chi-ti-jie/"/>
     <id>https://maserhe.top/2020/06/21/luo-gu-p1172-dtoj-begin1777-an-quan-tao-chi-ti-jie/</id>
     <published>2020-06-21T07:18:45.000Z</published>
-    <updated>2020-06-26T17:03:37.164Z</updated>
+    <updated>2020-07-13T21:52:10.648Z</updated>
     
     <summary type="html">
     
@@ -491,26 +515,6 @@
       <category term="数论" scheme="https://maserhe.top/tags/%E6%95%B0%E8%AE%BA/"/>
     
       <category term="POJ" scheme="https://maserhe.top/tags/POJ/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>基础数论总结</title>
-    <link href="https://maserhe.top/2020/05/31/ji-chu-shu-lun-zong-jie/"/>
-    <id>https://maserhe.top/2020/05/31/ji-chu-shu-lun-zong-jie/</id>
-    <published>2020-05-31T09:25:54.000Z</published>
-    <updated>2020-06-25T15:28:12.371Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;一、数论中的基本概念与性质&quot;&gt;&lt;a href=&quot;#一、数论中的基本概念与性质&quot; class=&quot;headerlink&quot; title=&quot;一、数论中的基本概念与性质&quot;&gt;&lt;/a&gt;一、数论中的基本概念与性质&lt;/h1&gt;&lt;h2 id=&quot;1、整除&quot;&gt;&lt;a href=&quot;#1、整除&quot; class=&quot;headerlink&quot; title=&quot;1、整除&quot;&gt;&lt;/a&gt;1、整除&lt;/h2&gt;&lt;h3 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h3&gt;
-    
-    </summary>
-    
-      <category term="数学" scheme="https://maserhe.top/categories/%E6%95%B0%E5%AD%A6/"/>
-    
-    
-      <category term="数论" scheme="https://maserhe.top/tags/%E6%95%B0%E8%AE%BA/"/>
     
   </entry>
   
