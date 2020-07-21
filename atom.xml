@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://maserhe.top/"/>
-  <updated>2020-07-17T00:50:29.396Z</updated>
+  <updated>2020-07-21T00:59:08.710Z</updated>
   <id>https://maserhe.top/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>DTOJ1984 花园</title>
+    <link href="https://maserhe.top/2020/07/21/dtoj1984-hua-yuan/"/>
+    <id>https://maserhe.top/2020/07/21/dtoj1984-hua-yuan/</id>
+    <published>2020-07-21T09:15:27.000Z</published>
+    <updated>2020-07-21T00:59:08.710Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;
+    
+    </summary>
+    
+      <category term="信息竞赛" scheme="https://maserhe.top/categories/%E4%BF%A1%E6%81%AF%E7%AB%9E%E8%B5%9B/"/>
+    
+    
+      <category term="DTOJ" scheme="https://maserhe.top/tags/DTOJ/"/>
+    
+      <category term="题解" scheme="https://maserhe.top/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="线段树" scheme="https://maserhe.top/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
+    
+      <category term="图论" scheme="https://maserhe.top/tags/%E5%9B%BE%E8%AE%BA/"/>
+    
+      <category term="LCA" scheme="https://maserhe.top/tags/LCA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>洛谷P3628  [APOI2010]特别行动队</title>
+    <link href="https://maserhe.top/2020/07/20/luo-gu-p3628-dtoj1220-apoi2010-te-bie-xing-dong-dui/"/>
+    <id>https://maserhe.top/2020/07/20/luo-gu-p3628-dtoj1220-apoi2010-te-bie-xing-dong-dui/</id>
+    <published>2020-07-20T09:15:45.000Z</published>
+    <updated>2020-07-21T01:02:04.580Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://www.luogu.com.cn/problem/P3628&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;原题&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="信息竞赛" scheme="https://maserhe.top/categories/%E4%BF%A1%E6%81%AF%E7%AB%9E%E8%B5%9B/"/>
+    
+    
+      <category term="题解" scheme="https://maserhe.top/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="DP" scheme="https://maserhe.top/tags/DP/"/>
+    
+      <category term="几何" scheme="https://maserhe.top/tags/%E5%87%A0%E4%BD%95/"/>
+    
+      <category term="斜率DP" scheme="https://maserhe.top/tags/%E6%96%9C%E7%8E%87DP/"/>
+    
+  </entry>
   
   <entry>
     <title>最短Hamilton路径</title>
@@ -476,54 +530,6 @@
     
     
       <category term="几何" scheme="https://maserhe.top/tags/%E5%87%A0%E4%BD%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>DTOJ2444 祖玛</title>
-    <link href="https://maserhe.top/2020/06/22/dtoj2444-zu-ma/"/>
-    <id>https://maserhe.top/2020/06/22/dtoj2444-zu-ma/</id>
-    <published>2020-06-22T14:17:12.000Z</published>
-    <updated>2020-06-24T16:26:52.918Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;
-    
-    </summary>
-    
-      <category term="信息竞赛" scheme="https://maserhe.top/categories/%E4%BF%A1%E6%81%AF%E7%AB%9E%E8%B5%9B/"/>
-    
-    
-      <category term="DTOJ" scheme="https://maserhe.top/tags/DTOJ/"/>
-    
-      <category term="题解" scheme="https://maserhe.top/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>DTOJ3493 加帕里图书馆</title>
-    <link href="https://maserhe.top/2020/06/21/dtoj3493-jia-pa-li-tu-shu-guan/"/>
-    <id>https://maserhe.top/2020/06/21/dtoj3493-jia-pa-li-tu-shu-guan/</id>
-    <published>2020-06-21T10:32:41.000Z</published>
-    <updated>2020-07-01T09:49:09.358Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;
-    
-    </summary>
-    
-      <category term="信息竞赛" scheme="https://maserhe.top/categories/%E4%BF%A1%E6%81%AF%E7%AB%9E%E8%B5%9B/"/>
-    
-    
-      <category term="DTOJ" scheme="https://maserhe.top/tags/DTOJ/"/>
-    
-      <category term="题解" scheme="https://maserhe.top/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="DP" scheme="https://maserhe.top/tags/DP/"/>
-    
-      <category term="区间DP" scheme="https://maserhe.top/tags/%E5%8C%BA%E9%97%B4DP/"/>
     
   </entry>
   
