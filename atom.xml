@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://maserhe.top/"/>
-  <updated>2020-07-21T00:59:08.710Z</updated>
+  <updated>2020-07-23T16:31:24.057Z</updated>
   <id>https://maserhe.top/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vacode Markdown 样式自定义</title>
+    <link href="https://maserhe.top/2020/07/24/vscode-markdown/"/>
+    <id>https://maserhe.top/2020/07/24/vscode-markdown/</id>
+    <published>2020-07-24T03:41:03.000Z</published>
+    <updated>2020-07-23T16:31:24.057Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;vacode-Markdown-样式自定义&quot;&gt;&lt;a href=&quot;#vacode-Markdown-样式自定义&quot; class=&quot;headerlink&quot; title=&quot;vacode Markdown 样式自定义&quot;&gt;&lt;/a&gt;vacode Markdown
+        
+      
+    
+    </summary>
+    
+      <category term="软件安装与配置" scheme="https://maserhe.top/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="Markdown" scheme="https://maserhe.top/tags/Markdown/"/>
+    
+      <category term="vscode" scheme="https://maserhe.top/tags/vscode/"/>
+    
+      <category term="css" scheme="https://maserhe.top/tags/css/"/>
+    
+  </entry>
   
   <entry>
     <title>DTOJ1984 花园</title>
@@ -510,26 +540,6 @@
       <category term="DTOJ" scheme="https://maserhe.top/tags/DTOJ/"/>
     
       <category term="题解" scheme="https://maserhe.top/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>矢量（向量）</title>
-    <link href="https://maserhe.top/2020/06/25/shi-liang-xiang-liang/"/>
-    <id>https://maserhe.top/2020/06/25/shi-liang-xiang-liang/</id>
-    <published>2020-06-25T03:36:19.000Z</published>
-    <updated>2020-06-25T15:07:05.017Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;1、矢量的定义&quot;&gt;&lt;a href=&quot;#1、矢量的定义&quot; class=&quot;headerlink&quot; title=&quot;1、矢量的定义&quot;&gt;&lt;/a&gt;1、矢量的定义&lt;/h2&gt;&lt;p&gt;矢量是一种既有大小又有方向的量，又称为向量。在计算机中，矢量图可以无限放大永不变形 &lt;del&gt;（反正我没看懂）&lt;/del&gt;。——百度百科&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="数学" scheme="https://maserhe.top/categories/%E6%95%B0%E5%AD%A6/"/>
-    
-    
-      <category term="几何" scheme="https://maserhe.top/tags/%E5%87%A0%E4%BD%95/"/>
     
   </entry>
   
