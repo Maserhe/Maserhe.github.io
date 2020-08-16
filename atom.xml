@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://maserhe.top/"/>
-  <updated>2020-08-14T13:39:53.518Z</updated>
+  <updated>2020-08-16T23:23:11.093Z</updated>
   <id>https://maserhe.top/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>制作热点机 (WIFI)</title>
+    <link href="https://maserhe.top/2020/08/17/zhi-zuo-mian-liu-re-dian-ji/"/>
+    <id>https://maserhe.top/2020/08/17/zhi-zuo-mian-liu-re-dian-ji/</id>
+    <published>2020-08-16T21:13:06.000Z</published>
+    <updated>2020-08-16T23:23:11.093Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;制作热点机-WIFI&quot;&gt;&lt;a href=&quot;#制作热点机-WIFI&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="免流" scheme="https://maserhe.top/categories/%E5%85%8D%E6%B5%81/"/>
+    
+    
+      <category term="root" scheme="https://maserhe.top/tags/root/"/>
+    
+      <category term="bl锁" scheme="https://maserhe.top/tags/bl%E9%94%81/"/>
+    
+      <category term="tiny" scheme="https://maserhe.top/tags/tiny/"/>
+    
+  </entry>
   
   <entry>
     <title>无向图的最小环问题</title>
@@ -515,36 +545,6 @@
       <category term="LOJ" scheme="https://maserhe.top/tags/LOJ/"/>
     
       <category term="CEOI" scheme="https://maserhe.top/tags/CEOI/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷P3258 [JLOI2014]松鼠的新家</title>
-    <link href="https://maserhe.top/2020/07/03/luo-gu-p3258-bzoj3631-dtoj2250-jloi2014-song-shu-de-xin-jia/"/>
-    <id>https://maserhe.top/2020/07/03/luo-gu-p3258-bzoj3631-dtoj2250-jloi2014-song-shu-de-xin-jia/</id>
-    <published>2020-07-03T10:32:10.000Z</published>
-    <updated>2020-07-03T16:31:03.294Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;
-    
-    </summary>
-    
-      <category term="信息竞赛" scheme="https://maserhe.top/categories/%E4%BF%A1%E6%81%AF%E7%AB%9E%E8%B5%9B/"/>
-    
-    
-      <category term="DTOJ" scheme="https://maserhe.top/tags/DTOJ/"/>
-    
-      <category term="BZOJ" scheme="https://maserhe.top/tags/BZOJ/"/>
-    
-      <category term="题解" scheme="https://maserhe.top/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="图论" scheme="https://maserhe.top/tags/%E5%9B%BE%E8%AE%BA/"/>
-    
-      <category term="LCA" scheme="https://maserhe.top/tags/LCA/"/>
-    
-      <category term="洛谷" scheme="https://maserhe.top/tags/%E6%B4%9B%E8%B0%B7/"/>
     
   </entry>
   
