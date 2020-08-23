@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://maserhe.top/"/>
-  <updated>2020-08-17T12:56:41.927Z</updated>
+  <updated>2020-08-23T15:21:48.718Z</updated>
   <id>https://maserhe.top/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>制作Ubuntu口袋系统(一)</title>
+    <link href="https://maserhe.top/2020/08/23/ubuntu/"/>
+    <id>https://maserhe.top/2020/08/23/ubuntu/</id>
+    <published>2020-08-23T09:33:00.000Z</published>
+    <updated>2020-08-23T15:21:48.718Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;制作Ubuntu口袋系统-一-（数据可以保存）&quot;&gt;&lt;a href=&quot;#制作Ubuntu口袋系统-一-（数据可以保存）&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="软件安装与配置" scheme="https://maserhe.top/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="Linux" scheme="https://maserhe.top/tags/Linux/"/>
+    
+      <category term="Ubuntu" scheme="https://maserhe.top/tags/Ubuntu/"/>
+    
+  </entry>
   
   <entry>
     <title>制作热点机 (WIFI)(一)</title>
@@ -401,34 +429,6 @@
       <category term="图论" scheme="https://maserhe.top/tags/%E5%9B%BE%E8%AE%BA/"/>
     
       <category term="网络流" scheme="https://maserhe.top/tags/%E7%BD%91%E7%BB%9C%E6%B5%81/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>制作Ubuntu口袋系统(一)</title>
-    <link href="https://maserhe.top/2020/07/13/ubuntu/"/>
-    <id>https://maserhe.top/2020/07/13/ubuntu/</id>
-    <published>2020-07-13T09:33:00.000Z</published>
-    <updated>2020-08-23T15:15:35.821Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;制作Ubuntu口袋系统-一-（数据可以保存）&quot;&gt;&lt;a href=&quot;#制作Ubuntu口袋系统-一-（数据可以保存）&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="软件安装与配置" scheme="https://maserhe.top/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
-    
-    
-      <category term="Linux" scheme="https://maserhe.top/tags/Linux/"/>
-    
-      <category term="Ubuntu" scheme="https://maserhe.top/tags/Ubuntu/"/>
     
   </entry>
   
