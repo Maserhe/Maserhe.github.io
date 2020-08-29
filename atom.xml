@@ -45,6 +45,34 @@
   </entry>
   
   <entry>
+    <title>制作Ubuntu口袋系统(二)</title>
+    <link href="https://maserhe.top/2020/08/23/ubuntu2/"/>
+    <id>https://maserhe.top/2020/08/23/ubuntu2/</id>
+    <published>2020-08-23T09:33:00.000Z</published>
+    <updated>2020-08-29T13:04:33.819Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;前提&quot;&gt;&lt;a href=&quot;#前提&quot; class=&quot;headerlink&quot; title=&quot;前提&quot;&gt;&lt;/a&gt;前提&lt;/h1&gt;&lt;p&gt;已经将linux系统装进U盘了。什么？还没弄好，看第一片篇文章。&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="软件安装与配置" scheme="https://maserhe.top/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="Linux" scheme="https://maserhe.top/tags/Linux/"/>
+    
+      <category term="Ubuntu" scheme="https://maserhe.top/tags/Ubuntu/"/>
+    
+  </entry>
+  
+  <entry>
     <title>制作热点机 (WIFI)(一)</title>
     <link href="https://maserhe.top/2020/08/17/zhi-zuo-mian-liu-re-dian-ji-1/"/>
     <id>https://maserhe.top/2020/08/17/zhi-zuo-mian-liu-re-dian-ji-1/</id>
@@ -527,30 +555,6 @@
       <category term="图论" scheme="https://maserhe.top/tags/%E5%9B%BE%E8%AE%BA/"/>
     
       <category term="二分图染色" scheme="https://maserhe.top/tags/%E4%BA%8C%E5%88%86%E5%9B%BE%E6%9F%93%E8%89%B2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>DTOJ2450 梦灵苏魅</title>
-    <link href="https://maserhe.top/2020/07/05/dtoj2450-meng-ling-su-mei/"/>
-    <id>https://maserhe.top/2020/07/05/dtoj2450-meng-ling-su-mei/</id>
-    <published>2020-07-05T09:16:02.000Z</published>
-    <updated>2020-07-05T12:19:20.110Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;
-    
-    </summary>
-    
-      <category term="信息竞赛" scheme="https://maserhe.top/categories/%E4%BF%A1%E6%81%AF%E7%AB%9E%E8%B5%9B/"/>
-    
-    
-      <category term="DTOJ" scheme="https://maserhe.top/tags/DTOJ/"/>
-    
-      <category term="题解" scheme="https://maserhe.top/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="图论" scheme="https://maserhe.top/tags/%E5%9B%BE%E8%AE%BA/"/>
     
   </entry>
   

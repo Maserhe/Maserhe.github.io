@@ -31,6 +31,33 @@
     
     
     <entry>
+      <title>制作Ubuntu口袋系统(二)</title>
+      <link href="/2020/08/23/ubuntu2/"/>
+      <url>/2020/08/23/ubuntu2/</url>
+      
+        <content type="html"><![CDATA[<h1 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h1><p>已经将linux系统装进U盘了。什么？还没弄好，看第一片篇文章。<a href="https://maserhe.top/2020/08/23/ubuntu/">传送门</a></p><h1 id="进去bios"><a href="#进去bios" class="headerlink" title="进去bios"></a>进去bios</h1><ul><li>电脑关机</li><li>我的是 <code>F2</code>进入bios模式。</li></ul><p><strong>注意: 刚按下开机键就不停的按压 F2键，慢一点就会由 UEFI 引导进入windows系统</strong></p><ul><li>上 下 左 右 和 enter 键可以控制。</li><li>先通过左右按键 ， 移动到 <code>Boot</code>设置<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/123.jpg" alt="123"></li><li>按上下键 移动到 mode 选项，将 UEFI 改变成 Legacy</li></ul><p><strong>按下enter可以进行更改，上下键进行选择。最后按下enter键确认</strong><br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/45654.jpg" alt="45654"></p><ul><li>退出<br>顶层状态栏移动到 <code>exit</code>就行了<br>这里直接连按两下就进入 u盘启动了</li></ul><p><strong>刚进入时光标默认选择的就是 <code>Exit saving changes</code></strong><br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/IMG_20200713_234805.jpg" alt="IMG_20200713_234805"><br><strong>按第一下enter键</strong><br>进入 <code>Exit saving changes</code>选项<br><strong>按第二下enter键</strong><br>弹出提示框，保存就行了。<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/IMG_20200713_234917.jpg" alt="IMG_20200713_234917"></p><ul><li>进入Ubuntu<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/IMG_20200713_234625.jpg" alt="IMG_20200713_234625"></li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件安装与配置 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> Ubuntu </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>制作热点机 (WIFI)(一)</title>
       <link href="/2020/08/17/zhi-zuo-mian-liu-re-dian-ji-1/"/>
       <url>/2020/08/17/zhi-zuo-mian-liu-re-dian-ji-1/</url>
@@ -810,9 +837,9 @@
             
             <tag> DP </tag>
             
-            <tag> 洛谷 </tag>
-            
             <tag> 几何 </tag>
+            
+            <tag> 洛谷 </tag>
             
             <tag> 斜率优化DP </tag>
             
@@ -1094,9 +1121,9 @@
             
             <tag> 题解 </tag>
             
-            <tag> 图论 </tag>
-            
             <tag> DP </tag>
+            
+            <tag> 图论 </tag>
             
             <tag> 概率DP </tag>
             
@@ -1309,11 +1336,11 @@
             
             <tag> 题解 </tag>
             
-            <tag> 图论 </tag>
-            
             <tag> DP </tag>
             
             <tag> 状压DP </tag>
+            
+            <tag> 图论 </tag>
             
             <tag> 最短路 </tag>
             
