@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>i3wm壁纸自动切换</title>
+      <link href="/2020/08/31/manjaroi3/"/>
+      <url>/2020/08/31/manjaroi3/</url>
+      
+        <content type="html"><![CDATA[<h1 id="安装feh"><a href="#安装feh" class="headerlink" title="安装feh"></a>安装feh</h1><p>通过feh来进行控制壁纸的切换。</p><pre><code># ArchLinux &amp;&amp; manjaro 安装sudo pacman -S feh# Ubuntu 安装sudo apt-get install feh</code></pre><h1 id="准备壁纸"><a href="#准备壁纸" class="headerlink" title="准备壁纸"></a>准备壁纸</h1><pre><code># 我的壁纸存放在 ~/图片/壁纸# 设置随机图片 作为壁纸# 终端下也可以执行设置随机壁纸feh --bg-fill -no-fehbg -randomize ~/图片/壁纸</code></pre><h1 id="准备脚本-wallpic-sh"><a href="#准备脚本-wallpic-sh" class="headerlink" title="准备脚本 wallpic.sh"></a>准备脚本 wallpic.sh</h1><pre><code>#!bin/sh    while true; do        feh --bg-fill -no-fehbg -randomize ~/图片/壁纸        #设置 15秒切换一次        sleeep 15done</code></pre><h1 id="设置权限"><a href="#设置权限" class="headerlink" title="设置权限"></a>设置权限</h1><pre><code>chmod +x wallpic.sh</code></pre><h1 id="放置脚本，自启动"><a href="#放置脚本，自启动" class="headerlink" title="放置脚本，自启动"></a>放置脚本，自启动</h1><pre><code># 使用vim等 打开 ~/.config/i3/config # 添加一条 指令# --no-startup-id 是 当脚本不支持启动时，防止鼠标长时间空转。exec_always --no-startup-id  ~/图片/壁纸/wallpic.sh</code></pre><p><strong>如果想要透明渲染</strong></p><h1 id="透明渲染"><a href="#透明渲染" class="headerlink" title="透明渲染"></a>透明渲染</h1><pre><code># Archlinux &amp;&amp; manjaro 安装 comptonsudo pacman -S compton# Ubuntu 我记得Ubuntu有comptonsudo apt-get -install compton</code></pre><h1 id="更改透明度"><a href="#更改透明度" class="headerlink" title="更改透明度"></a>更改透明度</h1><ul><li>具体看你用什么shell 吧</li><li>我用的是 alacritty</li><li>我的配置 在 ~/.config/alacritty/alacritty.yml</li></ul><h1 id="开机启动comton"><a href="#开机启动comton" class="headerlink" title="开机启动comton"></a>开机启动comton</h1><pre><code># 使用vim等 打开 ~/.config/i3/config # 添加一条 指令# --no-startup-id 是 当脚本不支持启动时，防止鼠标长时间空转。exec_always --no-startup-id  compton</code></pre><h1 id="重启"><a href="#重启" class="headerlink" title="重启"></a>重启</h1><pre><code># 终端下输入， 看看效果吧。reboot</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件安装与配置 </category>
+          
+          <category> manjaro </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> Manjaro </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>制作Ubuntu口袋系统(一)</title>
       <link href="/2020/08/23/ubuntu/"/>
       <url>/2020/08/23/ubuntu/</url>
