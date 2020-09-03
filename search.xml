@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>解决linux时间与windows时间不同步</title>
+      <link href="/2020/09/02/linux-shi-jian-bu-tong-bu/"/>
+      <url>/2020/09/02/linux-shi-jian-bu-tong-bu/</url>
+      
+        <content type="html"><![CDATA[<h1 id="解决linux时间与windows时间不同步"><a href="#解决linux时间与windows时间不同步" class="headerlink" title="解决linux时间与windows时间不同步"></a>解决linux时间与windows时间不同步</h1><h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>我的是 U盘系统,和双系统 系统引导方式不一样,不过应该都有时间不同步的问题.  硬件时钟 hwclock ,即使系统关机,这个时钟是由电池直接供电.也不会停止计时.</p><p>我的linux 时间比 实际时间快了八个小时.不知道是不是 北京时间是 东8区的原因.</p><p>UTC（Universal Time Coordinated）：协调世界时<br>GMT（Greenwich Mean Time）：格林威治时间<br>本地时间（local time）：全球二十四个时区，以GMT或UTC为基准进行调整。例如，北京为东八区，则北京时间为GMT+8或UTC+8</p><p>应该是 linux 系统在我本地的时间 基础上加了8 个小时.把系统硬件时间默认为是 UTC .然后加上八个小时.感觉这样不太对,我也不太懂,算了.</p><h2 id="指令-hwclock-用法"><a href="#指令-hwclock-用法" class="headerlink" title="指令 hwclock 用法"></a>指令 hwclock 用法</h2><pre><code># hwclock 用法： hwclock [function] [option...]Time clocks utility.功能： -r, --show           显示 RTC 时间     --get            display drift corrected RTC time     --set            set the RTC according to --date -s, --hctosys        set the system time from the RTC -w, --systohc        set the RTC from the system time     --systz          send timescale configurations to the kernel -a, --adjust         adjust the RTC to account for systematic drift     --predict        predict the drifted RTC time according to --date选项： -u, --utc            the RTC timescale is UTC -l, --localtime      the RTC timescale is Local -f, --rtc &lt;file&gt;     use an alternate file to /dev/rtc0     --directisa      use the ISA bus instead of /dev/rtc0 access     --date &lt;时间戳&gt;  指定用于 --set 和 --predict 的日期/时间输入     --delay &lt;sec&gt;    delay used when set new RTC time     --update-drift   update the RTC drift factor     --noadjfile      不使用 /etc/adjtime     --adjfile &lt;file&gt; use an alternate file to /etc/adjtime     --test           测试运行；隐含启用 --verbose -v, --verbose        显示更多细节 -h, --help           显示此帮助 -V, --version        显示版本</code></pre><h2 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h2><p>可以看到 -l 显示的是 Local 本地时间.  -u 显示的是 UTC 时间. (linux 默认的时间但是我的不是，我的是CST 时间)</p><p><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20200903062519.png" alt="深度截图_选择区域_20200903062519"></p><p>可以看到 UTC 时间 比 本地 时间 快了 八个小时. 可以看到linux系统使用的是 UTC 时间.(左边大数字)</p><p>找到问题的根源,问题就变得容易解决了.</p><p>看了别人的帖子,有人是把 UTC 时间禁用.同步网络时间的.</p><p>还是这个简单.直接设置</p><p>可以用  <code>timedatectl</code>指令查看 哪个时间是正确.显然我的 Local time 是 CST 时间.需哟修改 吧Localtime 修改成 UTC 时间.</p><p><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20200902230818.png" alt="深度截图_选择区域_20200902230818"><br><strong>既然知道要修改什么了</strong></p><p>那就一招制服</p><pre><code>sudo  ln -sf /usr/share/zoneinfo/UTC /etc/localtime</code></pre><p><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/5234654564561455.png" alt="5234654564561455"></p><p>问题解决。自己好像把我自己给解释迷糊了。算了，问题解决就行了。</p><p><strong>喜欢的话，给博主赏一杯冰阔乐吧</strong></p><table>  <tbody><tr>    <td><img width="100" src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/wechat.png"></td>      <td><img width="100" src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/zan.png"></td>        <td><img width="100" src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/alipay.jpg"></td>     </tr></tbody></table><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件安装与配置 </category>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> Github </tag>
+            
+            <tag> 博客 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>i3wm壁纸自动切换</title>
       <link href="/2020/08/31/manjaroi3/"/>
       <url>/2020/08/31/manjaroi3/</url>
@@ -33,11 +64,11 @@
     
     
     <entry>
-      <title>制作Ubuntu口袋系统(二)</title>
-      <link href="/2020/08/23/ubuntu2/"/>
-      <url>/2020/08/23/ubuntu2/</url>
+      <title>制作Ubuntu口袋系统(一)</title>
+      <link href="/2020/08/23/ubuntu/"/>
+      <url>/2020/08/23/ubuntu/</url>
       
-        <content type="html"><![CDATA[<h1 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h1><p>已经将linux系统装进U盘了。什么？还没弄好，看第一片篇文章。<a href="https://maserhe.top/2020/08/23/ubuntu/">传送门</a></p><h1 id="进去bios"><a href="#进去bios" class="headerlink" title="进去bios"></a>进去bios</h1><ul><li>电脑关机</li><li>我的是 <code>F2</code>进入bios模式。</li></ul><p><strong>注意: 刚按下开机键就不停的按压 F2键，慢一点就会由 UEFI 引导进入windows系统</strong></p><ul><li>上 下 左 右 和 enter 键可以控制。</li><li>先通过左右按键 ， 移动到 <code>Boot</code>设置<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/123.jpg" alt="123"></li><li>按上下键 移动到 mode 选项，将 UEFI 改变成 Legacy</li></ul><p><strong>按下enter可以进行更改，上下键进行选择。最后按下enter键确认</strong><br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/45654.jpg" alt="45654"></p><ul><li>退出<br>顶层状态栏移动到 <code>exit</code>就行了<br>这里直接连按两下就进入 u盘启动了</li></ul><p><strong>刚进入时光标默认选择的就是 <code>Exit saving changes</code></strong><br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/IMG_20200713_234805.jpg" alt="IMG_20200713_234805"><br><strong>按第一下enter键</strong><br>进入 <code>Exit saving changes</code>选项<br><strong>按第二下enter键</strong><br>弹出提示框，保存就行了。<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/IMG_20200713_234917.jpg" alt="IMG_20200713_234917"></p><ul><li>进入Ubuntu<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/IMG_20200713_234625.jpg" alt="IMG_20200713_234625"></li></ul><p><strong>喜欢的话，给博主赏一杯冰阔乐吧~</strong></p><table>  <tbody><tr>    <td><img width="100" src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/wechat.png"></td>      <td><img width="100" src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/zan.png"></td>        <td><img width="100" src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/alipay.jpg"></td>     </tr></tbody></table><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+        <content type="html"><![CDATA[<h1 id="制作Ubuntu口袋系统-一-（数据可以保存）"><a href="#制作Ubuntu口袋系统-一-（数据可以保存）" class="headerlink" title="制作Ubuntu口袋系统(一)（数据可以保存）"></a>制作Ubuntu口袋系统(一)（数据可以保存）</h1><h2 id="前提条件"><a href="#前提条件" class="headerlink" title="前提条件"></a>前提条件</h2><p><strong>首先说明</strong><br>    如果你手中的U盘比较烂的话，最好还是别使用这种口袋系统，能把你卡到自闭<span class="github-emoji" style="color: transparent;background:no-repeat url(https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8) center/contain" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8">😄</span>,推荐固态U盘，使用电脑USB3.0的那个插孔（一般里面是蓝色的）。</p><ul><li>如何判断U盘好坏呢？<blockquote><p>U盘主要看写入速度，但是你看各大卖U盘的商家，完全不提写入速度，他们宣传的速度全是读取速度，真是太那啥了。一般市面上常见U盘的写入速度大概10-20Mb左右，最简单的使用文件复制粘贴到U盘中自己计算一下速度。可以选择购买某宝DIY的U盘的商家（概率翻车，看脸，别想着贪小便宜），1g大约合计1元左右或者高点就行，如果价格太低买到扩容U盘，到时候交智商税别还怪我。有没有不翻车车的呢，自己去某宝某东自己搜索固态U盘呗，闪迪的好像又几款不错（不是打广告）。你直接问客服写入速度多少，自己就能判别U盘好坏。我感觉写入速度100Mb，要有4K对齐哦（毕竟又不是只读取大文件），以上应该就会很舒服的使用U盘来装Ubuntu系统了。当然U盘好坏还要涉及tlc,slc这些芯片之类的，想了解的话自己百度去，这里不说了。U盘厂家是按照1000Mb算1G的，所以买回来的U盘容量都会比实际低一些。乘以0.93就是大概实际容量，例如买的32G U盘实际容量大概29.76G左右，如果比这个高很多，嘿嘿，可能买到扩容盘了（卖扩容盘的商家应该没脑子）。我也没怎么深入去了解U盘，以上是仅是我愚见。有错请指明，勿喷<span class="github-emoji" style="color: transparent;background:no-repeat url(https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8) center/contain" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8">😄</span>。</p></blockquote></li><li>继续再谈谈U盘吧<blockquote><p>如果你和我一样买了固态U盘，可以下载AS SSD来测试一下U盘性能，自己心里也有谱。如果你买的U盘比较大，那么只装个Ubuntu那就太浪费了，如果是这种情况的话推荐使用Disk Genius(比较流氓的软件)进行分盘，如果U盘没有4K对齐的话，也可以使用这个流氓软件进行4K对齐，只需要分几G可以装Ubuntu系统就行，剩下的空间可以继续当一个U盘来使用。真的超级方便，既能当U盘，还装一个口袋系统（数据是可以保存的！！！）随插随用。</p></blockquote><h2 id="下载文件"><a href="#下载文件" class="headerlink" title="下载文件"></a>下载文件</h2></li></ul><ul><li>下载ubuntu镜像文件<br><a href="" https:="" ubuntu.com="" download="" desktop""="">传送门</a></li><li>下载virtualbox<br><a href="" https:="" www.virtualbox.org="" wiki="" downloads""="">传送门</a></li><li>virtual 最好装上 扩展插件VirtualBox Extension Pack<br><a href="" https:="" download.virtualbox.org="" virtualbox="" 6.1.12="" oracle_vm_virtualbox_extension_pack-6.1.12.vbox-extpack""="">传送门</a></li></ul><p><strong>下载情况如下</strong><br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20200823213013.png" alt="20200823213013"></p><h2 id="安装virtualbox"><a href="#安装virtualbox" class="headerlink" title="安装virtualbox"></a>安装virtualbox</h2><p>没啥说的</p><h2 id="安装扩展插件"><a href="#安装扩展插件" class="headerlink" title="安装扩展插件"></a>安装扩展插件</h2><ul><li>按下 <code>Ctrl + G</code> 打开全局设定</li><li>点击扩展<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20200823213838.png" alt="20200823213838"></li><li>点击 + 号</li></ul><p><strong>找到插件目录</strong><br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20200823213945.png" alt="20200823213945"></p><h2 id="创建虚拟机"><a href="#创建虚拟机" class="headerlink" title="创建虚拟机"></a>创建虚拟机</h2><ul><li>点击新建</li><li>选择系统 </li><li>设置内存大小<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20200823215534.png" alt="20200823215534"><h2 id="配置镜像文件"><a href="#配置镜像文件" class="headerlink" title="配置镜像文件"></a>配置镜像文件</h2></li><li>点击 设置</li><li>点击 存储</li><li>点击 没有盘片<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20200823215655.png" alt="20200823215655"></li><li>点击 属性 里面的 小光盘 图标<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/4554.png" alt="4554"></li><li>删除 无效盘片<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20200823220222.png" alt="20200823220222"><h2 id="配置-usb"><a href="#配置-usb" class="headerlink" title="配置 usb"></a>配置 usb</h2></li></ul><p><strong>没有安装 扩展插件？</strong> 快回到上面传送门 安装装<strong>扩展插件</strong></p><ul><li>选择usb3.0<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20200823220435.png" alt="20200823220435"></li><li>点击右侧加号</li><li>找到自己的 u盘</li><li>添加自己的 U盘<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20200823220550.png" alt="20200823220550"></li><li>安装ubuntu<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20200823221051.png" alt="20200823221051"></li><li>进入安装界面<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/45.png" alt="45"></li><li>点击 <code>install Ubuntu</code></li><li><code>something else</code><br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20200823221851.png" alt="20200823221851"></li><li><strong>重点</strong> Dedvice boot loader installion 选择自己的 u 盘分区<br>如果你这个u盘就是自己单独一个 ，没有进行分区就算了。<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20200823222142.png" alt="20200823222142"></li><li>选择分区 设置成 ext4 </li><li>Mount point 设置 /</li></ul><p><strong>说明</strong> 我的是两部分 第一部分我还要当u 盘使用，第二部分装 ubuntu。所以我这样选择。</p><p><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20200823222625.png" alt="20200823222625"></p><ul><li><p>选择上海<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20200823222859.png" alt="20200823222859"></p></li><li><p>设置账户和密码<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20200823223043.png" alt="20200823223043"></p></li><li><p>漫长的等待<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/456.png" alt="456"></p></li></ul><p><strong>喜欢的话，给博主赏一杯冰阔乐吧~</strong></p><table>  <tbody><tr>    <td><img width="100" src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/wechat.png"></td>      <td><img width="100" src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/zan.png"></td>        <td><img width="100" src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/alipay.jpg"></td>     </tr></tbody></table><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
       <categories>
@@ -60,11 +91,11 @@
     
     
     <entry>
-      <title>制作Ubuntu口袋系统(一)</title>
-      <link href="/2020/08/23/ubuntu/"/>
-      <url>/2020/08/23/ubuntu/</url>
+      <title>制作Ubuntu口袋系统(二)</title>
+      <link href="/2020/08/23/ubuntu2/"/>
+      <url>/2020/08/23/ubuntu2/</url>
       
-        <content type="html"><![CDATA[<h1 id="制作Ubuntu口袋系统-一-（数据可以保存）"><a href="#制作Ubuntu口袋系统-一-（数据可以保存）" class="headerlink" title="制作Ubuntu口袋系统(一)（数据可以保存）"></a>制作Ubuntu口袋系统(一)（数据可以保存）</h1><h2 id="前提条件"><a href="#前提条件" class="headerlink" title="前提条件"></a>前提条件</h2><p><strong>首先说明</strong><br>    如果你手中的U盘比较烂的话，最好还是别使用这种口袋系统，能把你卡到自闭<span class="github-emoji" style="color: transparent;background:no-repeat url(https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8) center/contain" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8">😄</span>,推荐固态U盘，使用电脑USB3.0的那个插孔（一般里面是蓝色的）。</p><ul><li>如何判断U盘好坏呢？<blockquote><p>U盘主要看写入速度，但是你看各大卖U盘的商家，完全不提写入速度，他们宣传的速度全是读取速度，真是太那啥了。一般市面上常见U盘的写入速度大概10-20Mb左右，最简单的使用文件复制粘贴到U盘中自己计算一下速度。可以选择购买某宝DIY的U盘的商家（概率翻车，看脸，别想着贪小便宜），1g大约合计1元左右或者高点就行，如果价格太低买到扩容U盘，到时候交智商税别还怪我。有没有不翻车车的呢，自己去某宝某东自己搜索固态U盘呗，闪迪的好像又几款不错（不是打广告）。你直接问客服写入速度多少，自己就能判别U盘好坏。我感觉写入速度100Mb，要有4K对齐哦（毕竟又不是只读取大文件），以上应该就会很舒服的使用U盘来装Ubuntu系统了。当然U盘好坏还要涉及tlc,slc这些芯片之类的，想了解的话自己百度去，这里不说了。U盘厂家是按照1000Mb算1G的，所以买回来的U盘容量都会比实际低一些。乘以0.93就是大概实际容量，例如买的32G U盘实际容量大概29.76G左右，如果比这个高很多，嘿嘿，可能买到扩容盘了（卖扩容盘的商家应该没脑子）。我也没怎么深入去了解U盘，以上是仅是我愚见。有错请指明，勿喷<span class="github-emoji" style="color: transparent;background:no-repeat url(https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8) center/contain" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8">😄</span>。</p></blockquote></li><li>继续再谈谈U盘吧<blockquote><p>如果你和我一样买了固态U盘，可以下载AS SSD来测试一下U盘性能，自己心里也有谱。如果你买的U盘比较大，那么只装个Ubuntu那就太浪费了，如果是这种情况的话推荐使用Disk Genius(比较流氓的软件)进行分盘，如果U盘没有4K对齐的话，也可以使用这个流氓软件进行4K对齐，只需要分几G可以装Ubuntu系统就行，剩下的空间可以继续当一个U盘来使用。真的超级方便，既能当U盘，还装一个口袋系统（数据是可以保存的！！！）随插随用。</p></blockquote><h2 id="下载文件"><a href="#下载文件" class="headerlink" title="下载文件"></a>下载文件</h2></li></ul><ul><li>下载ubuntu镜像文件<br><a href="" https:="" ubuntu.com="" download="" desktop""="">传送门</a></li><li>下载virtualbox<br><a href="" https:="" www.virtualbox.org="" wiki="" downloads""="">传送门</a></li><li>virtual 最好装上 扩展插件VirtualBox Extension Pack<br><a href="" https:="" download.virtualbox.org="" virtualbox="" 6.1.12="" oracle_vm_virtualbox_extension_pack-6.1.12.vbox-extpack""="">传送门</a></li></ul><p><strong>下载情况如下</strong><br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20200823213013.png" alt="20200823213013"></p><h2 id="安装virtualbox"><a href="#安装virtualbox" class="headerlink" title="安装virtualbox"></a>安装virtualbox</h2><p>没啥说的</p><h2 id="安装扩展插件"><a href="#安装扩展插件" class="headerlink" title="安装扩展插件"></a>安装扩展插件</h2><ul><li>按下 <code>Ctrl + G</code> 打开全局设定</li><li>点击扩展<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20200823213838.png" alt="20200823213838"></li><li>点击 + 号</li></ul><p><strong>找到插件目录</strong><br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20200823213945.png" alt="20200823213945"></p><h2 id="创建虚拟机"><a href="#创建虚拟机" class="headerlink" title="创建虚拟机"></a>创建虚拟机</h2><ul><li>点击新建</li><li>选择系统 </li><li>设置内存大小<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20200823215534.png" alt="20200823215534"><h2 id="配置镜像文件"><a href="#配置镜像文件" class="headerlink" title="配置镜像文件"></a>配置镜像文件</h2></li><li>点击 设置</li><li>点击 存储</li><li>点击 没有盘片<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20200823215655.png" alt="20200823215655"></li><li>点击 属性 里面的 小光盘 图标<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/4554.png" alt="4554"></li><li>删除 无效盘片<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20200823220222.png" alt="20200823220222"><h2 id="配置-usb"><a href="#配置-usb" class="headerlink" title="配置 usb"></a>配置 usb</h2></li></ul><p><strong>没有安装 扩展插件？</strong> 快回到上面传送门 安装装<strong>扩展插件</strong></p><ul><li>选择usb3.0<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20200823220435.png" alt="20200823220435"></li><li>点击右侧加号</li><li>找到自己的 u盘</li><li>添加自己的 U盘<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20200823220550.png" alt="20200823220550"></li><li>安装ubuntu<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20200823221051.png" alt="20200823221051"></li><li>进入安装界面<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/45.png" alt="45"></li><li>点击 <code>install Ubuntu</code></li><li><code>something else</code><br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20200823221851.png" alt="20200823221851"></li><li><strong>重点</strong> Dedvice boot loader installion 选择自己的 u 盘分区<br>如果你这个u盘就是自己单独一个 ，没有进行分区就算了。<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20200823222142.png" alt="20200823222142"></li><li>选择分区 设置成 ext4 </li><li>Mount point 设置 /</li></ul><p><strong>说明</strong> 我的是两部分 第一部分我还要当u 盘使用，第二部分装 ubuntu。所以我这样选择。</p><p><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20200823222625.png" alt="20200823222625"></p><ul><li><p>选择上海<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20200823222859.png" alt="20200823222859"></p></li><li><p>设置账户和密码<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20200823223043.png" alt="20200823223043"></p></li><li><p>漫长的等待<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/456.png" alt="456"></p></li></ul><p><strong>喜欢的话，给博主赏一杯冰阔乐吧~</strong></p><table>  <tbody><tr>    <td><img width="100" src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/wechat.png"></td>      <td><img width="100" src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/zan.png"></td>        <td><img width="100" src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/alipay.jpg"></td>     </tr></tbody></table><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+        <content type="html"><![CDATA[<h1 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h1><p>已经将linux系统装进U盘了。什么？还没弄好，看第一片篇文章。<a href="https://maserhe.top/2020/08/23/ubuntu/">传送门</a></p><h1 id="进去bios"><a href="#进去bios" class="headerlink" title="进去bios"></a>进去bios</h1><ul><li>电脑关机</li><li>我的是 <code>F2</code>进入bios模式。</li></ul><p><strong>注意: 刚按下开机键就不停的按压 F2键，慢一点就会由 UEFI 引导进入windows系统</strong></p><ul><li>上 下 左 右 和 enter 键可以控制。</li><li>先通过左右按键 ， 移动到 <code>Boot</code>设置<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/123.jpg" alt="123"></li><li>按上下键 移动到 mode 选项，将 UEFI 改变成 Legacy</li></ul><p><strong>按下enter可以进行更改，上下键进行选择。最后按下enter键确认</strong><br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/45654.jpg" alt="45654"></p><ul><li>退出<br>顶层状态栏移动到 <code>exit</code>就行了<br>这里直接连按两下就进入 u盘启动了</li></ul><p><strong>刚进入时光标默认选择的就是 <code>Exit saving changes</code></strong><br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/IMG_20200713_234805.jpg" alt="IMG_20200713_234805"><br><strong>按第一下enter键</strong><br>进入 <code>Exit saving changes</code>选项<br><strong>按第二下enter键</strong><br>弹出提示框，保存就行了。<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/IMG_20200713_234917.jpg" alt="IMG_20200713_234917"></p><ul><li>进入Ubuntu<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/IMG_20200713_234625.jpg" alt="IMG_20200713_234625"></li></ul><p><strong>喜欢的话，给博主赏一杯冰阔乐吧~</strong></p><table>  <tbody><tr>    <td><img width="100" src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/wechat.png"></td>      <td><img width="100" src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/zan.png"></td>        <td><img width="100" src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/alipay.jpg"></td>     </tr></tbody></table><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
       <categories>
@@ -335,9 +366,9 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
+            
+            <tag> 题解 </tag>
             
             <tag> 数学 </tag>
             
@@ -366,9 +397,9 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
+            
+            <tag> 题解 </tag>
             
             <tag> 线段树 </tag>
             
@@ -430,11 +461,11 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
             
             <tag> BZOJ </tag>
+            
+            <tag> 题解 </tag>
             
         </tags>
       
@@ -459,9 +490,9 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
+            
+            <tag> 题解 </tag>
             
             <tag> 模拟 </tag>
             
@@ -488,9 +519,9 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
+            
+            <tag> 题解 </tag>
             
             <tag> 图论 </tag>
             
@@ -519,9 +550,9 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
+            
+            <tag> 题解 </tag>
             
         </tags>
       
@@ -546,9 +577,9 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
+            
+            <tag> 题解 </tag>
             
             <tag> 图论 </tag>
             
@@ -577,9 +608,9 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
+            
+            <tag> 题解 </tag>
             
             <tag> 分块 </tag>
             
@@ -606,9 +637,9 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
+            
+            <tag> 题解 </tag>
             
             <tag> 图论 </tag>
             
@@ -637,9 +668,9 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
+            
+            <tag> 题解 </tag>
             
             <tag> 图论 </tag>
             
@@ -666,9 +697,9 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
+            
+            <tag> 题解 </tag>
             
             <tag> 数论 </tag>
             
@@ -697,9 +728,9 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
+            
+            <tag> 题解 </tag>
             
             <tag> LOJ </tag>
             
@@ -728,11 +759,11 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
             
             <tag> BZOJ </tag>
+            
+            <tag> 题解 </tag>
             
             <tag> 图论 </tag>
             
@@ -794,9 +825,9 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
+            
+            <tag> 题解 </tag>
             
             <tag> 图论 </tag>
             
@@ -827,9 +858,9 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
+            
+            <tag> 题解 </tag>
             
             <tag> DP </tag>
             
@@ -860,9 +891,9 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
+            
+            <tag> 题解 </tag>
             
             <tag> DP </tag>
             
@@ -895,9 +926,9 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
+            
+            <tag> 题解 </tag>
             
             <tag> 树状数组 </tag>
             
@@ -924,9 +955,9 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
+            
+            <tag> 题解 </tag>
             
         </tags>
       
@@ -976,9 +1007,9 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
+            
+            <tag> 题解 </tag>
             
         </tags>
       
@@ -1003,9 +1034,9 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
+            
+            <tag> 题解 </tag>
             
             <tag> DP </tag>
             
@@ -1034,9 +1065,9 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
+            
+            <tag> 题解 </tag>
             
             <tag> 模拟 </tag>
             
@@ -1146,13 +1177,13 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
             
-            <tag> 图论 </tag>
+            <tag> 题解 </tag>
             
             <tag> DP </tag>
+            
+            <tag> 图论 </tag>
             
             <tag> 概率DP </tag>
             
@@ -1206,9 +1237,9 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
+            
+            <tag> 题解 </tag>
             
             <tag> 图论 </tag>
             
@@ -1299,9 +1330,9 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
+            
+            <tag> 题解 </tag>
             
             <tag> 组合 </tag>
             
@@ -1328,9 +1359,9 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
+            
+            <tag> 题解 </tag>
             
             <tag> 线段树 </tag>
             
@@ -1361,15 +1392,15 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
             
-            <tag> 图论 </tag>
+            <tag> 题解 </tag>
             
             <tag> DP </tag>
             
             <tag> 状压DP </tag>
+            
+            <tag> 图论 </tag>
             
             <tag> 最短路 </tag>
             
@@ -1396,9 +1427,9 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
+            
+            <tag> 题解 </tag>
             
             <tag> 组合 </tag>
             
@@ -1425,9 +1456,9 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> BZOJ </tag>
+            
+            <tag> 题解 </tag>
             
             <tag> 洛谷 </tag>
             
@@ -1458,9 +1489,9 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
+            
+            <tag> 题解 </tag>
             
             <tag> 线段树 </tag>
             
@@ -1545,9 +1576,9 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
+            
+            <tag> 题解 </tag>
             
             <tag> DP </tag>
             
@@ -1576,9 +1607,9 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
+            
+            <tag> 题解 </tag>
             
             <tag> DP </tag>
             
@@ -1607,9 +1638,9 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
+            
+            <tag> 题解 </tag>
             
         </tags>
       
@@ -1634,11 +1665,11 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
             
             <tag> BZOJ </tag>
+            
+            <tag> 题解 </tag>
             
             <tag> DP </tag>
             
@@ -1673,9 +1704,9 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
+            
+            <tag> 题解 </tag>
             
         </tags>
       
@@ -1700,9 +1731,9 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
+            
+            <tag> 题解 </tag>
             
         </tags>
       
@@ -1727,11 +1758,11 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
             
             <tag> BZOJ </tag>
+            
+            <tag> 题解 </tag>
             
             <tag> 线段树 </tag>
             
@@ -1758,9 +1789,9 @@
       
         <tags>
             
-            <tag> 题解 </tag>
-            
             <tag> DTOJ </tag>
+            
+            <tag> 题解 </tag>
             
             <tag> 线段树 </tag>
             
