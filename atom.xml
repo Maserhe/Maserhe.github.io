@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://maserhe.top/"/>
-  <updated>2020-09-03T14:13:48.784Z</updated>
+  <updated>2020-09-05T11:37:47.740Z</updated>
   <id>https://maserhe.top/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>我的腾讯图床问题了！！！</title>
+    <title>解决Git中文乱码</title>
+    <link href="https://maserhe.top/2020/09/05/git-zhong-wen-luan-ma/"/>
+    <id>https://maserhe.top/2020/09/05/git-zhong-wen-luan-ma/</id>
+    <published>2020-09-05T10:41:03.000Z</published>
+    <updated>2020-09-05T11:37:47.740Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;解决Git中文乱码&quot;&gt;&lt;a href=&quot;#解决Git中文乱码&quot; class=&quot;headerlink&quot; title=&quot;解决Git中文乱码&quot;&gt;&lt;/a&gt;解决Git中文乱码&lt;/h1&gt;&lt;h2 id=&quot;解决方式&quot;&gt;&lt;a href=&quot;#解决方式&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Git" scheme="https://maserhe.top/categories/Git/"/>
+    
+    
+      <category term="乱码" scheme="https://maserhe.top/tags/%E4%B9%B1%E7%A0%81/"/>
+    
+      <category term="编码" scheme="https://maserhe.top/tags/%E7%BC%96%E7%A0%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>腾讯图床出问题了！！！</title>
     <link href="https://maserhe.top/2020/09/04/tu-chuang-chu-wen-ti-liao/"/>
     <id>https://maserhe.top/2020/09/04/tu-chuang-chu-wen-ti-liao/</id>
     <published>2020-09-04T05:41:03.000Z</published>
-    <updated>2020-09-03T14:13:48.784Z</updated>
+    <updated>2020-09-05T11:38:21.585Z</updated>
     
     <summary type="html">
     
@@ -170,11 +198,11 @@
   </entry>
   
   <entry>
-    <title>制作热点机 (WIFI)(二)</title>
-    <link href="https://maserhe.top/2020/08/17/zhi-zuo-mian-liu-re-dian-ji-2/"/>
-    <id>https://maserhe.top/2020/08/17/zhi-zuo-mian-liu-re-dian-ji-2/</id>
+    <title>制作热点机 (WIFI)(一)</title>
+    <link href="https://maserhe.top/2020/08/17/zhi-zuo-mian-liu-re-dian-ji-1/"/>
+    <id>https://maserhe.top/2020/08/17/zhi-zuo-mian-liu-re-dian-ji-1/</id>
     <published>2020-08-16T21:13:06.000Z</published>
-    <updated>2020-09-04T02:43:07.343Z</updated>
+    <updated>2020-09-04T02:56:20.503Z</updated>
     
     <summary type="html">
     
@@ -182,7 +210,7 @@
       
         
         
-          &lt;h1 id=&quot;制作热点机-WIFI-（二）&quot;&gt;&lt;a href=&quot;#制作热点机-WIFI-（二）&quot; class=&quot;headerlink&quot;
+          &lt;h1 id=&quot;制作热点机-WIFI-（一）&quot;&gt;&lt;a href=&quot;#制作热点机-WIFI-（一）&quot; class=&quot;headerlink&quot;
         
       
     
@@ -200,11 +228,11 @@
   </entry>
   
   <entry>
-    <title>制作热点机 (WIFI)(一)</title>
-    <link href="https://maserhe.top/2020/08/17/zhi-zuo-mian-liu-re-dian-ji-1/"/>
-    <id>https://maserhe.top/2020/08/17/zhi-zuo-mian-liu-re-dian-ji-1/</id>
+    <title>制作热点机 (WIFI)(二)</title>
+    <link href="https://maserhe.top/2020/08/17/zhi-zuo-mian-liu-re-dian-ji-2/"/>
+    <id>https://maserhe.top/2020/08/17/zhi-zuo-mian-liu-re-dian-ji-2/</id>
     <published>2020-08-16T21:13:06.000Z</published>
-    <updated>2020-09-04T02:56:20.503Z</updated>
+    <updated>2020-09-04T02:43:07.343Z</updated>
     
     <summary type="html">
     
@@ -212,7 +240,7 @@
       
         
         
-          &lt;h1 id=&quot;制作热点机-WIFI-（一）&quot;&gt;&lt;a href=&quot;#制作热点机-WIFI-（一）&quot; class=&quot;headerlink&quot;
+          &lt;h1 id=&quot;制作热点机-WIFI-（二）&quot;&gt;&lt;a href=&quot;#制作热点机-WIFI-（二）&quot; class=&quot;headerlink&quot;
         
       
     
@@ -546,26 +574,6 @@
       <category term="图论" scheme="https://maserhe.top/tags/%E5%9B%BE%E8%AE%BA/"/>
     
       <category term="网络流" scheme="https://maserhe.top/tags/%E7%BD%91%E7%BB%9C%E6%B5%81/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>从今以后</title>
-    <link href="https://maserhe.top/2020/07/12/cong-jin-yi-hou/"/>
-    <id>https://maserhe.top/2020/07/12/cong-jin-yi-hou/</id>
-    <published>2020-07-12T03:19:15.000Z</published>
-    <updated>2020-09-03T14:02:49.865Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;
-    
-    </summary>
-    
-      <category term="算法" scheme="https://maserhe.top/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="题解" scheme="https://maserhe.top/tags/%E9%A2%98%E8%A7%A3/"/>
     
   </entry>
   
