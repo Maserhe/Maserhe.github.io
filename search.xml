@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>leetcode 141.环形链表</title>
+      <link href="/2020/09/12/huan-xing-lian-biao/"/>
+      <url>/2020/09/12/huan-xing-lian-biao/</url>
+      
+        <content type="html"><![CDATA[<h1 id="leetcode-141-环形链表"><a href="#leetcode-141-环形链表" class="headerlink" title="leetcode 141.环形链表"></a>leetcode 141.环形链表</h1><p><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8-2020-09-12-15-23-51.png" alt="环形链表-2020-09-12-15-23-51"><br><strong>第一次使用快慢双指针</strong><br>例如:龟兔赛跑，如果有环的话，肯定，兔子会追上 乌龟。<br>快指针， 一次 越 两步<br>慢指针， 一次 走 一布</p><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span><span class="token keyword">public</span><span class="token operator">:</span>    <span class="token keyword">bool</span> <span class="token function">hasCycle</span><span class="token punctuation">(</span>ListNode <span class="token operator">*</span>head<span class="token punctuation">)</span> <span class="token punctuation">{</span>        <span class="token comment" spellcheck="true">// 说明 一个节点 或者 为空</span>        <span class="token keyword">if</span> <span class="token punctuation">(</span>head <span class="token operator">==</span> <span class="token constant">NULL</span> <span class="token operator">||</span> head<span class="token operator">-</span><span class="token operator">></span>next <span class="token operator">==</span> <span class="token constant">NULL</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>        <span class="token comment" spellcheck="true">// 快满 双 指针</span>        ListNode <span class="token operator">*</span> fast <span class="token operator">=</span> head<span class="token punctuation">;</span>        ListNode <span class="token operator">*</span> slow <span class="token operator">=</span> head<span class="token punctuation">;</span>        <span class="token keyword">while</span><span class="token punctuation">(</span>fast <span class="token operator">!=</span> <span class="token constant">NULL</span> <span class="token operator">&amp;&amp;</span> fast<span class="token operator">-</span><span class="token operator">></span>next <span class="token operator">!=</span> <span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">{</span>            fast <span class="token operator">=</span> fast<span class="token operator">-</span><span class="token operator">></span>next<span class="token operator">-</span><span class="token operator">></span>next<span class="token punctuation">;</span>            slow <span class="token operator">=</span> slow<span class="token operator">-</span><span class="token operator">></span>next<span class="token punctuation">;</span>            <span class="token keyword">if</span> <span class="token punctuation">(</span>fast <span class="token operator">==</span> slow<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span>        <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p><strong>喜欢的话，给博主赏一杯冰阔乐吧</strong></p><table>  <tbody><tr>    <td><img width="100" src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/wechat.png"></td>      <td><img width="100" src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/zan.png"></td>        <td><img width="100" src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/alipay.jpg"></td>     </tr></tbody></table><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> leetcode </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 题解 </tag>
+            
+            <tag> 双指针 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>解决Git中文乱码</title>
       <link href="/2020/09/05/git-zhong-wen-luan-ma/"/>
       <url>/2020/09/05/git-zhong-wen-luan-ma/</url>
