@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://maserhe.top/"/>
-  <updated>2020-09-14T09:20:16.104Z</updated>
+  <updated>2020-09-15T08:15:48.834Z</updated>
   <id>https://maserhe.top/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>leetcode 299.猜数字游戏</title>
+    <link href="https://maserhe.top/2020/09/15/cai-shu-zi-you-xi/"/>
+    <id>https://maserhe.top/2020/09/15/cai-shu-zi-you-xi/</id>
+    <published>2020-09-15T03:41:03.000Z</published>
+    <updated>2020-09-15T08:15:48.834Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;leetcode-299-猜数字游戏&quot;&gt;&lt;a href=&quot;#leetcode-299-猜数字游戏&quot; class=&quot;headerlink&quot; title=&quot;leetcode 299.猜数字游戏&quot;&gt;&lt;/a&gt;leetcode
+        
+      
+    
+    </summary>
+    
+      <category term="leetcode" scheme="https://maserhe.top/categories/leetcode/"/>
+    
+    
+      <category term="字母桶" scheme="https://maserhe.top/tags/%E5%AD%97%E6%AF%8D%E6%A1%B6/"/>
+    
+      <category term="字符串" scheme="https://maserhe.top/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    
+  </entry>
   
   <entry>
     <title>leetcode 141.回文链表</title>
@@ -564,28 +592,6 @@
       <category term="几何" scheme="https://maserhe.top/tags/%E5%87%A0%E4%BD%95/"/>
     
       <category term="斜率DP" scheme="https://maserhe.top/tags/%E6%96%9C%E7%8E%87DP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>BZOJ3919 DTOJ2308 Portals</title>
-    <link href="https://maserhe.top/2020/07/17/portals/"/>
-    <id>https://maserhe.top/2020/07/17/portals/</id>
-    <published>2020-07-17T07:02:20.000Z</published>
-    <updated>2020-09-03T13:54:55.835Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;h3 id=&quot;英文题目&quot;&gt;&lt;a href=&quot;#英文题目&quot; class=&quot;headerlink&quot; title=&quot;英文题目&quot;&gt;&lt;/a&gt;英文题目&lt;/h3&gt;
-    
-    </summary>
-    
-      <category term="算法" scheme="https://maserhe.top/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="题解" scheme="https://maserhe.top/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="英文题目" scheme="https://maserhe.top/tags/%E8%8B%B1%E6%96%87%E9%A2%98%E7%9B%AE/"/>
     
   </entry>
   
