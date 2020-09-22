@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://maserhe.top/"/>
-  <updated>2020-09-17T11:55:52.254Z</updated>
+  <updated>2020-09-22T06:45:04.082Z</updated>
   <id>https://maserhe.top/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>leetcode 538.把二叉搜索树转换为累加树</title>
+    <link href="https://maserhe.top/2020/09/22/ba-er-cha-sou-suo-shu-zhuan-huan-wei-lei-jia-shu/"/>
+    <id>https://maserhe.top/2020/09/22/ba-er-cha-sou-suo-shu-zhuan-huan-wei-lei-jia-shu/</id>
+    <published>2020-09-22T03:41:03.000Z</published>
+    <updated>2020-09-22T06:45:04.082Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;leetcode-538-把二叉搜索树转换为累加树&quot;&gt;&lt;a href=&quot;#leetcode-538-把二叉搜索树转换为累加树&quot; class=&quot;headerlink&quot; title=&quot;leetcode 538.把二叉搜索树转换为累加树&quot;&gt;&lt;/a&gt;leetcode
+        
+      
+    
+    </summary>
+    
+      <category term="leetcode" scheme="https://maserhe.top/categories/leetcode/"/>
+    
+    
+      <category term="二叉树" scheme="https://maserhe.top/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
+    
+      <category term="BST" scheme="https://maserhe.top/tags/BST/"/>
+    
+      <category term="stack" scheme="https://maserhe.top/tags/stack/"/>
+    
+  </entry>
   
   <entry>
     <title>leetcode 299.猜数字游戏</title>
@@ -566,32 +596,6 @@
       <category term="线段树" scheme="https://maserhe.top/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
     
       <category term="LCA" scheme="https://maserhe.top/tags/LCA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷P3628  [APOI2010]特别行动队</title>
-    <link href="https://maserhe.top/2020/07/20/luo-gu-p3628-te-bie-xing-dong-dui/"/>
-    <id>https://maserhe.top/2020/07/20/luo-gu-p3628-te-bie-xing-dong-dui/</id>
-    <published>2020-07-20T09:15:45.000Z</published>
-    <updated>2020-09-03T13:50:28.665Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://www.luogu.com.cn/problem/P3628&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;原题&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="算法" scheme="https://maserhe.top/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="题解" scheme="https://maserhe.top/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="DP" scheme="https://maserhe.top/tags/DP/"/>
-    
-      <category term="几何" scheme="https://maserhe.top/tags/%E5%87%A0%E4%BD%95/"/>
-    
-      <category term="斜率DP" scheme="https://maserhe.top/tags/%E6%96%9C%E7%8E%87DP/"/>
     
   </entry>
   
