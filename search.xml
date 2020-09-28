@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>数组的度</title>
+      <link href="/2020/09/28/shu-zu-de-du/"/>
+      <url>/2020/09/28/shu-zu-de-du/</url>
+      
+        <content type="html"><![CDATA[<h1 id="leetcode-697-数组的度"><a href="#leetcode-697-数组的度" class="headerlink" title="leetcode 697.数组的度"></a>leetcode 697.数组的度</h1><p><strong>题目:</strong> <a href="https://leetcode-cn.com/problems/degree-of-an-array/" target="_blank" rel="noopener">传送门</a><br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/s%E6%95%B0%E7%BB%84%E7%9A%84%E5%BA%A6-2020-09-28-17-37-44.png" alt="s数组的度-2020-09-28-17-37-44"><br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://pic.leetcode-cn.com/1601284642-huehQn-QQ%E6%88%AA%E5%9B%BE20200928171708.png" alt="QQ截图20200928171708.png"></p><h2 id="一看题很水就想直接暴力。哎-我错了。"><a href="#一看题很水就想直接暴力。哎-我错了。" class="headerlink" title="一看题很水就想直接暴力。哎~ 我错了。"></a>一看题很水就想直接暴力。哎<del>~</del> 我错了。</h2><ul><li>开始想着排序。找到最大的度对应的值，然后双指针从两边开始搜。找到相应的值左右两边相减就能得到答案了。</li><li>太天真了。其实最大度对应的值可能不止一对。当发现问题后，其实多遍历几次，多判断几次，<strong>但是为这题写长代码值得吗？</strong> 直接用上高效的map吧。不过我不是很喜欢使用STL来解决问题。一般能降低空间复杂度，就尽量降低。<h2 id="时间复杂度O-n-解法。"><a href="#时间复杂度O-n-解法。" class="headerlink" title="时间复杂度O(n) 解法。"></a>时间复杂度O(n) 解法。</h2></li><li>使用map记录值。 第一个 key就 int类型吧 ,我们也要记录数据第一次出现时对应的下标。以及数据出现的次数。</li><li>那么map中的 value我使用 pair&lt;int, int&gt; 来记录。第一个位置记录出现的次数。第二个记录数据第一次出现时的下标。</li><li><strong>边遍历边更新</strong></li><li>1，如果当前记录的最大度， 比当前枚举的数据的度小，那么就跟新最大度的值。以及最大度的距离。</li><li><ol start="2"><li>如果当前记录的最大度， 和当前枚举的数据的度一样，那么我就只更新距离。获取最小的。</li></ol></li><li><ol start="3"><li>如果当前记录的最大度， 比当前枚举的数据的度要大。那么就不处理。</li></ol></li></ul><p><strong>话不多说，上代码</strong></p><pre><code>#define x first#define y secondtypedef pair&lt;int, int&gt; PII; // 第一个是数据出现的次数， 第二是数据第一次出现的 坐标。using namespace std;class Solution {public:    int findShortestSubArray(vector&lt;int&gt;&amp; nums) {        unordered_map&lt;int, PII&gt; map;        int ma = 0;        int ans = 0;        for (int i = 0; i &lt; nums.size(); i ++ ) {            if (!map[nums[i]].x){                map[nums[i]].x ++ ;                map[nums[i]].y = i;     //记录第一次出现时的坐标。            }            else  map[nums[i]].x ++ ;            if (ma &lt; map[nums[i]].x){ // 如果遇见度更大的，则更新成最小的。                ma = map[nums[i]].x;                ans = i - map[nums[i]].y + 1;            }            if (ma == map[nums[i]].x) // 如果遇见度相同的 则更新成最小的。            {                ans = min(ans, i - map[nums[i]].y + 1);            }        }        return ans;    }};</code></pre><p><strong>喜欢的话，给博主赏一杯冰阔乐吧</strong></p><table>  <tbody><tr>    <td><img width="100" src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/wechat.png"></td>      <td><img width="100" src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/zan.png"></td>        <td><img width="100" src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/alipay.jpg"></td>     </tr></tbody></table><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> leetcode </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> map </tag>
+            
+            <tag> 度 </tag>
+            
+            <tag> 子序列 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>leetcode 538.把二叉搜索树转换为累加树</title>
       <link href="/2020/09/22/ba-er-cha-sou-suo-shu-zhuan-huan-wei-lei-jia-shu/"/>
       <url>/2020/09/22/ba-er-cha-sou-suo-shu-zhuan-huan-wei-lei-jia-shu/</url>
