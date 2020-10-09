@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>Java解析XML</title>
+      <link href="/2020/10/09/xml-jie-xi/"/>
+      <url>/2020/10/09/xml-jie-xi/</url>
+      
+        <content type="html"><![CDATA[<h1 id="解析XML"><a href="#解析XML" class="headerlink" title="解析XML"></a>解析XML</h1><p>这里使用Sax解析xml文件。<br>我们可以重写一下DefaultHandler<br><strong>xml 解析练习</strong></p><ul><li>1， 获取解析工厂。</li><li>2, 从解析工厂获取解析器。</li><li>3, 编写处理器</li><li>4, 加载文档 注册处理器。<pre><code>import org.xml.sax.SAXException;import javax.xml.parsers.ParserConfigurationException;import javax.xml.parsers.SAXParser;import javax.xml.parsers.SAXParserFactory;import java.io.IOException;</code></pre></li></ul><p>import org.xml.sax.Attributes;<br>import org.xml.sax.Locator;<br>import org.xml.sax.SAXException;<br>import org.xml.sax.helpers.DefaultHandler;</p><p>/**</p><ul><li><p>xml 解析练习</p></li><li><p>1， 获取解析工厂。</p></li><li><p>2, 从解析工厂获取解析器。</p></li><li><p>3, 编写处理器</p></li><li><p>4, 加载文档 注册处理器。</p></li><li><p>/<br>public class SaxText {<br>  public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException {</p><pre><code>  // 1, 获取解析工厂。  SAXParserFactory factory = SAXParserFactory.newInstance();  // 2, 从解析工厂获取解析器。  SAXParser parser = factory.newSAXParser();  // 3, 编写处理器。  // 4, 加载文档 注册处理器。  // 重写一下 DefaultHandler就行了。  DefaultHandler handler = new PHandler();  // 5, 从当前类加载器中获取，  parser.parse(Thread.currentThread().getContextClassLoader().getResourceAsStream("123.xml"), handler);</code></pre></li></ul><pre><code>}</code></pre><p>}</p><p>class PHandler extends DefaultHandler{</p><pre><code>@Overridepublic void startDocument() throws SAXException {    super.startDocument();    //接收文件开头的通知。    System.out.println("---文件加载从这里开始---");}@Overridepublic void endDocument() throws SAXException {    super.endDocument();    //接受文件结尾通知。    System.out.println("----文件加载这里结束");}@Overridepublic void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {    super.startElement(uri, localName, qName, attributes);    // 接收元素开始通知。    System.out.println("---接受元素开始通知---");}@Overridepublic void endElement(String uri, String localName, String qName) throws SAXException {    super.endElement(uri, localName, qName);    // 接受元素结尾通知。    System.out.println("---接受元素结尾通知---");}@Overridepublic void characters(char[] ch, int start, int length) throws SAXException {    super.characters(ch, start, length);    // 接收元素内的字符数据通知。    String contents = new String(ch,start,length).trim();    if(contents.length()&gt;0) {        System.out.println("内容为-&gt;"+contents);    }else {        System.out.println("内容为-&gt;"+"空");    }}</code></pre><p>}</p><pre><code>**喜欢的话，给博主赏一杯冰阔乐吧**<table>  <tbody><tr>    <td><img width="100" src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/wechat.png"></td>      <td><img width="100" src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/zan.png"></td>        <td><img width="100" src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/alipay.jpg"></td>     </tr></tbody></table></code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> XML </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 网络编程 </tag>
+            
+            <tag> Java </tag>
+            
+            <tag> xml解析 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>顺时针打印数组</title>
       <link href="/2020/10/01/shun-shi-zhen-da-yin/"/>
       <url>/2020/10/01/shun-shi-zhen-da-yin/</url>

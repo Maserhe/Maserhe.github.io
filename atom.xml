@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://maserhe.top/"/>
-  <updated>2020-10-01T04:57:48.114Z</updated>
+  <updated>2020-10-09T11:35:31.927Z</updated>
   <id>https://maserhe.top/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java解析XML</title>
+    <link href="https://maserhe.top/2020/10/09/xml-jie-xi/"/>
+    <id>https://maserhe.top/2020/10/09/xml-jie-xi/</id>
+    <published>2020-10-09T11:41:03.000Z</published>
+    <updated>2020-10-09T11:35:31.927Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;解析XML&quot;&gt;&lt;a href=&quot;#解析XML&quot; class=&quot;headerlink&quot; title=&quot;解析XML&quot;&gt;&lt;/a&gt;解析XML&lt;/h1&gt;&lt;p&gt;这里使用Sax解析xml文件。&lt;br&gt;我们可以重写一下DefaultHandler&lt;br&gt;&lt;strong&gt;xml
+        
+      
+    
+    </summary>
+    
+      <category term="XML" scheme="https://maserhe.top/categories/XML/"/>
+    
+    
+      <category term="网络编程" scheme="https://maserhe.top/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="Java" scheme="https://maserhe.top/tags/Java/"/>
+    
+      <category term="xml解析" scheme="https://maserhe.top/tags/xml%E8%A7%A3%E6%9E%90/"/>
+    
+  </entry>
   
   <entry>
     <title>顺时针打印数组</title>
@@ -574,36 +604,6 @@
       <category term="Markdown" scheme="https://maserhe.top/tags/Markdown/"/>
     
       <category term="vscode" scheme="https://maserhe.top/tags/vscode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>最短Hamilton路径</title>
-    <link href="https://maserhe.top/2020/07/26/zui-duan-hamilton/"/>
-    <id>https://maserhe.top/2020/07/26/zui-duan-hamilton/</id>
-    <published>2020-07-25T21:13:06.000Z</published>
-    <updated>2020-09-03T14:19:09.368Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;题目：最短Hamilton路径&quot;&gt;&lt;a href=&quot;#题目：最短Hamilton路径&quot; class=&quot;headerlink&quot; title=&quot;题目：最短Hamilton路径&quot;&gt;&lt;/a&gt;题目：最短Hamilton路径&lt;/h1&gt;&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="算法竞赛进阶指南" scheme="https://maserhe.top/categories/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97/"/>
-    
-    
-      <category term="题解" scheme="https://maserhe.top/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="DP" scheme="https://maserhe.top/tags/DP/"/>
-    
-      <category term="压缩dp" scheme="https://maserhe.top/tags/%E5%8E%8B%E7%BC%A9dp/"/>
     
   </entry>
   
