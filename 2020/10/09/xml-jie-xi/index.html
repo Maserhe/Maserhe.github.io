@@ -14,7 +14,9 @@
 1， 获取解析工厂。
 2, 从解析工厂获取解析器。
 3, 编写处理器
-4, 加载文档 注册处理器。import org.xml.sax.">
+4, 加载文档 注册处理器。
+
+import org.xml.sa">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -785,7 +787,7 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        489
+                        486
                     </div>
                     
 
@@ -809,85 +811,93 @@
 <li>1， 获取解析工厂。</li>
 <li>2, 从解析工厂获取解析器。</li>
 <li>3, 编写处理器</li>
-<li>4, 加载文档 注册处理器。<pre><code>import org.xml.sax.SAXException;
+<li>4, 加载文档 注册处理器。</li>
+</ul>
+<pre class="line-numbers language-Java"><code class="language-Java">import org.xml.sax.SAXException;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import java.io.IOException;
-</code></pre></li>
-</ul>
-<p>import org.xml.sax.Attributes;<br>import org.xml.sax.Locator;<br>import org.xml.sax.SAXException;<br>import org.xml.sax.helpers.DefaultHandler;</p>
-<p>/**</p>
-<ul>
-<li><p>xml 解析练习</p>
-</li>
-<li><p>1， 获取解析工厂。</p>
-</li>
-<li><p>2, 从解析工厂获取解析器。</p>
-</li>
-<li><p>3, 编写处理器</p>
-</li>
-<li><p>4, 加载文档 注册处理器。</p>
-</li>
-<li><p>/<br>public class SaxText {<br>  public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException {</p>
-<pre><code>  // 1, 获取解析工厂。
-  SAXParserFactory factory = SAXParserFactory.newInstance();
-  // 2, 从解析工厂获取解析器。
-  SAXParser parser = factory.newSAXParser();
 
-  // 3, 编写处理器。
+import org.xml.sax.Attributes;
+import org.xml.sax.Locator;
+import org.xml.sax.SAXException;
+import org.xml.sax.helpers.DefaultHandler;
 
-  // 4, 加载文档 注册处理器。
-  // 重写一下 DefaultHandler就行了。
+/**
+ * xml 解析练习
+ * 1， 获取解析工厂。
+ * 2, 从解析工厂获取解析器。
+ * 3, 编写处理器
+ * 4, 加载文档 注册处理器。
+ */
 
-  DefaultHandler handler = new PHandler();
-  // 5, 从当前类加载器中获取，
-  parser.parse(Thread.currentThread().getContextClassLoader().getResourceAsStream("123.xml"), handler);</code></pre></li>
-</ul>
-<pre><code>}</code></pre><p>}</p>
-<p>class PHandler extends DefaultHandler{</p>
-<pre><code>@Override
-public void startDocument() throws SAXException {
-    super.startDocument();
-    //接收文件开头的通知。
-    System.out.println("---文件加载从这里开始---");
-}
+public class SaxText {
+    public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException {
+        // 1, 获取解析工厂。
+        SAXParserFactory factory = SAXParserFactory.newInstance();
+        // 2, 从解析工厂获取解析器。
+        SAXParser parser = factory.newSAXParser();
 
-@Override
-public void endDocument() throws SAXException {
-    super.endDocument();
-    //接受文件结尾通知。
-    System.out.println("----文件加载这里结束");
-}
+        // 3, 编写处理器。
 
-@Override
-public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
-    super.startElement(uri, localName, qName, attributes);
-    // 接收元素开始通知。
-    System.out.println("---接受元素开始通知---");
+        // 4, 加载文档 注册处理器。
+        // 重写一下 DefaultHandler就行了。
 
-}
+        DefaultHandler handler = new PHandler();
+        // 5, 从当前类加载器中获取，
+        parser.parse(Thread.currentThread().getContextClassLoader().getResourceAsStream("123.xml"), handler);
 
-@Override
-public void endElement(String uri, String localName, String qName) throws SAXException {
-    super.endElement(uri, localName, qName);
-    // 接受元素结尾通知。
-    System.out.println("---接受元素结尾通知---");
-}
 
-@Override
-public void characters(char[] ch, int start, int length) throws SAXException {
-    super.characters(ch, start, length);
-    // 接收元素内的字符数据通知。
-
-    String contents = new String(ch,start,length).trim();
-    if(contents.length()&gt;0) {
-        System.out.println("内容为-&gt;"+contents);
-    }else {
-        System.out.println("内容为-&gt;"+"空");
     }
-}</code></pre><p>}</p>
-<pre><code>**喜欢的话，给博主赏一杯冰阔乐吧**
+}
+
+class PHandler extends DefaultHandler{
+
+    @Override
+    public void startDocument() throws SAXException {
+        super.startDocument();
+        //接收文件开头的通知。
+        System.out.println("---文件加载从这里开始---");
+    }
+
+    @Override
+    public void endDocument() throws SAXException {
+        super.endDocument();
+        //接受文件结尾通知。
+        System.out.println("----文件加载这里结束");
+    }
+
+    @Override
+    public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
+        super.startElement(uri, localName, qName, attributes);
+        // 接收元素开始通知。
+        System.out.println("---接受元素开始通知---");
+
+    }
+
+    @Override
+    public void endElement(String uri, String localName, String qName) throws SAXException {
+        super.endElement(uri, localName, qName);
+        // 接受元素结尾通知。
+        System.out.println("---接受元素结尾通知---");
+    }
+
+    @Override
+    public void characters(char[] ch, int start, int length) throws SAXException {
+        super.characters(ch, start, length);
+        // 接收元素内的字符数据通知。
+
+        String contents = new String(ch,start,length).trim();
+        if(contents.length()>0) {
+            System.out.println("内容为->"+contents);
+        }else {
+            System.out.println("内容为->"+"空");
+        }
+    }
+}
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>喜欢的话，给博主赏一杯冰阔乐吧</strong></p>
 
 <table>
   <tbody><tr>
@@ -896,7 +906,8 @@ public void characters(char[] ch, int start, int length) throws SAXException {
     <td><img width="100" src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/alipay.jpg"></td>   
   </tr>
 </tbody></table>
-</code></pre><script>
+
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -1282,7 +1293,9 @@ public void characters(char[] ch, int start, int length) throws SAXException {
 1， 获取解析工厂。
 2, 从解析工厂获取解析器。
 3, 编写处理器
-4, 加载文档 注册处理器。import org.xml.sax.
+4, 加载文档 注册处理器。
+
+import org.xml.sa
                         
                     </div>
                     <div class="publish-info">
@@ -1783,10 +1796,10 @@ $(function () {
             </script>
         
 
-    <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"left","width":200,"height":250},"mobile":{"show":"flase"},"react":{"opacity":0.7}});</script><script>
+    <script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var i=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){i&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,e,a=0;a<r.length;a++)t=r[a],0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var i=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){i&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,e,a=0;a<r.length;a++)t=r[a],0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"left","width":200,"height":250},"mobile":{"show":"flase"},"react":{"opacity":0.7}});</script></body>
 </html>
