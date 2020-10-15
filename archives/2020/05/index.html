@@ -986,9 +986,9 @@ C国里一共有$N$个城镇，编号为$1$到$N$其中第$i$个城镇与第$i+1
                         
                         <div class="card-action article-tags">
                             
-                            <a href="/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/"><span class="chip bg-color">微积分</span></a>
-                            
                             <a href="/tags/%E5%87%A0%E4%BD%95/"><span class="chip bg-color">几何</span></a>
+                            
+                            <a href="/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/"><span class="chip bg-color">微积分</span></a>
                             
                         </div>
                         
@@ -1448,9 +1448,9 @@ $$\begin{cases}f_{i,1}=a \ti
 
     var uvcountOffset = 20000; 
 
-    function fixCount() { 
+    function fixCount() { //document.getElementById("busuanzi_container_site_pv").style.display != "none"
         if (
-            document.getElementById("busuanzi_container_site_pv").style.display != "none") { 
+            document.getElementById("busuanzi_container_site_pv") != "none") { 
             $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset); 
             clearInterval(int); 
         } 

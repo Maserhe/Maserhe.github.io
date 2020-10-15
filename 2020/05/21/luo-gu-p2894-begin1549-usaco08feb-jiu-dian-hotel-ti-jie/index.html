@@ -1677,9 +1677,9 @@ TRT出国后，想找一个好的位置住下来。而他所在的城市，恰�
 
     var uvcountOffset = 20000; 
 
-    function fixCount() { 
+    function fixCount() { //document.getElementById("busuanzi_container_site_pv").style.display != "none"
         if (
-            document.getElementById("busuanzi_container_site_pv").style.display != "none") { 
+            document.getElementById("busuanzi_container_site_pv") != "none") { 
             $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset); 
             clearInterval(int); 
         } 

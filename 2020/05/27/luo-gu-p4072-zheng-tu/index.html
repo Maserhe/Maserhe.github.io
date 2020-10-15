@@ -1602,9 +1602,9 @@ Linux用户和OS X用户一定对软件包管理器不会陌生通过软件包�
 
     var uvcountOffset = 20000; 
 
-    function fixCount() { 
+    function fixCount() { //document.getElementById("busuanzi_container_site_pv").style.display != "none"
         if (
-            document.getElementById("busuanzi_container_site_pv").style.display != "none") { 
+            document.getElementById("busuanzi_container_site_pv") != "none") { 
             $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset); 
             clearInterval(int); 
         } 

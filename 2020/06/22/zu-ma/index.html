@@ -1586,9 +1586,9 @@ A</code></pre><h2 id="数据范围与提示"><a href="#数据范围与提示" cl
 
     var uvcountOffset = 20000; 
 
-    function fixCount() { 
+    function fixCount() { //document.getElementById("busuanzi_container_site_pv").style.display != "none"
         if (
-            document.getElementById("busuanzi_container_site_pv").style.display != "none") { 
+            document.getElementById("busuanzi_container_site_pv") != "none") { 
             $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset); 
             clearInterval(int); 
         } 

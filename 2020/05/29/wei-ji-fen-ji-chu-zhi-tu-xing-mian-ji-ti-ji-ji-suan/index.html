@@ -739,12 +739,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/" target="_blank">
-                                <span class="chip bg-color">微积分</span>
-                            </a>
-                        
                             <a href="/tags/%E5%87%A0%E4%BD%95/" target="_blank">
                                 <span class="chip bg-color">几何</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/" target="_blank">
+                                <span class="chip bg-color">微积分</span>
                             </a>
                         
                     </div>
@@ -1583,9 +1583,9 @@ Linux用户和OS X用户一定对软件包管理器不会陌生通过软件包�
 
     var uvcountOffset = 20000; 
 
-    function fixCount() { 
+    function fixCount() { //document.getElementById("busuanzi_container_site_pv").style.display != "none"
         if (
-            document.getElementById("busuanzi_container_site_pv").style.display != "none") { 
+            document.getElementById("busuanzi_container_site_pv") != "none") { 
             $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset); 
             clearInterval(int); 
         } 

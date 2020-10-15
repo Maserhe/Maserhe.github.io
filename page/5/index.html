@@ -749,12 +749,12 @@ C国里一共有$N$个城镇，编号为$1$到$N$其中第$i$个城镇与第$i+1
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/" target="_blank">
-                            <span class="chip bg-color">微积分</span>
-                        </a>
-                        
                         <a href="/tags/%E5%87%A0%E4%BD%95/" target="_blank">
                             <span class="chip bg-color">几何</span>
+                        </a>
+                        
+                        <a href="/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/" target="_blank">
+                            <span class="chip bg-color">微积分</span>
                         </a>
                         
                     </div>
@@ -1485,9 +1485,9 @@ A国正在开展一项伟大的计划——国旗计划这项计划的内容是�
 
     var uvcountOffset = 20000; 
 
-    function fixCount() { 
+    function fixCount() { //document.getElementById("busuanzi_container_site_pv").style.display != "none"
         if (
-            document.getElementById("busuanzi_container_site_pv").style.display != "none") { 
+            document.getElementById("busuanzi_container_site_pv") != "none") { 
             $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset); 
             clearInterval(int); 
         } 

@@ -1235,12 +1235,12 @@ public:
                         <span class="chip bg-color">题解</span>
                     </a>
                     
-                    <a href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/" target="_blank">
-                        <span class="chip bg-color">双指针</span>
-                    </a>
-                    
                     <a href="/tags/%E9%93%BE%E8%A1%A8/" target="_blank">
                         <span class="chip bg-color">链表</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/" target="_blank">
+                        <span class="chip bg-color">双指针</span>
                     </a>
                     
                 </div>
@@ -1565,9 +1565,9 @@ public:
 
     var uvcountOffset = 20000; 
 
-    function fixCount() { 
+    function fixCount() { //document.getElementById("busuanzi_container_site_pv").style.display != "none"
         if (
-            document.getElementById("busuanzi_container_site_pv").style.display != "none") { 
+            document.getElementById("busuanzi_container_site_pv") != "none") { 
             $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset); 
             clearInterval(int); 
         } 
