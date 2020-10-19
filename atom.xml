@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://maserhe.top/"/>
-  <updated>2020-10-09T11:40:36.624Z</updated>
+  <updated>2020-10-19T13:46:10.828Z</updated>
   <id>https://maserhe.top/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>脚本引擎执行Javascript代码报错解决。</title>
+    <link href="https://maserhe.top/2020/10/19/js-yin-qing-bao-cuo-jie-jue/"/>
+    <id>https://maserhe.top/2020/10/19/js-yin-qing-bao-cuo-jie-jue/</id>
+    <published>2020-10-19T03:41:03.000Z</published>
+    <updated>2020-10-19T13:46:10.828Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;strong&gt;报错信息:Exception in thread “main” javax.script.ScriptException: ReferenceError: “importPackage” is not defined in &lt;eval&gt; at line
+        
+      
+    
+    </summary>
+    
+      <category term="报错" scheme="https://maserhe.top/categories/%E6%8A%A5%E9%94%99/"/>
+    
+    
+      <category term="Js" scheme="https://maserhe.top/tags/Js/"/>
+    
+      <category term="java" scheme="https://maserhe.top/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>Java解析XML</title>
@@ -342,11 +370,11 @@
   </entry>
   
   <entry>
-    <title>制作Ubuntu口袋系统(一)</title>
-    <link href="https://maserhe.top/2020/08/23/ubuntu/"/>
-    <id>https://maserhe.top/2020/08/23/ubuntu/</id>
+    <title>制作Ubuntu口袋系统(二)</title>
+    <link href="https://maserhe.top/2020/08/23/ubuntu2/"/>
+    <id>https://maserhe.top/2020/08/23/ubuntu2/</id>
     <published>2020-08-23T09:33:00.000Z</published>
-    <updated>2020-09-03T14:22:51.700Z</updated>
+    <updated>2020-09-03T14:22:42.713Z</updated>
     
     <summary type="html">
     
@@ -354,7 +382,7 @@
       
         
         
-          &lt;h1 id=&quot;制作Ubuntu口袋系统-一-（数据可以保存）&quot;&gt;&lt;a href=&quot;#制作Ubuntu口袋系统-一-（数据可以保存）&quot; class=&quot;headerlink&quot;
+          &lt;h1 id=&quot;前提&quot;&gt;&lt;a href=&quot;#前提&quot; class=&quot;headerlink&quot; title=&quot;前提&quot;&gt;&lt;/a&gt;前提&lt;/h1&gt;&lt;p&gt;已经将linux系统装进U盘了。什么？还没弄好，看第一片篇文章。&lt;a
         
       
     
@@ -372,11 +400,11 @@
   </entry>
   
   <entry>
-    <title>制作Ubuntu口袋系统(二)</title>
-    <link href="https://maserhe.top/2020/08/23/ubuntu2/"/>
-    <id>https://maserhe.top/2020/08/23/ubuntu2/</id>
+    <title>制作Ubuntu口袋系统(一)</title>
+    <link href="https://maserhe.top/2020/08/23/ubuntu/"/>
+    <id>https://maserhe.top/2020/08/23/ubuntu/</id>
     <published>2020-08-23T09:33:00.000Z</published>
-    <updated>2020-09-03T14:22:42.713Z</updated>
+    <updated>2020-09-03T14:22:51.700Z</updated>
     
     <summary type="html">
     
@@ -384,7 +412,7 @@
       
         
         
-          &lt;h1 id=&quot;前提&quot;&gt;&lt;a href=&quot;#前提&quot; class=&quot;headerlink&quot; title=&quot;前提&quot;&gt;&lt;/a&gt;前提&lt;/h1&gt;&lt;p&gt;已经将linux系统装进U盘了。什么？还没弄好，看第一片篇文章。&lt;a
+          &lt;h1 id=&quot;制作Ubuntu口袋系统-一-（数据可以保存）&quot;&gt;&lt;a href=&quot;#制作Ubuntu口袋系统-一-（数据可以保存）&quot; class=&quot;headerlink&quot;
         
       
     
@@ -574,36 +602,6 @@
       <category term="Dijkstra" scheme="https://maserhe.top/tags/Dijkstra/"/>
     
       <category term="洛谷" scheme="https://maserhe.top/tags/%E6%B4%9B%E8%B0%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>vscode Markdown 样式自定义</title>
-    <link href="https://maserhe.top/2020/07/27/vscode-markdown/"/>
-    <id>https://maserhe.top/2020/07/27/vscode-markdown/</id>
-    <published>2020-07-27T03:41:03.000Z</published>
-    <updated>2020-09-03T14:23:16.718Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;vscode-Markdown-样式自定义&quot;&gt;&lt;a href=&quot;#vscode-Markdown-样式自定义&quot; class=&quot;headerlink&quot; title=&quot;vscode Markdown 样式自定义&quot;&gt;&lt;/a&gt;vscode Markdown
-        
-      
-    
-    </summary>
-    
-      <category term="软件安装与配置" scheme="https://maserhe.top/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
-    
-      <category term="css" scheme="https://maserhe.top/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/css/"/>
-    
-    
-      <category term="Markdown" scheme="https://maserhe.top/tags/Markdown/"/>
-    
-      <category term="vscode" scheme="https://maserhe.top/tags/vscode/"/>
     
   </entry>
   
