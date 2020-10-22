@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://maserhe.top/"/>
-  <updated>2020-10-20T11:38:56.963Z</updated>
+  <updated>2020-10-22T13:39:24.125Z</updated>
   <id>https://maserhe.top/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>java中final修饰符</title>
+    <link href="https://maserhe.top/2020/10/22/java-zhong-final-guan-jian-zi/"/>
+    <id>https://maserhe.top/2020/10/22/java-zhong-final-guan-jian-zi/</id>
+    <published>2020-10-22T03:41:03.000Z</published>
+    <updated>2020-10-22T13:39:24.125Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;基础&quot;&gt;&lt;a href=&quot;#基础&quot; class=&quot;headerlink&quot; title=&quot;基础&quot;&gt;&lt;/a&gt;基础&lt;/h1&gt;&lt;p&gt;首先回顾一下关于 final实例变量的知识。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;final可以修饰变量，被
+        
+      
+    
+    </summary>
+    
+      <category term="java" scheme="https://maserhe.top/categories/java/"/>
+    
+    
+      <category term="final" scheme="https://maserhe.top/tags/final/"/>
+    
+      <category term="总结" scheme="https://maserhe.top/tags/%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
   
   <entry>
     <title>leetcode 143. 重排链表</title>
@@ -576,30 +606,6 @@
       <category term="最短路" scheme="https://maserhe.top/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/"/>
     
       <category term="spfa" scheme="https://maserhe.top/tags/spfa/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>蒙德里安的梦想</title>
-    <link href="https://maserhe.top/2020/07/29/meng-de-li-an-de-meng-xiang/"/>
-    <id>https://maserhe.top/2020/07/29/meng-de-li-an-de-meng-xiang/</id>
-    <published>2020-07-28T21:13:06.000Z</published>
-    <updated>2020-09-03T14:19:00.543Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.acwing.com/problem/content/293/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;原题&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="算法竞赛进阶指南" scheme="https://maserhe.top/categories/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97/"/>
-    
-    
-      <category term="题解" scheme="https://maserhe.top/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="DP" scheme="https://maserhe.top/tags/DP/"/>
-    
-      <category term="压缩dp" scheme="https://maserhe.top/tags/%E5%8E%8B%E7%BC%A9dp/"/>
     
   </entry>
   
