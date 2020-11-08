@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://maserhe.top/"/>
-  <updated>2020-10-30T04:33:48.046Z</updated>
+  <updated>2020-11-08T06:48:59.928Z</updated>
   <id>https://maserhe.top/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux考前知识点整理</title>
+    <link href="https://maserhe.top/2020/11/08/linuxppt-li-ti-zheng-li/"/>
+    <id>https://maserhe.top/2020/11/08/linuxppt-li-ti-zheng-li/</id>
+    <published>2020-11-08T03:41:03.000Z</published>
+    <updated>2020-11-08T06:48:59.928Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;第二章整理&quot;&gt;&lt;a href=&quot;#第二章整理&quot; class=&quot;headerlink&quot; title=&quot;第二章整理&quot;&gt;&lt;/a&gt;第二章整理&lt;/h2&gt;&lt;h5 id=&quot;终止程序命令&quot;&gt;&lt;a href=&quot;#终止程序命令&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="总结" scheme="https://maserhe.top/categories/%E6%80%BB%E7%BB%93/"/>
+    
+    
+      <category term="linux" scheme="https://maserhe.top/tags/linux/"/>
+    
+  </entry>
   
   <entry>
     <title>leetcode 99. 恢复二叉搜索树</title>
@@ -568,36 +594,6 @@
       <category term="几何" scheme="https://maserhe.top/tags/%E5%87%A0%E4%BD%95/"/>
     
       <category term="斜率DP" scheme="https://maserhe.top/tags/%E6%96%9C%E7%8E%87DP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>制作热点机 (WIFI)(二)</title>
-    <link href="https://maserhe.top/2020/08/17/zhi-zuo-mian-liu-re-dian-ji-2/"/>
-    <id>https://maserhe.top/2020/08/17/zhi-zuo-mian-liu-re-dian-ji-2/</id>
-    <published>2020-08-16T21:13:06.000Z</published>
-    <updated>2020-09-04T02:43:07.343Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;制作热点机-WIFI-（二）&quot;&gt;&lt;a href=&quot;#制作热点机-WIFI-（二）&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="免流" scheme="https://maserhe.top/categories/%E5%85%8D%E6%B5%81/"/>
-    
-    
-      <category term="root" scheme="https://maserhe.top/tags/root/"/>
-    
-      <category term="bl锁" scheme="https://maserhe.top/tags/bl%E9%94%81/"/>
-    
-      <category term="tiny" scheme="https://maserhe.top/tags/tiny/"/>
     
   </entry>
   
