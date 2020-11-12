@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://maserhe.top/"/>
-  <updated>2020-11-08T06:48:59.928Z</updated>
+  <updated>2020-11-12T05:57:58.816Z</updated>
   <id>https://maserhe.top/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>leetcode 868. 二进制间距</title>
+    <link href="https://maserhe.top/2020/11/12/lowbit/"/>
+    <id>https://maserhe.top/2020/11/12/lowbit/</id>
+    <published>2020-11-12T03:41:03.000Z</published>
+    <updated>2020-11-12T05:57:58.816Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+      <category term="leetcode" scheme="https://maserhe.top/categories/leetcode/"/>
+    
+    
+      <category term="题解" scheme="https://maserhe.top/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="lowbit" scheme="https://maserhe.top/tags/lowbit/"/>
+    
+      <category term="位运算" scheme="https://maserhe.top/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux考前知识点整理</title>
@@ -568,32 +598,6 @@
       <category term="Linux" scheme="https://maserhe.top/tags/Linux/"/>
     
       <category term="Ubuntu" scheme="https://maserhe.top/tags/Ubuntu/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷P3628  [APOI2010]特别行动队</title>
-    <link href="https://maserhe.top/2020/08/20/luo-gu-p3628-te-bie-xing-dong-dui/"/>
-    <id>https://maserhe.top/2020/08/20/luo-gu-p3628-te-bie-xing-dong-dui/</id>
-    <published>2020-08-20T09:15:45.000Z</published>
-    <updated>2020-11-05T07:38:55.229Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://www.luogu.com.cn/problem/P3628&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;原题&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="算法" scheme="https://maserhe.top/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="题解" scheme="https://maserhe.top/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="DP" scheme="https://maserhe.top/tags/DP/"/>
-    
-      <category term="几何" scheme="https://maserhe.top/tags/%E5%87%A0%E4%BD%95/"/>
-    
-      <category term="斜率DP" scheme="https://maserhe.top/tags/%E6%96%9C%E7%8E%87DP/"/>
     
   </entry>
   

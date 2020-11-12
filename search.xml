@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>leetcode 868. 二进制间距</title>
+      <link href="/2020/11/12/lowbit/"/>
+      <url>/2020/11/12/lowbit/</url>
+      
+        <content type="html"><![CDATA[<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20201112135012-2020-11-12-13-50-14.png" alt="20201112135012-2020-11-12-13-50-14"><br><strong>运行效率</strong><br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://pic.leetcode-cn.com/1605108063-KJgHKP-QQ%E6%88%AA%E5%9B%BE20201111232053.png" alt="QQ截图20201111232053.png"></p><h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><p><strong>lowbit(x)</strong> 是x二进制表达式中最低位1所代表的数值。即<code>x &amp; -x</code>就是lowbit函数。<br>例如<br>当x=22时二进制表示10110则 22&amp;-22既可以得到二进制数值10。<br>为啥呢？因为我们计算机中负数采用的补码表示。lowbit很好证明。<br>那我们枚举相邻两个1，取出他们位数所代表的权值相除得到的结果，再通过log对2取对数就能直接得到相邻两个1之间的间隔位数。<br>例如x=22 二进制10110</p><ul><li>第一次取出 last = 10(二进制) </li><li>第二次取出 now = 100（二进制） </li><li>两者相除取对数。log2(now / last) 就可以直接得到想间隔的距离。</li></ul><p><strong>shuw your code</strong></p><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span><span class="token keyword">public</span><span class="token operator">:</span>    <span class="token keyword">int</span> <span class="token function">binaryGap</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>        <span class="token keyword">int</span> ans <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>         <span class="token keyword">int</span> last <span class="token operator">=</span> n <span class="token operator">&amp;</span> <span class="token operator">-</span>n<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">// 上一个最低位 1 所代表的权值</span>        n <span class="token operator">-</span><span class="token operator">=</span> last<span class="token punctuation">;</span>        <span class="token keyword">while</span> <span class="token punctuation">(</span>n<span class="token punctuation">)</span>        <span class="token punctuation">{</span>            <span class="token keyword">int</span> t <span class="token operator">=</span> n <span class="token operator">&amp;</span> <span class="token operator">-</span>n<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 当前最低位 1 所代表的权值</span>            ans <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>ans<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token function">log</span><span class="token punctuation">(</span>t<span class="token operator">/</span>last<span class="token punctuation">)</span><span class="token operator">/</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            n <span class="token operator">-</span><span class="token operator">=</span> t<span class="token punctuation">;</span>            last <span class="token operator">=</span> t<span class="token punctuation">;</span>        <span class="token punctuation">}</span>        <span class="token keyword">return</span> ans<span class="token punctuation">;</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><table>  <tbody><tr>    <td><img width="100" src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/wechat.png"></td>      <td><img width="100" src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/zan.png"></td>        <td><img width="100" src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/alipay.jpg"></td>     </tr></tbody></table><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> leetcode </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 题解 </tag>
+            
+            <tag> lowbit </tag>
+            
+            <tag> 位运算 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Linux考前知识点整理</title>
       <link href="/2020/11/08/linuxppt-li-ti-zheng-li/"/>
       <url>/2020/11/08/linuxppt-li-ti-zheng-li/</url>
