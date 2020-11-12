@@ -542,11 +542,11 @@
   </entry>
   
   <entry>
-    <title>制作Ubuntu口袋系统(二)</title>
-    <link href="https://maserhe.top/2020/08/23/ubuntu2/"/>
-    <id>https://maserhe.top/2020/08/23/ubuntu2/</id>
+    <title>制作Ubuntu口袋系统(一)</title>
+    <link href="https://maserhe.top/2020/08/23/ubuntu/"/>
+    <id>https://maserhe.top/2020/08/23/ubuntu/</id>
     <published>2020-08-23T09:33:00.000Z</published>
-    <updated>2020-09-03T14:22:42.713Z</updated>
+    <updated>2020-09-03T14:22:51.700Z</updated>
     
     <summary type="html">
     
@@ -554,7 +554,7 @@
       
         
         
-          &lt;h1 id=&quot;前提&quot;&gt;&lt;a href=&quot;#前提&quot; class=&quot;headerlink&quot; title=&quot;前提&quot;&gt;&lt;/a&gt;前提&lt;/h1&gt;&lt;p&gt;已经将linux系统装进U盘了。什么？还没弄好，看第一片篇文章。&lt;a
+          &lt;h1 id=&quot;制作Ubuntu口袋系统-一-（数据可以保存）&quot;&gt;&lt;a href=&quot;#制作Ubuntu口袋系统-一-（数据可以保存）&quot; class=&quot;headerlink&quot;
         
       
     
@@ -572,11 +572,11 @@
   </entry>
   
   <entry>
-    <title>制作Ubuntu口袋系统(一)</title>
-    <link href="https://maserhe.top/2020/08/23/ubuntu/"/>
-    <id>https://maserhe.top/2020/08/23/ubuntu/</id>
+    <title>制作Ubuntu口袋系统(二)</title>
+    <link href="https://maserhe.top/2020/08/23/ubuntu2/"/>
+    <id>https://maserhe.top/2020/08/23/ubuntu2/</id>
     <published>2020-08-23T09:33:00.000Z</published>
-    <updated>2020-09-03T14:22:51.700Z</updated>
+    <updated>2020-09-03T14:22:42.713Z</updated>
     
     <summary type="html">
     
@@ -584,7 +584,7 @@
       
         
         
-          &lt;h1 id=&quot;制作Ubuntu口袋系统-一-（数据可以保存）&quot;&gt;&lt;a href=&quot;#制作Ubuntu口袋系统-一-（数据可以保存）&quot; class=&quot;headerlink&quot;
+          &lt;h1 id=&quot;前提&quot;&gt;&lt;a href=&quot;#前提&quot; class=&quot;headerlink&quot; title=&quot;前提&quot;&gt;&lt;/a&gt;前提&lt;/h1&gt;&lt;p&gt;已经将linux系统装进U盘了。什么？还没弄好，看第一片篇文章。&lt;a
         
       
     
