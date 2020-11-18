@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>剑指 Offer 65. 不用加减乘除做加法</title>
+      <link href="/2020/11/18/liang-shu-zhi-he/"/>
+      <url>/2020/11/18/liang-shu-zhi-he/</url>
+      
+        <content type="html"><![CDATA[<h1 id="剑指-Offer-65-不用加减乘除做加法"><a href="#剑指-Offer-65-不用加减乘除做加法" class="headerlink" title="剑指 Offer 65. 不用加减乘除做加法"></a>剑指 Offer 65. 不用加减乘除做加法</h1><h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20201118121828-2020-11-18-12-18-29.png" alt="20201118121828-2020-11-18-12-18-29"></p><h1 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h1><blockquote><p>就是不让用加减乘除等运算来模拟实现加法运算。</p></blockquote><h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><ul><li><p>异或找到不需要进位的情况。</p></li><li><p>相与找到需要进位的情况。然后左移一位模拟进位。</p></li><li><p>不停循环直到进位的值为零时，即两数异或就是两个数的和的情况。<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20201118122940-2020-11-18-12-29-40.png" alt="20201118122940-2020-11-18-12-29-40"></p><h1 id="show-your-code"><a href="#show-your-code" class="headerlink" title="show your code"></a>show your code</h1><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span><span class="token keyword">public</span><span class="token operator">:</span>  <span class="token keyword">int</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span>      <span class="token keyword">int</span> n<span class="token punctuation">,</span> m<span class="token punctuation">;</span>      <span class="token keyword">while</span> <span class="token punctuation">(</span>b <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>          <span class="token comment" spellcheck="true">//这是无进位的情况。</span>          n <span class="token operator">=</span> a <span class="token operator">^</span> b<span class="token punctuation">;</span>          <span class="token comment" spellcheck="true">//进位的。</span>          m <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">unsigned</span> <span class="token keyword">int</span><span class="token punctuation">)</span><span class="token punctuation">(</span>a <span class="token operator">&amp;</span> b<span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 转换成无符号数。可能有负数的情况。</span>          a <span class="token operator">=</span> n<span class="token punctuation">;</span>          b <span class="token operator">=</span> m<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">// 一直到进位的情况为 0，退出循环。</span>      <span class="token punctuation">}</span>      <span class="token keyword">return</span> a<span class="token punctuation">;</span>  <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li></ul><p><strong>喜欢的话，给博主赏一杯冰阔乐吧</strong></p><table>  <tbody><tr>    <td><img width="100" src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/wechat.png"></td>      <td><img width="100" src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/zan.png"></td>        <td><img width="100" src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/alipay.jpg"></td>     </tr></tbody></table><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 剑指offer </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 题解 </tag>
+            
+            <tag> 位运算 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>leetcode 868. 二进制间距</title>
       <link href="/2020/11/12/lowbit/"/>
       <url>/2020/11/12/lowbit/</url>
