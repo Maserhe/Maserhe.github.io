@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://maserhe.top/"/>
-  <updated>2020-11-18T04:30:24.635Z</updated>
+  <updated>2020-11-19T11:24:18.471Z</updated>
   <id>https://maserhe.top/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>剑指 Offer 38. 字符串的排列</title>
+    <link href="https://maserhe.top/2020/11/19/zi-fu-chuan-de-pai-lie/"/>
+    <id>https://maserhe.top/2020/11/19/zi-fu-chuan-de-pai-lie/</id>
+    <published>2020-11-19T03:41:03.000Z</published>
+    <updated>2020-11-19T11:24:18.471Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;剑指-Offer-38-字符串的排列&quot;&gt;&lt;a href=&quot;#剑指-Offer-38-字符串的排列&quot; class=&quot;headerlink&quot; title=&quot;剑指 Offer 38. 字符串的排列&quot;&gt;&lt;/a&gt;剑指 Offer 38. 字符串的排列&lt;/h1&gt;&lt;h2
+        
+      
+    
+    </summary>
+    
+      <category term="剑指offer" scheme="https://maserhe.top/categories/%E5%89%91%E6%8C%87offer/"/>
+    
+    
+      <category term="题解" scheme="https://maserhe.top/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="回溯" scheme="https://maserhe.top/tags/%E5%9B%9E%E6%BA%AF/"/>
+    
+      <category term="dfs" scheme="https://maserhe.top/tags/dfs/"/>
+    
+  </entry>
   
   <entry>
     <title>剑指 Offer 65. 不用加减乘除做加法</title>
@@ -566,36 +596,6 @@
       <category term="Linux" scheme="https://maserhe.top/tags/Linux/"/>
     
       <category term="Manjaro" scheme="https://maserhe.top/tags/Manjaro/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>制作Ubuntu口袋系统(一)</title>
-    <link href="https://maserhe.top/2020/08/23/ubuntu/"/>
-    <id>https://maserhe.top/2020/08/23/ubuntu/</id>
-    <published>2020-08-23T09:33:00.000Z</published>
-    <updated>2020-09-03T14:22:51.700Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;制作Ubuntu口袋系统-一-（数据可以保存）&quot;&gt;&lt;a href=&quot;#制作Ubuntu口袋系统-一-（数据可以保存）&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="软件安装与配置" scheme="https://maserhe.top/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
-    
-      <category term="Ubuntu" scheme="https://maserhe.top/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/Ubuntu/"/>
-    
-    
-      <category term="Linux" scheme="https://maserhe.top/tags/Linux/"/>
-    
-      <category term="Ubuntu" scheme="https://maserhe.top/tags/Ubuntu/"/>
     
   </entry>
   
