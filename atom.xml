@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://maserhe.top/"/>
-  <updated>2020-11-19T11:24:18.471Z</updated>
+  <updated>2020-11-21T10:34:07.188Z</updated>
   <id>https://maserhe.top/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>23种设计模式(必考点)</title>
+    <link href="https://maserhe.top/2020/11/21/she-ji-mo-shi/"/>
+    <id>https://maserhe.top/2020/11/21/she-ji-mo-shi/</id>
+    <published>2020-11-21T03:41:03.000Z</published>
+    <updated>2020-11-21T10:34:07.188Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;设计模式概述&quot;&gt;&lt;a href=&quot;#设计模式概述&quot; class=&quot;headerlink&quot; title=&quot;设计模式概述&quot;&gt;&lt;/a&gt;设计模式概述&lt;/h1&gt;&lt;h2 id=&quot;基本概念&quot;&gt;&lt;a href=&quot;#基本概念&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="软件工程" scheme="https://maserhe.top/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+    
+      <category term="总结" scheme="https://maserhe.top/tags/%E6%80%BB%E7%BB%93/"/>
+    
+      <category term="设计模式" scheme="https://maserhe.top/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>剑指 Offer 38. 字符串的排列</title>
@@ -565,37 +593,6 @@
       <category term="概率DP" scheme="https://maserhe.top/tags/%E6%A6%82%E7%8E%87DP/"/>
     
       <category term="洛谷" scheme="https://maserhe.top/tags/%E6%B4%9B%E8%B0%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>i3wm壁纸自动切换</title>
-    <link href="https://maserhe.top/2020/08/31/manjaroi3/"/>
-    <id>https://maserhe.top/2020/08/31/manjaroi3/</id>
-    <published>2020-08-31T00:33:00.000Z</published>
-    <updated>2020-09-02T06:07:01.618Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;安装feh&quot;&gt;&lt;a href=&quot;#安装feh&quot; class=&quot;headerlink&quot; title=&quot;安装feh&quot;&gt;&lt;/a&gt;安装feh&lt;/h1&gt;&lt;p&gt;通过feh来进行控制壁纸的切换。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;# ArchLinux &amp;amp;&amp;amp;
-        
-      
-    
-    </summary>
-    
-      <category term="软件安装与配置" scheme="https://maserhe.top/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
-    
-      <category term="manjaro" scheme="https://maserhe.top/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/manjaro/"/>
-    
-    
-      <category term="Linux" scheme="https://maserhe.top/tags/Linux/"/>
-    
-      <category term="Manjaro" scheme="https://maserhe.top/tags/Manjaro/"/>
     
   </entry>
   
