@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://maserhe.top/"/>
-  <updated>2020-11-26T14:53:07.519Z</updated>
+  <updated>2020-11-30T14:56:06.820Z</updated>
   <id>https://maserhe.top/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>leetcode 338. 比特位计数</title>
+    <link href="https://maserhe.top/2020/11/30/bi-te-wei-ji-shu/"/>
+    <id>https://maserhe.top/2020/11/30/bi-te-wei-ji-shu/</id>
+    <published>2020-11-30T14:54:03.000Z</published>
+    <updated>2020-11-30T14:56:06.820Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;leetcode-338-比特位计数&quot;&gt;&lt;a href=&quot;#leetcode-338-比特位计数&quot; class=&quot;headerlink&quot; title=&quot;leetcode 338. 比特位计数&quot;&gt;&lt;/a&gt;leetcode 338.
+        
+      
+    
+    </summary>
+    
+      <category term="leetcode" scheme="https://maserhe.top/categories/leetcode/"/>
+    
+    
+      <category term="位运算" scheme="https://maserhe.top/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/"/>
+    
+      <category term="动态规划" scheme="https://maserhe.top/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+  </entry>
   
   <entry>
     <title>剑指 Offer 46. 把数字翻译成字符串</title>
@@ -563,38 +591,6 @@
       <category term="图床" scheme="https://maserhe.top/tags/%E5%9B%BE%E5%BA%8A/"/>
     
       <category term="PicGo" scheme="https://maserhe.top/tags/PicGo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>解决linux时间与windows时间不同步</title>
-    <link href="https://maserhe.top/2020/09/02/linux-shi-jian-bu-tong-bu/"/>
-    <id>https://maserhe.top/2020/09/02/linux-shi-jian-bu-tong-bu/</id>
-    <published>2020-09-02T03:41:03.000Z</published>
-    <updated>2020-09-17T11:57:06.763Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;解决linux时间与windows时间不同步&quot;&gt;&lt;a href=&quot;#解决linux时间与windows时间不同步&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="软件安装与配置" scheme="https://maserhe.top/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
-    
-      <category term="linux" scheme="https://maserhe.top/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/linux/"/>
-    
-    
-      <category term="Hexo" scheme="https://maserhe.top/tags/Hexo/"/>
-    
-      <category term="Github" scheme="https://maserhe.top/tags/Github/"/>
-    
-      <category term="博客" scheme="https://maserhe.top/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   

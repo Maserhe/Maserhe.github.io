@@ -6,14 +6,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="java中final修饰符, SUT self java Golang 计算机科学 Linux学习">
+    <meta name="keywords" content="leetcode 338. 比特位计数, SUT self java Golang 计算机科学 Linux学习">
     <meta name="baidu-site-verification" content="eFxriE7DVh" />
     <meta name="google-site-verification" content="KeoTn_OFy4ndJwXNmm2gMeQfPhd7alqE9vQDwI32KCY" />
-    <meta name="description" content="基础首先回顾一下关于 final实例变量的知识。
-
-final可以修饰变量，被 final修饰的变量被赋初始值之后，不能对它重新赋值。
-final可以修饰方法，被 final修饰的方法不能被重写。
-final可以修饰类，被 final修饰的">
+    <meta name="description" content="leetcode 338. 比特位计数传送门
+题解方法一，暴力枚举时间复杂度$O(nsizeof(integer))$有个常数k的时间复杂度O(Kn);如果用运算的lowbit函数优化，会降低一点时间复杂度降低一点k值。lowbit 优化版">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,7 +18,7 @@ final可以修饰类，被 final修饰的">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>java中final修饰符 | Maserhe</title>
+    <title>leetcode 338. 比特位计数 | Maserhe</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -620,13 +617,13 @@ final可以修饰类，被 final修饰的">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        java中final修饰符
+                        leetcode 338. 比特位计数
                     </div>
                 </div>
             </div>
@@ -738,12 +735,12 @@ final可以修饰类，被 final修饰的">
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/final/" target="_blank">
-                                <span class="chip bg-color">final</span>
+                            <a href="/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/" target="_blank">
+                                <span class="chip bg-color">位运算</span>
                             </a>
                         
-                            <a href="/tags/%E6%80%BB%E7%BB%93/" target="_blank">
-                                <span class="chip bg-color">总结</span>
+                            <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" target="_blank">
+                                <span class="chip bg-color">动态规划</span>
                             </a>
                         
                     </div>
@@ -754,8 +751,8 @@ final可以修饰类，被 final修饰的">
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/java/" class="post-category" target="_blank">
-                                java
+                            <a href="/categories/leetcode/" class="post-category" target="_blank">
+                                leetcode
                             </a>
                         
                     </div>
@@ -766,7 +763,7 @@ final可以修饰类，被 final修饰的">
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-10-22
+                    2020-11-30
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -780,14 +777,14 @@ final可以修饰类，被 final修饰的">
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        638
+                        400
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        2 分
+                        1 分
                     </div>
                     
                 
@@ -799,66 +796,48 @@ final可以修饰类，被 final修饰的">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h1><p>首先回顾一下关于 final实例变量的知识。</p>
+                <h1 id="leetcode-338-比特位计数"><a href="#leetcode-338-比特位计数" class="headerlink" title="leetcode 338. 比特位计数"></a>leetcode 338. 比特位计数</h1><p><strong><a href="https://leetcode-cn.com/problems/counting-bits/" target="_blank" rel="noopener">传送门</a></strong><br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20201130223303-2020-11-30-22-33-03.png" alt="20201130223303-2020-11-30-22-33-03"></p>
+<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><h2 id="方法一，暴力枚举"><a href="#方法一，暴力枚举" class="headerlink" title="方法一，暴力枚举"></a>方法一，暴力枚举</h2><p>时间复杂度$O(n<em>sizeof(integer))$有个常数k的时间复杂度O(K</em>n);<br>如果用运算的lowbit函数优化，会降低一点时间复杂度降低一点k值。<br>lowbit 优化版，效果还行，不过不是最优解<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20201130224454-2020-11-30-22-44-55.png" alt="20201130224454-2020-11-30-22-44-55"></p>
+<pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> <span class="token function">countBits</span><span class="token punctuation">(</span><span class="token keyword">int</span> num<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>num<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+        vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> <span class="token function">ans</span><span class="token punctuation">(</span>num <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> num<span class="token punctuation">;</span> i <span class="token operator">++</span> <span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">int</span> t <span class="token operator">=</span> i<span class="token punctuation">;</span>
+            <span class="token keyword">int</span> count <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+            <span class="token keyword">while</span> <span class="token punctuation">(</span>t<span class="token punctuation">)</span><span class="token punctuation">{</span>
+                count <span class="token operator">++</span> <span class="token punctuation">;</span>
+                t <span class="token operator">=</span> t <span class="token operator">-</span> <span class="token punctuation">(</span>t <span class="token operator">&amp;</span> <span class="token operator">-</span>t<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 位运算lowbit，主要就这一行代码</span>
+            <span class="token punctuation">}</span>
+            ans<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> count<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> ans<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="方法二，动态规划"><a href="#方法二，动态规划" class="headerlink" title="方法二，动态规划"></a>方法二，动态规划</h2><p><strong>偶数末尾二进制表示肯定是0结尾，所以去掉这个0和原本的数中1的个数一样。</strong><br>例如：<br>二进制数1000B和100B一样。<br><strong>奇数末尾二进制表示肯定是1结尾，所以去掉这个1和原本的数中1的个数少1。</strong><br>例如：<br>二进制数10001B和1000B个数少1。<br>状态转移方程为：移位运算<code>&gt;&gt;</code>快速做除法。</p>
 <ul>
-<li>final可以修饰变量，被 final修饰的变量被赋初始值之后，不能对它重新赋值。</li>
-<li>final可以修饰方法，被 final修饰的方法不能被重写。</li>
-<li>final可以修饰类，被 final修饰的类不能派生子类。</li>
+<li><p>dp(i) = dp(i/2) 若i为偶数；</p>
+</li>
+<li><p>dp(i) = dp(i/2) + 1 若i为奇数；<br>最近比较忙，快考试了，就水一题$<del>~</del>$</p>
+<pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+  vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> <span class="token function">countBits</span><span class="token punctuation">(</span><span class="token keyword">int</span> num<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>num<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+      vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> <span class="token function">dp</span><span class="token punctuation">(</span>num <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      dp<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+      <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> num<span class="token punctuation">;</span> i <span class="token operator">++</span> <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">&amp;</span> <span class="token number">1</span><span class="token punctuation">)</span> dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> dp<span class="token punctuation">[</span>i <span class="token operator">>></span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+          <span class="token keyword">else</span> dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> dp<span class="token punctuation">[</span>i <span class="token operator">>></span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">return</span> dp<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
 </ul>
-<p><strong>被 final修饰的实例变量必须显式指定初始值而且只能在如下3个位置指定初始值。</strong></p>
-<ul>
-<li>定义 final实例变量时指定初始值；</li>
-<li>在非静态初始化块中为 final实例变量指定初始值；</li>
-<li>在构造器中为 final实例变量指定初始值</li>
-</ul>
-<p>对于普通实例变量，Java程序可以对它执行默认的初始化，也就是将实例变量的值指定为默认的初始值0或null但对于 final实例变量，则必须由程序员<strong>显式指定</strong>初始值。</p>
-<p><strong>对于 final类变量(static)而言，同样必须显式指定初始值，而且 final类变量只能在2个地方指定初始值：</strong></p>
-<ul>
-<li>定义 final类变量时指定初始值；</li>
-<li>在静态初始化块中为fnal类变量指定初始值</li>
-</ul>
-<h2 id="执行“宏替换”的变量"><a href="#执行“宏替换”的变量" class="headerlink" title="执行“宏替换”的变量"></a>执行“宏替换”的变量</h2><p>如果在编译时，值能确定下来，那么值将会被宏替换！！！！！<br>看下面代码以及编译后的字节码文件。</p>
-<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">A</span> <span class="token punctuation">{</span>
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">final</span> <span class="token keyword">int</span>  a <span class="token operator">=</span> <span class="token number">7</span> <span class="token punctuation">;</span>      
-        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>      <span class="token comment" spellcheck="true">//这里a会被“宏”替换</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/java%E4%B8%ADfinal%E5%85%B3%E9%94%AE%E5%AD%97-2020-10-22-21-22-44.png" alt="java中final关键字-2020-10-22-21-22-44"></p>
-<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">A</span> <span class="token punctuation">{</span>
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">int</span>  a <span class="token operator">=</span> <span class="token number">7</span> <span class="token punctuation">;</span>            
-        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>     <span class="token comment" spellcheck="true">//这里不会被宏替换。</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/java%E4%B8%ADfinal%E5%85%B3%E9%94%AE%E5%AD%97-2020-10-22-21-24-00.png" alt="java中final关键字-2020-10-22-21-24-00"></p>
-<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">A</span> <span class="token punctuation">{</span>
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token comment" spellcheck="true">//下面的a变量的值因为调用了方法，所以无法在编译时被确定下来</span>
-        <span class="token keyword">final</span> <span class="token keyword">int</span>  a <span class="token operator">=</span> <span class="token number">7</span> <span class="token operator">+</span> Integer<span class="token punctuation">.</span><span class="token function">valueOf</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
-        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>      <span class="token comment" spellcheck="true">// 这里也不会被“宏”替换。</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/java%E4%B8%ADfinal%E5%85%B3%E9%94%AE%E5%AD%97-2020-10-22-21-21-24.png" alt="java中final关键字-2020-10-22-21-21-24"><br><strong>比较由意思的代码</strong></p>
-<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">A</span> <span class="token punctuation">{</span>
-    <span class="token comment" spellcheck="true">//定义3个fina1实例变量</span>
-    <span class="token keyword">final</span> String str1<span class="token punctuation">;</span>
-    <span class="token keyword">final</span> String str2 <span class="token operator">=</span> <span class="token string">"Java"</span><span class="token punctuation">;</span>
-    <span class="token comment" spellcheck="true">//str1 在非静态初始化中初始化</span>
-    <span class="token punctuation">{</span>
-        str1 <span class="token operator">=</span><span class="token string">"Java"</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    <span class="token comment" spellcheck="true">//判断str1、str2是否执行“宏替换”</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">display</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>str1 <span class="token operator">+</span> str1 <span class="token operator">==</span> <span class="token string">"JavaJava"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">// false</span>
-        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>str2 <span class="token operator">+</span> str2 <span class="token operator">==</span> <span class="token string">"JavaJava"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">// true  会被宏替换，所以为true</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        A a <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">A</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        a<span class="token punctuation">.</span><span class="token function">display</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>final并不会所有的都会被宏替换， 有些编译时确定不下来的，就不会被宏替换。<br><strong>喜欢的话，给博主赏一杯冰阔乐吧</strong></p>
+<p><strong>喜欢的话，给博主赏一杯冰阔乐吧</strong></p>
 
 <table>
   <tbody><tr>
@@ -912,7 +891,7 @@ final可以修饰类，被 final修饰的">
                     </span>
                     <a href="https://maserhe.top" class="b-link-green">Maserhe</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2020/10/22/java-zhong-final-guan-jian-zi/" class="b-link-green">java中final修饰符</a>
+                    <a href="/2020/11/30/bi-te-wei-ji-shu/" class="b-link-green">leetcode 338. 比特位计数</a>
                 </p>
             </div>
 
@@ -1232,30 +1211,85 @@ final可以修饰类，被 final修饰的">
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/10/27/shun-shi-zhen-da-yin-shu-zu/">
+                <a href="/2020/11/30/bi-te-wei-ji-shu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="剑指 Offer 29. 顺时针打印矩阵">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="leetcode 338. 比特位计数">
                         
-                        <span class="card-title">剑指 Offer 29. 顺时针打印矩阵</span>
+                        <span class="card-title">leetcode 338. 比特位计数</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            剑指 Offer 29. 顺时针打印矩阵题目
-题解以前随手写过一次，当时写的时候，没有测试很多用例其实有问题传送门解题思路定义上下左右四个边界，按顺时针扫描边界的行和列，扫描完一行或者一列之后更新边界值并判断边界。本来使用while(lef
+                            水一题，简单动态规划
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-10-27
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-11-30
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/leetcode/" class="post-category" target="_blank">
+                                    leetcode
+                                </a>
+                            
+                            
                         </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/" target="_blank">
+                        <span class="chip bg-color">位运算</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" target="_blank">
+                        <span class="chip bg-color">动态规划</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/11/26/ba-shu-zi-fan-yi-cheng-zi-fu-chuan/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="剑指 Offer 46. 把数字翻译成字符串">
+                        
+                        <span class="card-title">剑指 Offer 46. 把数字翻译成字符串</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            剑指 Offer 46. 把数字翻译成字符串题目传送门
+解题思路(简单动态规划)动态规划方程。先数字转化成字符串s = 12325664866处理令s[i - 2]和s[i - 1]所组成的数字为 t当t小于10或者大于25时只有一种情况。
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-11-26
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -1271,73 +1305,12 @@ final可以修饰类，被 final修饰的">
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%95%B0%E7%BB%84/" target="_blank">
-                        <span class="chip bg-color">数组</span>
+                    <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" target="_blank">
+                        <span class="chip bg-color">动态规划</span>
                     </a>
                     
-                    <a href="/tags/%E9%81%8D%E5%8E%86/" target="_blank">
-                        <span class="chip bg-color">遍历</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/10/20/chong-pai-lian-biao/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="leetcode 143. 重排链表">
-                        
-                        <span class="card-title">leetcode 143. 重排链表</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            重排链表题目
-找出规律。重排的链表分为两部分我们将链表的前一部分和后一部分链表。
-
-头部节点向后走正序插入
-尾部节点往后退倒序插入两个是交换着互相取出构成新的链。分成两部分我们可以使用快慢双指针迅速的达到链表的中间。这样就可以将链表分为两部
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-10-20
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/leetcode/" class="post-category" target="_blank">
-                                    leetcode
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E9%93%BE%E8%A1%A8/" target="_blank">
-                        <span class="chip bg-color">链表</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/" target="_blank">
-                        <span class="chip bg-color">双指针</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%8F%8D%E8%BD%AC/" target="_blank">
-                        <span class="chip bg-color">反转</span>
+                    <a href="/tags/dp/" target="_blank">
+                        <span class="chip bg-color">dp</span>
                     </a>
                     
                 </div>
@@ -1485,6 +1458,13 @@ final可以修饰类，被 final修饰的">
 
 </main>
 
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
 
 
 <script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
