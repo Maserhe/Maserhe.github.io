@@ -10,7 +10,7 @@
     <meta name="baidu-site-verification" content="eFxriE7DVh" />
     <meta name="google-site-verification" content="KeoTn_OFy4ndJwXNmm2gMeQfPhd7alqE9vQDwI32KCY" />
     <meta name="description" content="leetcode 338. 比特位计数传送门
-题解方法一，暴力枚举时间复杂度$O(nsizeof(integer))$有个常数k的时间复杂度O(Kn);如果用运算的lowbit函数优化，会降低一点时间复杂度降低一点k值。lowbit 优化版">
+题解方法一，暴力枚举时间复杂度O(n*sizeof(integer))有个常数k的时间复杂度O(K*n);如果用运算的lowbit函数优化，会降低一点时间复杂度降低一点k值。lowbit 优化版">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -777,7 +777,7 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        400
+                        402
                     </div>
                     
 
@@ -797,7 +797,7 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h1 id="leetcode-338-比特位计数"><a href="#leetcode-338-比特位计数" class="headerlink" title="leetcode 338. 比特位计数"></a>leetcode 338. 比特位计数</h1><p><strong><a href="https://leetcode-cn.com/problems/counting-bits/" target="_blank" rel="noopener">传送门</a></strong><br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20201130223303-2020-11-30-22-33-03.png" alt="20201130223303-2020-11-30-22-33-03"></p>
-<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><h2 id="方法一，暴力枚举"><a href="#方法一，暴力枚举" class="headerlink" title="方法一，暴力枚举"></a>方法一，暴力枚举</h2><p>时间复杂度$O(n<em>sizeof(integer))$有个常数k的时间复杂度O(K</em>n);<br>如果用运算的lowbit函数优化，会降低一点时间复杂度降低一点k值。<br>lowbit 优化版，效果还行，不过不是最优解<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20201130224454-2020-11-30-22-44-55.png" alt="20201130224454-2020-11-30-22-44-55"></p>
+<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><h2 id="方法一，暴力枚举"><a href="#方法一，暴力枚举" class="headerlink" title="方法一，暴力枚举"></a>方法一，暴力枚举</h2><p>时间复杂度<code>O(n*sizeof(integer))</code>有个常数k的时间复杂度<code>O(K*n)</code>;<br>如果用运算的lowbit函数优化，会降低一点时间复杂度降低一点k值。<br>lowbit 优化版，效果还行，不过不是最优解<br><img src="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/loading.gif" data-original="https://picgo-1259138584.cos.ap-beijing.myqcloud.com/Markdown/20201130224454-2020-11-30-22-44-55.png" alt="20201130224454-2020-11-30-22-44-55"></p>
 <pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
     vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> <span class="token function">countBits</span><span class="token punctuation">(</span><span class="token keyword">int</span> num<span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -818,9 +818,9 @@
 <span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="方法二，动态规划"><a href="#方法二，动态规划" class="headerlink" title="方法二，动态规划"></a>方法二，动态规划</h2><p><strong>偶数末尾二进制表示肯定是0结尾，所以去掉这个0和原本的数中1的个数一样。</strong><br>例如：<br>二进制数1000B和100B一样。<br><strong>奇数末尾二进制表示肯定是1结尾，所以去掉这个1和原本的数中1的个数少1。</strong><br>例如：<br>二进制数10001B和1000B个数少1。<br>状态转移方程为：移位运算<code>&gt;&gt;</code>快速做除法。</p>
 <ul>
-<li><p>dp(i) = dp(i/2) 若i为偶数；</p>
+<li><p><code>dp(i) = dp(i/2)</code> 若i为偶数；</p>
 </li>
-<li><p>dp(i) = dp(i/2) + 1 若i为奇数；<br>最近比较忙，快考试了，就水一题$<del>~</del>$</p>
+<li><p><code>dp(i) = dp(i/2) + 1</code> 若i为奇数；<br>最近比较忙，快考试了，就水一题$<del>~</del>$</p>
 <pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
   vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> <span class="token function">countBits</span><span class="token punctuation">(</span><span class="token keyword">int</span> num<span class="token punctuation">)</span> <span class="token punctuation">{</span>
